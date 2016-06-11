@@ -19,6 +19,7 @@ Give the Data Source a **NAME** i.e. **DSN** (Data Source Name) which describes 
 * driver
 * name
 * ...
+
 ### 都有哪些DSN?
 - User DSN
 - System DSN
@@ -55,6 +56,7 @@ ODBC 数据源得配置是OS level的，是不依赖任何数据库系统的，�
 >      纯Java接口规范
 >      Java Language specific
 >      
+
 ### why jdbc when there is already ODBC?
 最简单的一句话是，ODBC是使用C语言接口的，java直接调C...sounds not very good.
 
@@ -91,8 +93,8 @@ Java 程序员可以使用：
 
 ### Sample Code: （[参考][1])
 
-`
-	private static void ConnectDBWithJNDI(String jndiName) throws 	NamingException, SQLException {
+
+	`private static void ConnectDBWithJNDI(String jndiName) throws 	NamingException, SQLException {
         Context ctx=new InitialContext();
         Object obj=ctx.lookup(jndiName);
         DataSource ds=(DataSource)obj;
@@ -101,17 +103,17 @@ Java 程序员可以使用：
         conn.commit();
         conn.close();
     }
-`
-`
+
+
 	private static void ConnectDBWithoutJNDI(String driverName, String jdbcLink) throws ClassNotFoundException, SQLException {
         Class.forName(driverName, true, Thread.currentThread().getContextClassLoader());
         conn = DriverManager.getConnection(jdbcLink);
         conn.setAutoCommit(false);
         conn.commit();
         conn.close();
-    }
-`
-[1]:http://blog.csdn.net/zhaosg198312/article/details/3979435
+    }`
+
+
 ### Extension：
 
 当然JNDI不仅限于数据库目录服务，很多诸如LDAP,文件系统等都支持。
