@@ -3,8 +3,6 @@ layout: post
 title: 概念学习 - JNDI, JDBC, ODBC, DataSource
 ---
 
-# 概念学习 - JNDI, JDBC, ODBC, DataSource
-
 最近在学习Java Hibernate，对数据库资源访问这块好多概念模糊，所以在此记录一下, 如有错误 盼指正。
 
 ## Data Source
