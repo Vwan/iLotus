@@ -5,7 +5,7 @@ title: 概念学习 - JNDI, JDBC, ODBC, DataSource
 
 最近在学习Java Hibernate，对数据库资源访问这块好多概念模糊，所以在此记录一下, 如有错误 盼指正。
 
-## <font color=#0099ff size=5 face="黑体">Data Source</font>
+## <font color="#0099ff" face="黑体"> Data Source </font>
 
 ### It is
 >**physically** a set of data stored somewhere like a database;<br>
