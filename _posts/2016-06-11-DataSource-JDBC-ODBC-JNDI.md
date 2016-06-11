@@ -33,7 +33,7 @@ Data Source是存在数据库中的，访问这些数据要用到sql 语句。<b
 显然需要一个翻译机制来实现。<br>
 于是便有了ODBC and JDBC...<br>
 
-## <font color=#0099ff size=5 face="黑体">ODBC</font>
+## <font color="#0099ff" face="黑体"> ODBC</font>
 
 ### <u>ODBC is</u>
 >     Open Database Connectivity
@@ -48,7 +48,7 @@ ODBC 数据源得配置是OS level的，是不依赖任何数据库系统的，�
 
 如上面三种DSN的配置，在windows中直接到Control Panel -> Administrator -> ODBC 中配置即可。 
 
-## <font color=#0099ff size=5 face="黑体">JDBC</font>
+## <font color="#0099ff" face="黑体"> JDBC</font>
 >      Java Database Connectivity
 >      纯Java接口规范
 >      Java Language specific
@@ -66,7 +66,7 @@ Java 程序员可以使用：
 + JDBC driver directly to talk to database
 
 
-## <font color=#0099ff size=5 face="黑体">JNDI</font>
+## <font color="#0099ff" face="黑体"> JNDI</font>
 
 ### <u>Why?</u>
 既然有了ODBC, JDBC, 那为什么还要JNDI?
