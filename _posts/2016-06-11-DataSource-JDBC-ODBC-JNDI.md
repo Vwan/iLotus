@@ -5,13 +5,14 @@ title: 概念学习 - JNDI, JDBC, ODBC, DataSource
 
 最近在学习Java Hibernate，对数据库资源访问这块好多概念模糊，所以在此记录一下, 如有错误 盼指正。
 
-## Data Source
+## <font color=#0099ff size=5 face="黑体">Data Source</font>
 
-### Data Source is
+### It is
 >**physically** a set of data stored somewhere like a database;<br>
 >**abstractly** it is DataSource object used to get connection to a database;
 
-### 访问这些数据需要什么？
+### <u>访问这些数据需要什么？</u>
+
 Give the Data Source a **NAME** i.e. **DSN** (Data Source Name) which describes informations to access it:
 
 * location
@@ -20,25 +21,21 @@ Give the Data Source a **NAME** i.e. **DSN** (Data Source Name) which describes 
 * name
 * ...
 
-### 都有哪些DSN?
+### <u>都有哪些DSN?</u>
 - User DSN
 - System DSN
 - File DSN
 
-### 如何访问Data Source呢？
-Data Source是存在数据库中的，访问这些数据要用到sql 语句。
+### <u>如何访问Data Source呢？</u>
+Data Source是存在数据库中的，访问这些数据要用到sql 语句。<br>
+应用程序呢，是用特定编程语言比如Java, C#等写的，程序中需要使用Data Source。<br>
+这就存在一个问题，这些编程语言和sql语言之间如何talk呢？<br>
+显然需要一个翻译机制来实现。<br>
+于是便有了ODBC and JDBC...<br>
 
-应用程序呢，是用特定编程语言比如Java, C#等写的，程序中需要使用Data Source。
+## <font color=#0099ff size=5 face="黑体">ODBC</font>
 
-这就存在一个问题，这些编程语言和sql语言之间如何talk呢？
-
-显然需要一个翻译机制来实现。
-
-于是便有了ODBC and JDBC...
-
-## ODBC
-
-### ODBC is
+### <u>ODBC is</u>
 >     Open Database Connectivity
 >     它统一了对各种不同类型数据库的访问接口
 >     是应用程序和数据库之间的中间件
@@ -46,22 +43,22 @@ Data Source是存在数据库中的，访问这些数据要用到sql 语句。
 
 类比：JVM 使java 可以跨平台使用，ODBC使应用程序可以跨数据库使用（移植数据库方便）
 
-### 配置ODBC数据源
+### <u>配置ODBC数据源</u>
 ODBC 数据源得配置是OS level的，是不依赖任何数据库系统的，不直接与数据库打交道，与数据库实际操作都是通过各数据库的ODBC Driver来实现的。
 
 如上面三种DSN的配置，在windows中直接到Control Panel -> Administrator -> ODBC 中配置即可。 
 
-## JDBC
+## <font color=#0099ff size=5 face="黑体">JDBC</font>
 >      Java Database Connectivity
 >      纯Java接口规范
 >      Java Language specific
 >      
 
-### why jdbc when there is already ODBC?
+### <u>why jdbc when there is already ODBC?</u>
 最简单的一句话是，ODBC是使用C语言接口的，java直接调C...sounds not very good.
 
 
-### 连接数据库
+### <u>连接数据库</u>
 
 Java 程序员可以使用：
 
@@ -69,13 +66,13 @@ Java 程序员可以使用：
 + JDBC driver directly to talk to database
 
 
-## JNDI
+## <font color=#0099ff size=5 face="黑体">JNDI</font>
 
-### Why?
+### <u>Why?</u>
 既然有了ODBC, JDBC, 那为什么还要JNDI?
 一个简单的原因是，程序员需要在程序中使用odbc, jdbc 连接配置信息来访问数据库。这些信息直接写在程序中好吗？如果要用到多个连接信息呢？
 
-### 是什么？
+### <u>是什么？</u>
 > Java naming and directory Interface (JAVA API)
 > 
 > Java 接口规范。
@@ -91,7 +88,7 @@ Java 程序员可以使用：
 >     最后关闭数据库连接等。
 
 
-### Sample Code: （[参考][1])
+### <u>Sample Code: （[参考][1])</u>
 
 
 	`private static void ConnectDBWithJNDI(String jndiName) throws 	NamingException, SQLException {
@@ -114,7 +111,7 @@ Java 程序员可以使用：
     }`
 
 
-### Extension：
+### <u>Extension：</u>
 
 当然JNDI不仅限于数据库目录服务，很多诸如LDAP,文件系统等都支持。
 
