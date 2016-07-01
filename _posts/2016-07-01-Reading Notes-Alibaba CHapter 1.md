@@ -1,5 +1,4 @@
-# Reading Notes - 
-# Alibaba， The House that Jack Ma Built - Chapter 1 - The Iron Triangle
+# Reading Notes - Alibaba， The House that Jack Ma Built - Chapter 1 - The Iron Triangle
 
 
 ## Words and Expressions
