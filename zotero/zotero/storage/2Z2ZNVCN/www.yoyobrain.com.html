@@ -1,0 +1,636 @@
+<html class="dj_gecko dj_contentbox">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<meta name="wpd_version" content="0.2">
+<meta name="wpd_baseurl" content="http://www.yoyobrain.com/">
+<meta name="wpd_url" content="http://www.yoyobrain.com/">
+<meta name="wpd_date" content="2017-03-18T12:01Z">
+
+  
+	<meta http-equiv="Pragma" content="no-cache">
+    <meta name="verify-v1" content="+K/i1jZ1nimZ+PZUkQuajBwU3V81gzzD5kf1JUtWNo4=">
+	<meta name="google-site-verification" content="KfUZ0GeWkH6rnVrtIiztXImgebn9uv1rKR-b7SUh79k">
+	<meta name="google-site-verification" content="rYayD9OfC6tpoG_GZZMsuVwrTUcBVa5yEvrCww2qOUs">
+	<meta name="y_key" content="f237224945313113">
+	<title>
+
+		
+		Flashcards, notes and learning tools online: YoYoBrain.com.	</title>
+
+	<script id="facebook-jssdk" src="all.js"></script><script type="text/javascript">
+
+
+        //this is the location where we will insert error information into
+        //the database
+        
+        var handleErr = function(message,url,line_number){
+
+			if ((1 > arguments.length) ||  ( !message)) {
+				message = "Was not given in call.";
+			}
+
+			if ((2 > arguments.length) ||  (!url)) {
+				url = 'unknown';
+			}
+			
+			
+			if ((3 > arguments.length) ||  (!line_number)) {
+				line_number = "not given";
+			}
+			browser_location = window.location.href;
+			if (!browser_location) {
+				browser_location = "couldn't find";
+			}
+			
+			var additional_info = "";
+			if (arguments.length > 3 ) {
+				for (var arg_cnt = 3; arguments.length > arg_cnt; arg_cnt+=1 ) {
+					additional_info += arguments[arg_cnt];
+				}
+			}
+			
+			
+				//filter out google analytics stuff
+				if (url == "http://www.google-analytics.com/ga.js") {
+					return true;
+					
+				}
+			
+			
+			//handle known bug of Class not registered for IE 6
+			//occurs on window.open
+			user_agent = navigator.userAgent;
+			if (message.match(/Class not registered/)) {
+				if (user_agent.match(/IE 6\.0/)) {
+				
+					window.location = "/error_handling/class_not_registered";
+					return true;
+				}				
+			}
+
+			if (message.match(/Building SWF failed/)){
+				
+				if (dojox.embed.Flash.available) {
+					additional_info += "Flash version: " + dojox.embed.Flash.version.major + 
+										"." +  dojox.embed.Flash.version.minor + "."  + dojox.embed.Flash.version.rev
+				} else {
+					additional_info += "Don't have flash installed."
+				}
+			}
+
+			if (window.location.hostname=='www.yoyobrain.com' ){
+					// Function to report errors proactively
+					if (error_count > 3){
+						return false;	
+						
+					}else{
+						
+						var post_hash = {	message: message,
+										file_location: url,
+										line_number: line_number,
+										page: browser_location,
+										additional_info: additional_info
+									};
+									
+						var ajax_param_hash = {
+							method: 'post',
+							parameters: post_hash
+						};
+									
+						error_count++;			
+		           
+				 		// submit information to server
+				  	//hold it	var my_request = new Ajax.Request('/error_handling/javascript_error_notifier',ajax_param_hash);
+						return true;
+					}				
+				
+			} else {
+				
+				var alert_message = 'message: ' + message + '\nfile_location=' + url + '\nline_number=' + line_number + "\nAdditional Info: " + additional_info;
+			 	alert(alert_message);
+			}	
+
+        };
+
+
+
+
+	    var debug = false;
+
+
+		
+			
+		        window.onerror = handleErr;
+			
+		
+			
+			
+
+        var error_count=0;
+		
+		
+ 	 	var isUserSignedIn=false;
+		var isPageLoaded=false;
+		
+		// flags for js object loads
+		var isAllOfBaseLoaded=false;
+		var isPrototypeLoaded=false;
+		var isDragDropLoaded=false;
+		var isEffectsLoaded=false;
+
+		
+	</script>
+
+
+	<script type="text/javascript">
+
+		//generic way to add onload functions without requiring any other script to be present
+		function addLoadEvent(func) { 
+		  var oldonload = window.onload; 
+
+		  if (typeof window.onload != 'function') { 
+		    window.onload = func; 
+		  } else { 
+		    window.onload = function() { 
+		      if (oldonload) { 
+		        oldonload(); 
+	      	  } 
+		      func(); 
+		    }; 
+		  } 
+		} 				
+</script>
+				<script type="text/javascript" charset="utf-8">
+
+		var djConfig = {
+			baseUrl : "/dojo/dojo/",
+			
+			
+			useCommentedJson: true,
+			locale: 'en-us',
+			parseOnLoad: true
+		};
+	</script>
+
+	<script src="base_packaged.js" type="text/javascript"></script>
+    <script type="text/javascript" src="dojo.js"></script>
+    <script src="yoyodojo.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="www.yoyobrain.com.css" media="all">
+</head>
+<body class="tundra" id="bodyId"><textarea id="dijit._editor.RichText.savedContent" style="display: none; position: absolute; top: -100px; left: -100px; height: 3px; width: 3px; overflow: hidden;"></textarea><textarea id="dijit._editor.RichText.savedContent" style="display: none; position: absolute; top: -100px; left: -100px; height: 3px; width: 3px; overflow: hidden;"></textarea><div class=" fb_reset" id="fb-root"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe src="www.yoyobrain.com_1.html" style="border: medium none;" tabindex="-1" title="Facebook Cross Domain Communication Frame" aria-hidden="true" id="fb_xdm_frame_http" scrolling="no" allowfullscreen="true" allowtransparency="true" name="fb_xdm_frame_http" frameborder="0"></iframe><iframe src="www.yoyobrain.com_2.html" style="border: medium none;" tabindex="-1" title="Facebook Cross Domain Communication Frame" aria-hidden="true" id="fb_xdm_frame_https" scrolling="no" allowfullscreen="true" allowtransparency="true" name="fb_xdm_frame_https" frameborder="0"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div><textarea id="dijit._editor.RichText.savedContent" style="display: none; position: absolute; top: -100px; left: -100px; height: 3px; width: 3px; overflow: hidden;"></textarea><textarea id="dijit._editor.RichText.savedContent" style="display: none; position: absolute; top: -100px; left: -100px; height: 3px; width: 3px; overflow: hidden;"></textarea>
+		
+
+
+	
+		
+		
+	
+
+	
+
+		
+		
+	
+	
+	<script add_asset_id="false" src="jqueryful_packaged.js" type="text/javascript"></script>
+	
+	<!--[if IE]><link rel="stylesheet" href="/stylesheets/ie.css" type="text/css" media="screen, projection"><![endif]-->
+
+	<!--[if lte IE 6]>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/IE6hacks.css"
+	 <![endif]-->
+
+	<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/IE7hacks.css"
+	 <![endif]-->
+	 
+	<script type="text/javascript">
+
+		 loadCSSHackFiles();
+		
+	</script>
+	
+	
+	
+		<link rel="shortcut icon" href="favicon.png" type="image/ico">		
+		<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+
+	
+
+
+
+
+
+
+		
+<div id="top_background" style="width: 100%; z-index: 500;">
+  <div class="container ">
+	   <div id="main_navigation" class="span-24" dojotype="dijit.Toolbar" style="">
+			<div id="navigation_tab_container" class="span-19 center ">	
+					<span id="logo" class="tab" style="margin-left: 0px; padding-left: 0px; margin-top: -4px;">
+						<a href="http://www.yoyobrain.com/" style="text-decoration: none;">
+						<img alt="YoYoBrain Logo" src="logo_menu.png" border="0">
+						</a>
+					</span>
+										
+						<span id="signup" class="tab selected">
+								<a href="http://www.yoyobrain.com/" id="signup_link">Free Signup</a>
+						</span>
+						<span id="tour" class="tab ">
+								<a href="http://www.yoyobrain.com/welcome/tour1">Tour</a>
+						</span>	
+						<span id="communities" class="tab ">
+									<a href="http://www.yoyobrain.com/community/list" id="communities_link">Communities</a>
+						</span>
+						<span id="teachers" class="tab ">
+								<a href="http://www.yoyobrain.com/welcome/teachers">Teachers</a>
+						</span>			
+						<span id="enterprises" class="tab ">
+								<a href="http://www.yoyobrain.com/welcome/enterprises">Enterprises</a>
+						</span>	
+
+					
+					<div id="help" class="tab " dojotype="dijit.form.DropDownButton" style="width: 35px; padding-left: 0px;">
+							<span class="center small_font bold_font">Help</span>
+							<div dojotype="dijit.Menu" style="display: none; width: 15em;">
+		                        <div dojotype="dijit.MenuItem">Use the Memorization Tool
+		                          <script type="dojo/method" event="onClick">
+
+		                            navigateTo('/help/memorization_tool');
+		                          </script>
+		                        </div>
+		                        <div dojotype="dijit.MenuItem">Create Flashcards
+		                          <script type="dojo/method" event="onClick">
+
+		                            navigateTo('/help/flashcard_tutorial');
+		                          </script>
+		                        </div>
+		                        <div dojotype="dijit.MenuItem">Building a learning community
+		                          <script type="dojo/method" event="onClick">
+
+		                            navigateTo('/help/community_tutorial');
+		                          </script>
+		                        </div>
+		                        <div dojotype="dijit.MenuItem">Create a lesson to teach others
+		                          <script type="dojo/method" event="onClick">
+
+		                            navigateTo('/help/lesson_tutorial');
+		                          </script>
+		                        </div>
+				                  <div dojotype="dijit.MenuSeparator"></div>
+				                  <div dojotype="dijit.MenuItem">See all help topics
+				                    <script type="dojo/method" event="onClick">
+
+				                      navigateTo('/help');
+				                    </script>
+				                  </div>
+				                  <div dojotype="dijit.MenuSeparator"></div>
+				                  <div dojotype="dijit.MenuItem">Suggestions, gripes or feedback
+				                    <script type="dojo/method" event="onClick">
+
+				                      navigateTo('/customer_service/contact_us');
+				                    </script>
+				                  </div>
+
+							</div>
+									
+					</div>
+					
+						<span class="tab" id="already_a_member" style="float: right;">
+							<a href="http://www.yoyobrain.com/account/signin">Login</a>
+						</span>
+					
+					
+					
+			</div>		
+			
+			<div id="search_from_nav_container" class="span-5 last align_right" style="height: 29px;">
+				
+						<form dojotype="dijit.form.Form" name="global_search_form" jsid="global_search_form" method="get" action="http://www.yoyobrain.com/searches/find">
+							<script type="dojo/method">
+
+								submitGlobalSearch = function() {
+									if (global_search_form.isValid()) {
+										global_search_form.submit();
+									} else {
+										global_search_for.focus();
+									}
+								}
+							</script>
+							   <div dojotype="dojox.data.QueryReadStore" jsid="yoyoBrainSearch" url="/searches/autocomplete"> </div>
+								<div id="global_search_for" name="search_for" jsid="global_search_for" autocomplete="false" searchdelay="250" dojotype="dijit.form.ComboBox" store="yoyoBrainSearch" labelattr="name" searchattr="name" required="true" invalidmessage="Can't search without a term to look for." value="Search" style="width: 150px; margin-top: 3px;"> 
+									<script type="dojo/connect" event="onFocus">
+
+										if (this.attr('value')=="Search") {
+											this.attr('value','');
+										}
+									</script>
+									<script type="dojo/connect" event="onKeyPress" args="evt">
+
+										if (!(evt.keyCode==dojo.keys.ENTER)){
+											return;
+										}
+
+										dojo.stopEvent(evt);
+										submitGlobalSearch();
+
+									</script>
+								</div>
+								<img src="search_glass.png" id="global_search" onclick="submitGlobalSearch();" style="cursor: pointer;" alt="search" align="top" border="0">
+						</form>	
+			</div> 			
+			
+					
+		</div>
+		
+		
+	</div>	
+</div>
+
+	<div id="maincontentarea" class="container content_for_welcome" style="">
+		<div class="span-24 text_dark_gray smaller_font" style="margin-bottom: 3px; margin-top: 10px;">
+				<div style="display: inline;" id="breadcrumbs"><b>Home</b></div>		
+		</div>
+		<script src="swfobject_modified.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+	function parseURLValues(){
+		
+		var search_string = window.location.search;
+		var email_param = search_string.toQueryParams().email;
+		var cardbox_id_param = search_string.toQueryParams().cardbox_id;
+		
+		if (email_param ){
+			email_dom = $('learner_email');
+			if (email_dom) {
+				email_dom.value = email_param;
+			}
+		}
+	    if (location.href.toQueryParams().cardbox_id ){
+			cardbox_id_dom = $('cardbox_id');
+			if (cardbox_id_dom) {
+				cardbox_id_dom.value=cardbox_id_param;
+			}
+		}
+	}
+		
+</script>
+<hr class="space">
+	
+
+<!--LEFT COLUMN-->	
+	<div class="span-6" style="width: 215px;">
+		
+	  	    <div id="sign_in_form" class="small_font colored_table_1 border_1" style="width: 195px;">
+	<form action="http://www.yoyobrain.com/account/signin_authenticate" method="post">
+
+			Email or Login ID:
+			<br>
+			<input id="login" name="login" type="text">
+			<br>
+			Password:
+			<br>
+			<input id="password" name="password" type="password">
+			<div class="align_center" style="padding-top: 14px;">
+						<input value="Sign in" id="signin_home" style="width: 100px;" type="submit">
+	
+						<br>
+						<span id="forgot"><a href="http://www.yoyobrain.com/account/recover_password">Forgot password or login?</a></span>
+			</div>
+	</form>
+</div>
+		
+			<div class="notice" style="margin-top: 60px;">
+										<strong>Today on YoYoBrain.com:</strong><br>
+											<span id="facts_learned_count">289</span> 
+											Facts learned today  <br>  
+											<span id="flashcard_count">373,339</span> 
+											flashcards in play.
+											<br><br>	
+			 								<strong>Today's Most Popular Flashcards:</strong><br>
+		<a href="http://www.yoyobrain.com/quizzes/learn_subject/1183">Vocabulary Flashcards</a>
+		<br>	
+		<a href="http://www.yoyobrain.com/quizzes/learn_subject/551">Spanish Flashcards</a>
+		<br>	
+		<a href="http://www.yoyobrain.com/quizzes/learn_subject/1180">Cultural Literacy Flashcards</a>
+		<br>	
+		<a href="http://www.yoyobrain.com/quizzes/learn_subject/6311">Certified Paraoptometric Technician  Flashcards</a>
+		<br>	
+		<a href="http://www.yoyobrain.com/quizzes/learn_subject/517">Geography Flashcards</a>
+		<br>	
+		<a href="http://www.yoyobrain.com/quizzes/learn_subject/16350">Mediteranean Geography Flashcards</a>
+		<br>	
+		<a href="http://www.yoyobrain.com/quizzes/learn_subject/518">Miscellaneous Flashcards</a>
+		<br>	
+		<a href="http://www.yoyobrain.com/quizzes/learn_subject/636">World History Flashcards</a>
+		<br>	
+		<a href="http://www.yoyobrain.com/quizzes/learn_subject/16356">Japanese Geography Flashcards</a>
+		<br>	
+		<a href="http://www.yoyobrain.com/quizzes/learn_subject/16352">Russian Geography Flashcards</a>
+		<br>	
+
+<br><br>
+<strong>Top Communities:</strong><br>
+ <a href="http://www.yoyobrain.com/communities/show/3">Universities: Southern Methodist University students</a>
+	<br><br>
+ <a href="http://www.yoyobrain.com/communities/show/41">Professional: Web Development</a>
+	<br><br>
+ <a href="http://www.yoyobrain.com/communities/show/1710">High School: AP Studies</a>
+	<br><br>
+ <a href="http://www.yoyobrain.com/communities/show/1685">Languages: Beginner Italian</a>
+<br><br>
+	<div class="align_right">
+		<a href="http://www.yoyobrain.com/community/list">See them all...</a>
+	</div>
+			
+			</div>
+	</div><!-- end left column-->
+<!--END OF LEFT COLUMN-->
+<!--BEGIN  CENTER COLUMN-->
+	<div class="span-12">
+			
+		
+		
+			<div class="span-4 align_center" style="margin-top: 9px;">
+				<img alt="create" src="icon_add_stuff.png">	<br>
+				<h3 style="margin-top: 14px;">Create or find flashcards, notes, outlines and more</h3>
+			</div>
+			<div class="span-4 align_center" style="margin-top: 9px;">
+				<img alt="create" src="icon_share.png">	<br>			
+				<h3 style="margin-top: 14px;">Share and learn together with friends.</h3>
+			</div>
+
+		    <div class="span-4 last align_center" style="margin-top: 9px;">	
+				<img alt="create" src="icon_goal.png">		<br>
+					<h3 style="margin-top: 14px;">The memory accelerator quizzes you to get you to goals faster</h3>					
+			</div>
+	
+		<div class="align_right bold_text" style="margin-top: 12px; padding-right: 10px;">
+					 <a href="http://www.yoyobrain.com/welcome/how_it_works" class="bold_font" id="link_how_works">How it works</a> | 
+					 	<a id="take_a_tour_link" href="http://www.yoyobrain.com/welcome/tour1">Tour</a>
+		</div>
+				
+		<div class="colored_table_1  colored_border_1  small_font" style="margin-top: 26px;">
+ 
+				"I had a finance test the next day, so I was really happy when my friend shared her flashcards with me- I was able to click on the link in 
+				 her email and start studying...It was cool that I could find test information, and also that the site would actually quiz me so I could memorize better"
+				<div class="align_right">
+					<i>- Cate Biggs, senior, Southern Methodist University 
+							</i><br>
+				<a href="http://www.yoyobrain.com/welcome/testamonials">See more of what people are saying...</a>	</div>
+		</div>		
+		<hr class="space">
+		<div class="span-7">
+		
+				<div id="fb-root"></div>
+				<script>(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) {return;}
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));</script>
+
+				<div fb-iframe-plugin-query="app_id=&amp;container_width=270&amp;header=false&amp;href=http%3A%2F%2Fwww.facebook.com%2Fyoyobrain&amp;locale=en_US&amp;sdk=joey&amp;show_faces=false&amp;stream=false&amp;width=292" fb-xfbml-state="parsed" class="fb-like-box fb_iframe_widget" data-href="http://www.facebook.com/yoyobrain" data-width="292" data-show-faces="false" data-stream="false" data-header="false"><span style="vertical-align: top; width: 0px; height: 0px; overflow: hidden;"><iframe src="www.yoyobrain.com_3.html" style="border: medium none; visibility: hidden;" title="fb:like_box Facebook Social Plugin" scrolling="no" allowfullscreen="true" allowtransparency="true" name="f2c0d89de028ce8" frameborder="0" height="1000px" width="292px"></iframe></span></div>
+		
+		</div>
+		<div class="span-4" style="margin-top: 6px;">
+			<a href="http://yoyobrain.w3mg.com/"><img alt="App_store_badge" src="app_store_badge.png"></a>
+		</div>	
+	</div><!--END OF CENTER COLUMN-->
+	<div class="span-6 last">
+					<div dojotype="dojo.data.ItemFileReadStore" urlpreventcache="true" url="/communities" jsid="communityDataStore"></div>
+ <div id="register_table" class="colored_table_1 colored_border_1 signup_box">
+ 	<h6>
+
+ 		Get Started -Create a Free Account
+	</h6>
+<br>
+						<form action="http://www.yoyobrain.com/account/save_learner" dojotype="dijit.form.Form" jsid="userSignupForm" method="post">
+								<input name="cardbox_id" id="cardbox_id" type="hidden">
+								
+								
+								<label for="learner_full_name" style="float: left;">Name: (First and Last)</label>
+								<br>
+								<input dojotype="dijit.form.ValidationTextBox" id="learner_full_name" invalidmessage="We need your name to display your information correctly. Pretty please." name="learner[full_name]" promptmessage="Please enter your full name, <br/>example: 'John Doe' <br/>This lets us personalize your content and tools" propercase="true" required="true" size="30" style="" trim="true" type="text">								
+										<br>
+										<br>
+										
+										<label for="learner_login">Choose Your Login ID</label>
+										<br>
+										<input dojotype="dijit.form.ValidationTextBox" id="learner_login" invalidmessage="You must enter a login, please." name="learner[login]" promptmessage="Example: 'JDoe' <br/>...or any one word or letter combination  you like.<br/>It must be unique for our system, so be creative." required="true" size="30" trim="true" type="text">
+										<br>
+										<br>
+										<label for="learner_email">Email</label>
+										<br>
+										<input dojotype="dijit.form.ValidationTextBox" id="learner_email" invalidmessage="We need your email in case you forget your login or password." name="learner[email]" promptmessage="Example: 'john.doe@yoyobrain.com'<br/>...this lets us send you forgotten passwords<br/>and reminders of when to study.<br/>(We never sell or rent email addresses)." regexp="[a-z0-9._%+-]+@([a-z0-9-]+\.)+[a-z]{2,4}" required="true" size="30" trim="true" type="text">
+											<br>
+											<br>
+											
+											<label for="learner_password">Password</label>
+											<br>
+											<input dojotype="dijit.form.ValidationTextBox" id="learner_password" invalidmessage="We need need a password to know that you are you." name="learner[password]" promptmessage="Enter a password - choose something you can remember." required="true" size="30" tooltipposition="after" type="password">
+										<br>
+										<br>
+										
+										<label class="remove_for_verify" for="community_name">School or Affiliation (optional)</label>
+										<br>
+										
+								        <select dojotype="dijit.form.ComboBox" promptmessage="Type a name to enter a new one <br/>or see a list of who is already on YoYobrain.<br/>This is optional, it lets you immediately connect<br/> with people from a school, organization or<br/> people with similar interests.<br/>(You can change this later)." tooltipposition="after" id="community_name" name="community[name]" autocomplete="true" ignorecase="true" style="width: 186px;" store="communityDataStore"></select>
+									 	<br>
+										<br>
+										<label for="learner_learner_type">
+
+											Your main interest in YoYoBrain
+										</label>
+										<br>
+									
+								        <select dojotype="dijit.form.FilteringSelect" id="learner_learner_type" name="learner[learner_type]" style="width: 186px;" promptmessage="If you tell us how you plan to use YoYoBrain,<br/> we can customize it to match your need." tooltipposition="after" autocomplete="false" value="Student">
+								                <option value="Student" selected="selected">Student</option>
+								                <option value="Teacher">Teacher</option>
+								                <option value="Enterprise">Enterprise/Business</option>
+								                <option value="Self">Self-Study: learning for self actualization</option>
+								        </select>
+										<br>
+										<br>
+										<button type="submit" dojotype="dijit.form.Button" id="submit_button" style="font-size: 14px;">
+											<script type="dojo/method" event="startup">
+
+												var form =  userSignupForm;
+												//  set initial state
+												this.attr("disabled", !form.isValid());
+												this.connect(form, "onValidStateChange", function(state){
+														this.attr("disabled", !state);
+												});
+											</script>
+
+											
+											Start Learning
+										</button>
+									
+						</form>
+						
+</div>
+					
+					
+					<div class="align_center bold_font invisible">
+					<a href="http://www.yoyobrain.com/welcome/teachers">YoYoBrain for Teachers</a>
+						<br>
+						<a href="http://www.yoyobrain.com/welcome/enterprises">YoYoBrain for Enterprises</a>
+					</div>
+				
+					
+	</div><!-- end of right column-->
+				
+   <script type="text/javascript">parseURLValues();</script>
+
+		
+	<div id="community_features" class="invisible" style="text-align: center; margin-top: -50px;">
+		<a href="http://www.yoyobrain.com/welcome/featured_student_community">YoYoBrain For Students</a> |  <a href="http://www.yoyobrain.com/welcome/featured_professional_community">YoYoBrain for Professionals</a> | <a href="http://www.yoyobrain.com/welcome/featured_fun_community">YoYoBrain to Pursue Your Goals</a>
+	</div>	
+
+
+	</div>
+	<hr class="space">	
+	<hr class="space">
+	
+	
+<div class="container">
+	<div class="span-24 align_center invisible">
+		<a href="http://www.yoyobrain.com/" style="text-decoration: none;">
+			<img alt="YoYoBrain Logo" src="logo_menu.png" border="0">
+		</a>
+	</div>
+	<hr class="space"><hr class="space">
+		<hr class="space">
+		
+	<div id="about_etc" class="span-24 align_center">
+				<a href="http://blog.yoyobrain.com/">What's new</a>
+				| <a href="http://www.yoyobrain.com/welcome/about_us" id="about_us">About Us</a>
+				| <a href="http://www.yoyobrain.com/welcome/privacy_policy" id="privacy_policy">Privacy Policy</a>  
+				| <a href="http://www.yoyobrain.com/welcome/copyright_policy" id="copyright_policy">Copyright Policy</a>
+				| <a href="http://www.yoyobrain.com/customer_service/contact_us" id="contact_us">Contact Us</a>
+				<br><br>Copyright 2007-2017 YoYoBrain.com <br>
+			
+				<br>
+				<a href="http://www.w3mg.com/" style="text-decoration: none;"><img src="managed_by_w3mg.png" alt="Managed By W3mg" border="0" height="25" width="115"></a>
+				<hr class="space">
+	</div>
+</div>
+	<!-- this has been largely deprecated-->
+	<div id="status_update_container" class="invisible" style="position: fixed; top: 0px; right: 0px;">
+			<img alt="Spinner" src="spinner.gif">
+			<div id="update_message" style="display: inline;">updating...</div>
+	</div>
+	<!--end deprecated div-->
+
+<div id="flash_notice_container" class="last align_center invisible" style="position: fixed; top: 0px; padding: 10px; z-index: 9999; width: 100%;"></div>
+
+
+	
+	
+		<script src="ga.js" type="text/javascript">
+		</script></body>
+</html>

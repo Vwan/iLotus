@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="UTF-8" />
+<title>Error generating thumbnail</title>
+</head>
+<body>
+<h1>Error generating thumbnail</h1>
+<p>
+The source file 'FilmRoll-small.png' does not exist.
+</p>
+<!-- http://en.wikipedia.org/w/thumb_handler.php/7/7a/FilmRoll-small.png/40px-FilmRoll-small.png -->
+<!-- mw1298 -->
+
+</body>
+</html>

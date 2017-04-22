@@ -1,0 +1,377 @@
+
+/* ::::: https://d13jv82ekraqyq.cloudfront.net/assets/application-8c99a6177b53973aec4c34bb07a79157.css ::::: */
+
+.CodeMirror { font-family: monospace; height: auto; }
+.CodeMirror-scroll { overflow: auto; }
+.CodeMirror-lines { padding: 4px 0px; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-scrollbar-filler { background-color: white; }
+.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); background-color: rgb(247, 247, 247); }
+.CodeMirror-linenumbers {  }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; min-width: 20px; text-align: right; color: rgb(153, 153, 153); }
+.CodeMirror div.CodeMirror-cursor { border-left: 1px solid black; z-index: 3; }
+.CodeMirror div.CodeMirror-secondarycursor { border-left: 1px solid silver; }
+.CodeMirror.cm-keymap-fat-cursor div.CodeMirror-cursor { width: auto; border: 0px none; background: rgb(119, 238, 119) none repeat scroll 0% 0%; z-index: 1; }
+.CodeMirror div.CodeMirror-cursor.CodeMirror-overwrite {  }
+.cm-tab { display: inline-block; }
+.cm-s-default .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-default .cm-atom { color: rgb(34, 17, 153); }
+.cm-s-default .cm-number { color: rgb(17, 102, 68); }
+.cm-s-default .cm-def { color: rgb(0, 0, 255); }
+.cm-s-default .cm-variable { color: black; }
+.cm-s-default .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-default .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-default .cm-property { color: black; }
+.cm-s-default .cm-operator { color: black; }
+.cm-s-default .cm-comment { color: rgb(170, 85, 0); }
+.cm-s-default .cm-string { color: rgb(170, 17, 17); }
+.cm-s-default .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-default .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-default .cm-error { color: rgb(255, 0, 0); }
+.cm-s-default .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-default .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-default .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-default .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-default .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-default .cm-header { color: blue; }
+.cm-s-default .cm-quote { color: rgb(0, 153, 0); }
+.cm-s-default .cm-hr { color: rgb(153, 153, 153); }
+.cm-s-default .cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: bold; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-invalidchar { color: rgb(255, 0, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.CodeMirror { line-height: 1; position: relative; overflow: hidden; background: white none repeat scroll 0% 0%; color: black; }
+.CodeMirror-scroll { margin-bottom: -30px; margin-right: -30px; padding-bottom: 30px; padding-right: 30px; height: 100%; outline: medium none; position: relative; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-vscrollbar, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler { position: absolute; z-index: 6; display: none; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow-x: hidden; overflow-y: scroll; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow-y: hidden; overflow-x: scroll; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; z-index: 6; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; height: 100%; padding-bottom: 30px; z-index: 3; }
+.CodeMirror-gutter { height: 100%; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-radius: 0px; border-width: 0px; background: transparent none repeat scroll 0% 0%; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; word-wrap: normal; line-height: inherit; color: inherit; z-index: 2; position: relative; overflow: visible; }
+.CodeMirror-wrap pre { word-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-linebackground { position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: visible; }
+.CodeMirror-widget { display: inline-block; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right: medium none; width: 0px; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: visible; }
+.CodeMirror-selected { background: rgb(217, 217, 217) none repeat scroll 0% 0%; }
+.CodeMirror-focused .CodeMirror-selected { background: rgb(215, 212, 240) none repeat scroll 0% 0%; }
+.cm-searching { background: rgba(255, 255, 0, 0.4) none repeat scroll 0% 0%; }
+.CodeMirror span {  }
+@media print {
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+.cm-s-vibrant-ink { background: rgb(66, 66, 66) none repeat scroll 0% 0%; color: white; }
+.cm-s-vibrant-ink .CodeMirror-selected { background: rgb(53, 73, 60) none repeat scroll 0% 0% ! important; }
+.cm-s-vibrant-ink .CodeMirror-gutters { background: rgb(0, 34, 64) none repeat scroll 0% 0%; border-right: 1px solid rgb(170, 170, 170); }
+.cm-s-vibrant-ink .CodeMirror-linenumber { color: rgb(208, 208, 208); }
+.cm-s-vibrant-ink .CodeMirror-cursor { border-left: 1px solid white ! important; }
+.cm-s-vibrant-ink .cm-keyword { color: rgb(204, 120, 50); }
+.cm-s-vibrant-ink .cm-atom { color: rgb(255, 204, 0); }
+.cm-s-vibrant-ink .cm-number { color: rgb(255, 238, 152); }
+.cm-s-vibrant-ink .cm-def { color: rgb(141, 166, 206); }
+.cm-s-vibrant-ink span.cm-variable-2, .cm-s-cobalt span.cm-tag { color: rgb(255, 198, 109); }
+.cm-s-vibrant-ink span.cm-variable-3, .cm-s-cobalt span.cm-def { color: rgb(255, 198, 109); }
+.cm-s-vibrant-ink .cm-operator { color: rgb(136, 136, 136); }
+.cm-s-vibrant-ink .cm-comment { color: gray; font-weight: bold; }
+.cm-s-vibrant-ink .cm-string { color: rgb(165, 194, 92); }
+.cm-s-vibrant-ink .cm-string-2 { color: red; }
+.cm-s-vibrant-ink .cm-meta { color: rgb(216, 250, 60); }
+.cm-s-vibrant-ink .cm-error { border-bottom: 1px solid red; }
+.cm-s-vibrant-ink .cm-builtin { color: rgb(141, 166, 206); }
+.cm-s-vibrant-ink .cm-tag { color: rgb(141, 166, 206); }
+.cm-s-vibrant-ink .cm-attribute { color: rgb(141, 166, 206); }
+.cm-s-vibrant-ink .cm-header { color: rgb(255, 100, 0); }
+.cm-s-vibrant-ink .cm-hr { color: rgb(174, 174, 174); }
+.cm-s-vibrant-ink .cm-link { color: blue; }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td { margin: 0px; padding: 0px; }
+table { border-collapse: collapse; border-spacing: 0px; }
+fieldset, img { border: 0px none; }
+address, b, caption, cite, code, dfn, em, th, var { font-style: normal; font-weight: normal; }
+ol, ul { list-style: outside none none; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
+a { text-decoration: none; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+.group, #codeschool .progress-bar, #challenge #challenge-objective, #challenge #challenge-objective header, .codeschool-banner, .resource-group-panel, .toolbar, .toolbar .controls, footer ul, .home .share-block, .home .sub-content, .success .success-message, .bucket {  }
+.group::before, #codeschool .progress-bar::before, #challenge #challenge-objective::before, #challenge #challenge-objective header::before, .codeschool-banner::before, .resource-group-panel::before, .toolbar::before, .toolbar .controls::before, footer ul::before, .home .share-block::before, .home .sub-content::before, .success .success-message::before, .bucket::before, .group::after, #codeschool .progress-bar::after, #challenge #challenge-objective::after, #challenge #challenge-objective header::after, .codeschool-banner::after, .resource-group-panel::after, .toolbar::after, .toolbar .controls::after, footer ul::after, .home .share-block::after, .home .sub-content::after, .success .success-message::after, .bucket::after { content: ""; display: table; }
+.group::after, #codeschool .progress-bar::after, #challenge #challenge-objective::after, #challenge #challenge-objective header::after, .codeschool-banner::after, .resource-group-panel::after, .toolbar::after, .toolbar .controls::after, footer ul::after, .home .share-block::after, .home .sub-content::after, .success .success-message::after, .bucket::after { clear: both; }
+.ir, #codeschool #codeschool-logo, #challenge #challenge-objective h4, .toolbar .controls li a, footer .credits a, .success .success-close { background-color: transparent; border: 0px none; color: transparent; font: 0px/0 a; text-shadow: none; }
+.truncate, #codeschool .progress-bar li span em { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+html { background: rgb(255, 255, 255) none repeat scroll 0% 0%; font-size: 16px; height: 100%; min-width: 768px; }
+body { color: rgb(67, 67, 67); font-family: "OpenSansRegular","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 62.5%; height: 100%; min-width: 768px; min-height: 700px; position: relative; }
+.inner { margin: 0px auto; max-width: 1300px; padding: 0px 60px; }
+.button { border-radius: 3px; box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.3); display: block; }
+.button b { border-radius: 3px; box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1); transition: all 0.1s ease-in-out 0s; display: block; font-weight: bold; line-height: 22px; padding: 1px 14px 0px; position: relative; text-align: center; top: -4px; }
+.button:active b { transform: translateY(1px); }
+*::-moz-selection { background: rgb(65, 131, 196) none repeat scroll 0% 0%; color: rgb(255, 255, 255); }
+#codeschool { transition: top 0.7s ease-in-out 0s; background: rgb(237, 237, 237) none repeat scroll 0% 0%; border-bottom: 1px solid rgb(211, 211, 211); height: 35px; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 1; }
+.reveal #codeschool { top: -35px; }
+#codeschool #codeschool-logo { transition: opacity 0.2s ease-in-out 0s; background: transparent url('codeschool_logo_brackets-c74cf9011234ff99b9767d3f74bbdb9c.svg') no-repeat scroll 0px 5px; border: medium none; float: left; height: 27px; margin: 0px 10px 0px 0px; padding: 0px 0px 5px; opacity: 0.4; width: 26px; }
+#codeschool #codeschool-logo:hover, #codeschool #codeschool-logo:focus { opacity: 0.65; }
+#codeschool .progress-bar { float: right; padding: 7px 0px 0px; width: 90%; }
+#codeschool .progress-bar li { background: transparent url('bg-progress-bar-7c434475854a4abc243d193cfafffcb7.png') no-repeat scroll 0% 0%; height: 24px; float: left; position: relative; width: 4%; }
+#codeschool .progress-bar li.completed { background: transparent url('bg-progress-bar-filled-77f1716a0eefdfeceb005135e8a13705.png') no-repeat scroll 0% 0%; }
+#codeschool .progress-bar li.completed a { background: transparent url('bg-progress-link-filled-550b82cbc81eb5f56ff099f1a7b28b86.png') no-repeat scroll 0% 0%; }
+#codeschool .progress-bar li:first-child { background: transparent none repeat scroll 0% 0%; }
+#codeschool .progress-bar li:first-child a { background: transparent url('bg-progress-link-front-f6c5f46e278bd96a855ed98aec0c4caa.png') no-repeat scroll 0% 0%; width: 20px; }
+#codeschool .progress-bar li.completed:first-child a { background: transparent url('bg-progress-link-front-filled-a52059dd6997db5be183d538bd9abd60.png') no-repeat scroll 0% 0%; width: 20px; }
+#codeschool .progress-bar li:last-child {  }
+#codeschool .progress-bar li:last-child a { background: transparent url('bg-progress-link-end-bf00eb481437384c215feb11197e26cb.png') no-repeat scroll 0% 0%; width: 20px; }
+#codeschool .progress-bar li.completed:last-child a { background: transparent url('bg-progress-link-end-filled-d929e1d857627ec94c4a1746e7578033.png') no-repeat scroll 0% 0%; width: 20px; }
+#codeschool .progress-bar li a { background: transparent url('bg-progress-link-00feefaa8cd9a07088d1118deeb4b27b.png') no-repeat scroll 0% 0%; display: block; float: right; height: 24px; width: 18px; }
+#codeschool .progress-bar li span { background: rgb(238, 238, 238) none repeat scroll 0% 0%; border: 1px solid rgb(178, 178, 178); border-radius: 4px; box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2); display: none; font: 1.2em "OpenSansBold","Helvetica Neue",Helvetica,Arial,sans-serif; max-width: 130px; padding: 5px 10px; text-align: center; }
+#codeschool .progress-bar li span em { display: block; }
+#codeschool .progress-bar li span::after, #codeschool .progress-bar li span::before { bottom: 100%; border: medium solid transparent; content: " "; height: 0px; width: 0px; position: absolute; pointer-events: none; }
+#codeschool .progress-bar li span::after { border-bottom-color: rgb(238, 238, 238); border-width: 6px; left: 50%; margin-left: -6px; }
+#codeschool .progress-bar li span::before { border-bottom-color: rgb(178, 178, 178); border-width: 7px; left: 50%; margin-left: -7px; }
+#notifications { display: none; }
+#challenge { padding-right: 0px; position: relative; }
+#challenge #challenge-objective { transition: opacity 0.6s ease-in-out 0s; background: transparent url('logo-course-1fc23c6b16d6feda2bbfc802af9a209f.gif') no-repeat scroll 95% 65%; opacity: 1; min-height: 190px; padding: 6em 60px 20px; position: relative; }
+.reveal #challenge #challenge-objective { opacity: 0; }
+#challenge #challenge-objective h1 { color: rgb(0, 0, 0); font-size: 2.6em; }
+#challenge #challenge-objective h1 em { color: rgb(141, 141, 141); margin-right: 5px; padding-right: 15px; position: relative; }
+#challenge #challenge-objective h1 em::after { background: rgb(169, 169, 169) none repeat scroll 0% 0%; border-radius: 20px; content: ""; display: block; height: 4px; position: absolute; right: 0px; top: 18px; width: 4px; }
+#challenge #challenge-objective header { margin: 0px 0px 7px; }
+#challenge #challenge-objective header h1 { font: 2.8em "OpenSansLight","Helvetica Neue",Helvetica,Arial,sans-serif; }
+#challenge #challenge-objective h4 { display: block; }
+#challenge #challenge-objective #instructions { margin-top: 10px; }
+#challenge #challenge-objective #instructions p { color: rgb(67, 67, 67); font-size: 1.6em; line-height: 1.6em; margin-bottom: 1em; margin-left: 0px; max-width: 75%; min-height: 0px; }
+#challenge #challenge-objective #instructions p a { color: rgb(65, 131, 196); font-family: "OpenSansBold","Helvetica Neue",Helvetica,Arial,sans-serif; }
+#challenge #challenge-objective #instructions p a:hover { text-decoration: underline; }
+#challenge #challenge-objective #instructions p a.button { background-color: rgb(65, 131, 196); background-image: -moz-linear-gradient(center top , rgb(65, 131, 196), rgb(60, 120, 181)); border: 1px solid rgb(42, 91, 141); border-radius: 4px; color: rgb(255, 255, 255); display: inline-block; font-family: "OpenSansBold","Helvetica Neue",Helvetica,Arial,sans-serif; padding: 12px 40px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); }
+#challenge #challenge-objective #instructions p a.button:hover { background-color: rgb(68, 143, 216); background-image: -moz-linear-gradient(center top , rgb(68, 143, 216), rgb(65, 131, 196)); text-decoration: none; }
+#challenge #challenge-objective #instructions p code { font: 1em "OpenSansBold","Helvetica Neue",Helvetica,Arial,sans-serif; white-space: pre; }
+#challenge #challenge-objective #instructions p code.input { background: rgb(242, 242, 242) url('icon-arrow-f773f101189484da3d28b6e1270409f8.png') no-repeat scroll 10px 14px; border-radius: 8px; color: rgb(65, 131, 196); font-size: 1.3em; padding: 5px 15px 5px 35px; }
+#challenge #challenge-objective #instructions p code.input:hover { background-color: rgb(238, 238, 238); cursor: pointer; }
+#challenge #challenge-objective #instructions p code.input-inline { background: transparent url('icon-arrow-f773f101189484da3d28b6e1270409f8.png') no-repeat scroll 10px 7px; color: rgb(65, 131, 196); padding: 0px 0px 0px 35px; }
+#challenge #challenge-objective #instructions p code.input, #challenge #challenge-objective #instructions p code.input-inline { cursor: pointer; }
+#challenge #challenge-objective #challenge-points { display: none; }
+#challenge #challenge-panels { background-color: rgb(59, 132, 192); background-image: -moz-linear-gradient(center top , rgb(59, 132, 192), rgb(57, 131, 189)); transition: opacity 0.6s ease-in-out 0s; border-top: 1px solid rgb(38, 89, 127); height: auto ! important; opacity: 1; margin-bottom: 35px; position: relative; }
+.reveal #challenge #challenge-panels { opacity: 0; }
+#challenge #challenge-panels nav { display: none; }
+#challenge #challenge-panels #editor-group.panel-group { box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.4); margin-bottom: 20px; }
+#challenge #challenge-panels #editor-group.panel-group .panel { background: rgb(66, 66, 66) none repeat scroll 0% 0%; height: 300px; overflow-y: auto; }
+#challenge #challenge-panels #editor-group.panel-group .panel.ace-course { bottom: 58px; }
+#challenge #challenge-panels #editor-group.panel-group .panel.ace-course .ace_scroller { background-color: rgb(40, 38, 31); overflow-x: auto; }
+#challenge #challenge-panels #editor-group.panel-group .panel.console { color: rgb(255, 255, 255); font-family: Monaco,Courier,font-monospace; font-size: 1.4em; }
+#challenge #challenge-panels #editor-group.panel-group .panel.console .jquery-console-inner { padding: 10px; }
+#challenge #challenge-panels #editor-group.panel-group .panel.console pre { line-height: 1.4em; }
+#challenge #challenge-panels #editor-group.panel-group .panel.console .jquery-console-focus .jquery-console-cursor { background: rgb(153, 153, 153) none repeat scroll 0% 0%; color: rgb(153, 153, 153); font-weight: bold; }
+#challenge #challenge-panels #editor-group.panel-group .panel.console .jquery-console-message { color: rgb(187, 187, 187); padding: 0px 17px; }
+#challenge #challenge-panels #editor-group.panel-group .panel.console .jquery-console-message-error { color: rgb(251, 138, 138); font-family: "OpenSansRegular","Helvetica Neue",Helvetica,Arial,sans-serif; font-weight: bold; }
+#challenge #challenge-panels #editor-group.panel-group .panel.console .jquery-console-message-value { color: rgb(153, 153, 153); }
+#challenge #challenge-panels #editor-group.panel-group .panel.console .jquery-console-message-type { color: rgb(153, 153, 153); }
+#challenge #challenge-panels #editor-group.panel-group .panel.console .jquery-console-success-message, #challenge #challenge-panels #editor-group.panel-group .panel.console .jquery-console-error-message { padding-right: 17px; padding-left: 17px; }
+#challenge #challenge-panels #editor-group.panel-group .panel.console .jquery-console-error-message { color: rgb(251, 138, 138); }
+#challenge #challenge-panels #editor-group.panel-group .panel.console .jquery-console-success-message { color: rgb(100, 197, 61); }
+#challenge #challenge-panels #editor-group.panel-group footer { display: none; }
+.codeschool-banner { background-color: rgb(242, 242, 242); background-image: -moz-linear-gradient(center top , rgb(242, 242, 242), rgb(238, 238, 238)); border-top: 3px solid rgb(255, 255, 255); bottom: -70px; box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.25); display: none; left: 0px; opacity: 0.95; padding: 15px 40px 15px 180px; position: fixed; width: 100%; z-index: 10; }
+.codeschool-banner img { left: 40px; position: absolute; top: -20px; width: 70px; height: 70px; }
+.codeschool-banner h4 { text-align: center; position: relative; left: -160px; font: 1.7em "OpenSansBold","Helvetica Neue",Helvetica,Arial,sans-serif; }
+.codeschool-banner h4 a { color: rgb(65, 131, 196); }
+.codeschool-banner h4 a:hover { color: rgb(50, 105, 160); }
+.toolbar { background-color: rgb(239, 237, 238); background-image: -moz-linear-gradient(center top , rgb(239, 237, 238), rgb(193, 193, 193)); border-radius: 3px 3px 0px 0px; border-width: 1px 1px 0px; border-style: solid solid none; border-color: rgb(98, 135, 164) rgb(98, 135, 164) -moz-use-text-color; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; height: 30px; margin-top: 20px; position: relative; }
+.toolbar .controls { left: 9px; position: absolute; top: 9px; }
+.toolbar .controls li { float: left; margin: 0px 7px 0px 0px; }
+.toolbar .controls li a { background: transparent url('icon-control-cbd38af5c0f5d6695fa8da2c9ede1be2.png') no-repeat scroll 0% 0%; display: block; height: 13px; width: 12px; }
+.toolbar .controls li a.close { background-image: url('icon-close-9701c5138ee5a046693f75cdf4136826.png'); }
+.toolbar .title { color: rgb(0, 0, 0); display: block; font: 1.3em/30px "Helvetica Neue",Helvetica,Arial,sans-serif; text-align: center; text-shadow: 0px 1px 0px rgb(255, 255, 255); }
+.toolbar .title-console { position: relative; }
+.toolbar .title-console::before { background: transparent url('icon-home-cf0380418397eacff4a254d99291b73d.png') no-repeat scroll 0% 0%; content: ""; height: 15px; position: absolute; left: -22px; top: 0px; width: 13px; }
+#file-browser { float: left; width: 70%; }
+#file-browser .file-browser { box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.4); padding: 0px; }
+#file-browser .toolbar { border-bottom: 1px solid rgb(167, 167, 167); margin: 0px; width: 100%; }
+#file-browser .directories { background: rgb(255, 255, 255) none repeat scroll 0% 0%; height: 200px; margin-left: 1px; width: 100%; }
+#file-browser .directory { background: rgb(255, 255, 255) none repeat scroll 0% 0%; border-top: 0px none; height: 100%; width: 33.3333%; }
+#file-browser .directory:first-child { background: rgb(227, 227, 227) none repeat scroll 0% 0%; }
+#file-browser .directory li a { padding-left: 7px; }
+#file-browser .directory li a.modified::before { color: rgb(102, 102, 102); content: "M"; font: 0.6em "OpenSansBold","Helvetica Neue",Helvetica,Arial,sans-serif; }
+#file-browser .directory li a.added::before { color: green; content: "A"; font: 0.6em "OpenSansBold","Helvetica Neue",Helvetica,Arial,sans-serif; }
+#file-browser .directory li a.deleted::before { color: red; content: "D"; font: 0.6em "OpenSansBold","Helvetica Neue",Helvetica,Arial,sans-serif; }
+#file-browser .directory li a.untracked::before { color: rgb(51, 51, 51); content: "Q"; font: 0.6em "OpenSansBold","Helvetica Neue",Helvetica,Arial,sans-serif; }
+#file-browser .directory .selected { background: transparent none repeat scroll 0% 0%; color: rgb(68, 68, 68); }
+#file-browser .directory a:hover { background: transparent none repeat scroll 0% 0%; cursor: default; }
+#file-browser .directory .folder { background: url('icon-arrow-right-d4318610d8e2441b6205726010c8ad2d.png') no-repeat scroll 96% 11px, transparent url('icon-folder-1ff0921f2a28b221ae686087787f1415.png') no-repeat scroll 7px 8px; padding-left: 30px; }
+#file-browser .directory .folder:hover { cursor: pointer; background: url('icon-arrow-right-d4318610d8e2441b6205726010c8ad2d.png') no-repeat scroll 96% 11px, transparent url('icon-folder-1ff0921f2a28b221ae686087787f1415.png') no-repeat scroll 7px 8px; }
+#file-browser .directory .folder.selected { padding-left: 0px; box-shadow: 0px 1px rgba(255, 255, 255, 0.3) inset; background-color: rgb(57, 131, 190); background-image: -moz-linear-gradient(center top , rgb(57, 131, 190), rgb(49, 107, 155)); border-width: 1px 0px; border-style: solid none; border-color: rgb(37, 80, 117) -moz-use-text-color; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; color: rgb(255, 255, 255); }
+#file-browser .directory .folder.selected span { background: transparent url('icon-folder-1ff0921f2a28b221ae686087787f1415.png') no-repeat scroll 7px 3px; padding-left: 30px; }
+#terms { background: rgb(53, 121, 175) url('bg-terms-octocat-992475c1d45c413a00492b17924d53ff.png') no-repeat scroll 98% 4px; border-radius: 6px; border: 1px solid rgb(46, 108, 159); box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2); float: right; margin-bottom: 20px; min-height: 210px; padding: 5px 10px 15px; width: 25%; }
+#terms h3 { border-bottom: 1px solid rgb(96, 145, 185); color: rgb(255, 255, 255); font: 1.4em "OpenSansBold","Helvetica Neue",Helvetica,Arial,sans-serif; padding: 0px 0px 7px; text-align: center; width: 75%; }
+#terms #resource-group p { color: rgb(255, 255, 255); font: 1.3em/1.5em "OpenSansRegular","Helvetica Neue",Helvetica,Arial,sans-serif; margin: 10px 0px 5px; width: 90%; }
+#terms #resource-group p strong { color: rgb(137, 170, 195); display: block; font: bold 1.1em "OpenSansBold","Helvetica Neue",Helvetica,Arial,sans-serif; margin: 0px 0px 3px; }
+#terms #resource-group p code { background: rgb(50, 105, 160) none repeat scroll 0% 0%; border-radius: 2px; color: rgb(255, 255, 255); font: 0.9em Monaco,Courier,font-monospace; padding: 2px 4px; }
+#terms #resource-group p a { color: rgb(188, 207, 221); }
+#terms #resource-group p a:hover { text-decoration: underline; }
+#sidebar { display: none; }
+footer { transition: opacity 0.6s ease-in-out 0s; min-height: 150px; opacity: 1; }
+footer.inner { padding-bottom: 40px; }
+.reveal footer { opacity: 0; }
+footer .support { background: rgb(250, 250, 250) none repeat scroll 0% 0%; border: 1px solid rgb(224, 224, 224); border-radius: 3px; margin: 4.5em auto 0px; text-align: center; width: 20%; }
+footer .support a { color: rgb(153, 153, 153); display: inline-block; font-size: 1.3em; font-weight: bold; margin: 0px auto; padding: 5px 5px 5px 35px; position: relative; }
+footer .support a::before { background: transparent url('icon-support-f2e4c985f7f5a5bb5bcc057910388e28.png') no-repeat scroll 0px center; content: ""; display: block; height: 20px; left: 8px; position: absolute; top: 4px; width: 20px; }
+footer .support a:hover { color: rgb(102, 102, 102); border-color: rgb(203, 203, 203); }
+footer .credits { position: relative; }
+footer .credits a { transition: opacity 0.2s ease-in-out 0s; display: block; height: 77px; opacity: 0.4; position: absolute; top: 0px; }
+footer .credits a:hover { opacity: 0.6; }
+footer .credits .codeschool { background: transparent url('logo-codeschool-footer-720af602b8823cf152fafd83e3293aac.png') no-repeat scroll 0% 0%; left: 0px; width: 192px; }
+footer .credits .github { background: transparent url('logo-github-footer-3ab916a3190f9ad63418ae5a1608c519.png') no-repeat scroll 0% 0% / 169px 77px; right: 0px; width: 169px; }
+footer ul { margin: 0px auto; padding: 25px 0px 0px; width: 502px; }
+footer ul li { float: left; }
+footer ul li a { color: rgb(65, 131, 196); display: block; }
+footer ul li a.share { transition: background 0.2s ease-in-out 0s; background: rgb(237, 237, 237) none repeat scroll 0% 0%; border: 1px solid rgb(216, 216, 216); border-radius: 20px; font: 1.3em "OpenSansBold","Helvetica Neue",Helvetica,Arial,sans-serif; padding: 5px 0px; position: relative; width: 230px; }
+footer ul li a.share:hover { background: rgb(232, 232, 232) none repeat scroll 0% 0%; }
+footer ul li a.share img { position: absolute; top: -18px; }
+footer ul li a.share.share-facebook { padding-left: 18px; }
+footer ul li a.share.share-facebook img { right: -2px; }
+footer ul li a.share.share-twitter { padding-left: 80px; width: 170px; }
+footer ul li a.share.share-twitter img { left: -2px; }
+.ruby .comment, .javascript .comment, .html .comment, .html .doctype, .css .comment { color: rgb(153, 153, 153); }
+.ruby .symbol, .css .selectors, .ruby .brackets, .javascript .brackets { color: rgb(82, 102, 111); }
+.ruby .string, .javascript .string, .html .string, .css .urls { color: rgb(102, 128, 37); }
+.ruby .keywords, .javascript .keywords, .html .tag, .css .properties { color: rgb(158, 101, 1); }
+.home { margin-top: 30px; }
+.home .content { margin-top: 10px; padding-bottom: 100px; }
+.home .intro { min-height: 199px; padding: 0px 0px 70px; position: relative; }
+.home h2 { font: 6em "OpenSansLight","Helvetica Neue",Helvetica,Arial,sans-serif; margin-bottom: 15px; text-align: center; }
+.home h2::before { background: transparent none repeat scroll 0% 0%; }
+.home p { font-size: 1.6em; line-height: 1.6; }
+.home p a:hover { text-decoration: underline; }
+.home a { color: rgb(65, 131, 196); }
+.home .share-block { bottom: 20px; left: 16%; position: absolute; }
+.home .share-block li { float: left; margin-right: 15px; }
+.home .share-block li a { transition: background 0.2s ease-in-out 0s; background: rgb(237, 237, 237) none repeat scroll 0% 0%; border: 1px solid rgb(216, 216, 216); border-radius: 20px; display: block; font: 1.3em "OpenSansBold","Helvetica Neue",Helvetica,Arial,sans-serif; padding: 5px 0px; position: relative; width: 230px; }
+.home .share-block li a:hover { background: rgb(232, 232, 232) none repeat scroll 0% 0%; }
+.home .share-block li a img { position: absolute; top: -18px; }
+.home .share-block li a.share-facebook { padding-left: 18px; }
+.home .share-block li a.share-facebook img { right: -3px; }
+.home .share-block li a.share-twitter { padding-left: 80px; width: 170px; }
+.home .share-block li a.share-twitter img { left: -3px; }
+.home .share-facebook { background: transparent url('icon-facebook-e6c5c3771571b8ebc7a2bb65ac59ed9b.png') no-repeat scroll 0% 0%; }
+.home .share-twitter { background: transparent url('icon-twitter-dc403620a9d7a8d70180a6f86c68e41b.png') no-repeat scroll 0% 0%; }
+.home .upcoming { background-color: rgb(59, 132, 192); background-image: -moz-linear-gradient(center top , rgb(59, 132, 192), rgb(57, 131, 189)); border-top: 1px solid rgb(38, 89, 127); color: rgb(255, 255, 255); margin: 20px 0px; padding: 40px 0px; }
+.home .upcoming h3 { font: 2.6em "OpenSansBold","Helvetica Neue",Helvetica,Arial,sans-serif; margin: 0px 0px 5px; }
+.home .upcoming .promotion-block { margin: 0px auto; width: 50%; }
+.home .upcoming .promotion-block div { display: inline-block; margin: 0px 0px 0px 1em; width: 75%; }
+.home .upcoming .promotion-block p { width: 100%; }
+.home .upcoming .promotion-block p + p { margin: 15px 0px 8px; }
+.home .upcoming .promotion-block img { display: inline-block; position: relative; top: -42px; }
+.home .upcoming form { margin: 30px auto 20px; text-align: center; }
+.home .upcoming form input[type="email"] { background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 4px solid rgb(238, 238, 238); box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3) inset, 0px 1px 3px rgba(0, 0, 0, 0.45); font: 1.6em "OpenSansRegular","Helvetica Neue",Helvetica,Arial,sans-serif; margin-right: 10px; padding: 8px; width: 40%; }
+.home .upcoming form input[type="email"]:focus { outline: 0px none; }
+.home .upcoming form input[type="submit"] { background-color: rgb(217, 135, 69); background-image: -moz-linear-gradient(center top , rgb(217, 135, 69), rgb(189, 106, 58)); transition: all 0.2s ease-in-out 0s; border: 1px solid rgb(163, 92, 44); border-radius: 3px; box-shadow: 0px 1px rgba(255, 255, 255, 0.45) inset, 0px 1px 3px rgba(0, 0, 0, 0.45); color: rgb(74, 41, 20); cursor: pointer; display: inline; font: 1.8em "OpenSansBold","Helvetica Neue",Helvetica,Arial,sans-serif; padding: 11px 40px; text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.45); }
+.home .upcoming form input[type="submit"]:hover { background-color: rgb(252, 157, 79); background-image: -moz-linear-gradient(center top , rgb(252, 157, 79), rgb(189, 106, 58)); }
+.home .sub-content { max-width: 1100px; }
+.home .sub-content h4 { font: 2.4em "OpenSansBold","Helvetica Neue",Helvetica,Arial,sans-serif; margin: 0px 0px 10px; padding-left: 35px; }
+@media screen and (max-width: 1090px) {
+  .home .sub-content h4 { font-size: 2.2em; }
+}
+@media screen and (max-width: 960px) {
+  .home .sub-content h4 { font-size: 2em; }
+}
+.home .sub-content h5 { font: 2.2em "OpenSansLight","Helvetica Neue",Helvetica,Arial,sans-serif; margin: 20px 0px; }
+.home .sub-content p { font-size: 1.6em; width: 100%; }
+.home .sub-content p:last-child { padding-top: 30px; }
+.home .github { float: left; width: 45%; }
+@media screen and (max-width: 1090px) {
+  .home .github h4 {  }
+}
+@media screen and (max-width: 960px) {
+  .home .github h4 {  }
+}
+.home .github .resources { margin-bottom: 20px; }
+.home .github .resources li { font: 1.6em/1.8em "OpenSansRegular","Helvetica Neue",Helvetica,Arial,sans-serif; }
+.home .github .resources li a { transition: color 0.2s ease-in-out 0s; border-top: 1px solid rgb(216, 216, 216); display: block; padding: 8px 15px; }
+.home .github .resources li a:hover { background: rgb(237, 237, 237) none repeat scroll 0% 0%; }
+.home .github .resources li:last-child a { border-bottom: 1px solid rgb(216, 216, 216); }
+.home .codeschool { float: right; width: 45%; }
+@media screen and (max-width: 1090px) {
+  .home .codeschool h4 {  }
+}
+@media screen and (max-width: 960px) {
+  .home .codeschool h4 {  }
+}
+.home .codeschool form { margin: 20px 0px 0px; }
+.home .codeschool form input[type="text"] { border: 1px solid rgb(216, 216, 216); border-radius: 4px; font: 1.4em "OpenSansRegular","Helvetica Neue",Helvetica,Arial,sans-serif; padding: 5px; width: 75%; }
+.home .codeschool form input[type="text"]:focus { border-color: rgb(65, 131, 196); outline: medium none; }
+.home .codeschool form input[type="submit"] { background-color: rgb(242, 242, 242); background-image: -moz-linear-gradient(center top , rgb(242, 242, 242), rgb(237, 237, 237)); border: 1px solid rgb(204, 204, 204); border-radius: 4px; cursor: pointer; font: 1.4em "OpenSansBold","Helvetica Neue",Helvetica,Arial,sans-serif; padding: 5px 0px; text-shadow: 0px 1px 0px rgb(255, 255, 255); width: 20%; }
+.home .codeschool form input[type="submit"]:hover { background-color: white; background-image: -moz-linear-gradient(center top , white, rgb(237, 237, 237)); text-decoration: none; }
+.home .courses { margin-bottom: 20px; }
+.home .courses ul li a { transition: color 0.2s ease-in-out 0s; border-top: 1px solid rgb(216, 216, 216); display: block; font: 1.6em/57px "OpenSansRegular","Helvetica Neue",Helvetica,Arial,sans-serif; padding: 5px 0px 5px 70px; position: relative; }
+.home .courses ul li a:hover { background: rgb(237, 237, 237) none repeat scroll 0% 0%; }
+.home .courses ul li:last-child a { border-bottom: 1px solid rgb(216, 216, 216); }
+.home .courses ul li em { color: rgb(118, 118, 118); font-family: "OpenSansRegular","Helvetica Neue",Helvetica,Arial,sans-serif; }
+.home .courses ul li img { left: 0px; position: absolute; top: 5px; }
+.github-explain p { margin: 0px auto 20px; width: 70%; padding: 0px; }
+.github-explain.container h2 { text-align: center; padding: 0px; }
+.github-explain .links { width: 295px; margin: 40px auto 0px; }
+.github-explain .links p { margin: 0px; width: 100%; text-align: center; }
+.github-explain .links p a { font-size: 0.7em; }
+.github-explain .links p .button { background-color: rgb(65, 131, 196); background-image: -moz-linear-gradient(center top , rgb(65, 131, 196), rgb(60, 120, 181)); border: 1px solid rgb(42, 91, 141); border-radius: 4px; color: rgb(255, 255, 255); font-family: "OpenSansBold","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 1em; padding: 12px 40px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); display: inline-block; text-align: center; margin-bottom: 20px; }
+.github-explain .links p .button:hover { background-color: rgb(68, 143, 216); background-image: -moz-linear-gradient(center top , rgb(68, 143, 216), rgb(65, 131, 196)); text-decoration: none; }
+#facebox { position: absolute; top: 0px; left: 0px; z-index: 100; text-align: left; }
+#facebox .popup { position: relative; }
+#facebox .popup .close { display: none; }
+#facebox .content { display: table; margin: 0px; }
+#facebox_overlay { position: fixed; top: 0px; left: 0px; height: 100%; width: 100%; }
+.facebox_hide { z-index: -100; }
+.facebox_overlayBG { background-color: rgb(138, 137, 124); z-index: 99; }
+.success { border-radius: 8px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6); background: rgba(22, 22, 22, 0.9) none repeat scroll 0% 0%; padding: 15px 15px 57px; position: relative; width: 500px; }
+.success h2 { border-bottom: 1px solid rgba(0, 0, 0, 0.5); border-color: rgba(0, 0, 0, 0.5); color: rgb(65, 131, 196); font: 3em/1.1 "OpenSansRegular","Helvetica Neue",Helvetica,Arial,sans-serif; margin-bottom: 14px; padding-bottom: 5px; text-transform: uppercase; }
+.success h3 { color: rgb(255, 255, 255); font: bold 1.5em/1.3em "OpenSansRegular","Helvetica Neue",Helvetica,Arial,sans-serif; margin: 0px 0px 10px; text-shadow: none; text-transform: none; }
+.success p { color: rgb(65, 131, 196); font-size: 1.4em; margin: 0px 0px 10px; }
+.success #next { bottom: 10px; left: 15px; position: absolute; right: 15px; }
+.success .success-close { background: transparent url('close.png') no-repeat scroll 0% 0%; display: block; height: 26px; position: absolute; right: 5px; top: 5px; width: 27px; }
+.success .success-close:hover, .success .success-close:focus { opacity: 0.75; }
+#codeschool.reveal { top: -35px; }
+#challenge #challenge-objective.reveal, #challenge #challenge-panels.reveal, #sidebar-content.reveal { opacity: 0; }
+@media screen and (max-width: 1020px) {
+  footer ul { margin: 0px auto; padding: 10px 0px 0px; width: 220px; }
+  footer ul li { float: none; margin: 0px 0px 25px; }
+  footer .support { margin-top: 2.5em; }
+}
+@media screen and (max-width: 970px) {
+  #file-browser { float: none; width: inherit; }
+  #terms { float: none; min-height: 175px; width: inherit; }
+  #terms h3 { font-size: 1.8em; width: 90%; }
+  #terms #resource-group p { font-size: 1.3em; padding-left: 20px; width: 50%; }
+  #terms #resource-group p strong { font-size: 1.2em; }
+}
+.cs-console { color: rgb(93, 93, 93); font: 16px/23px Monaco,Courier,font-monospace; }
+.cs-console .console-cursor { background: rgb(67, 67, 67) none repeat scroll 0% 0%; }
+.cs-console .console-message { color: rgb(182, 207, 232); }
+.cs-console .console-success-message { color: rgb(255, 255, 255); }
+.cs-console .console-error-message { color: rgb(65, 131, 196); }
+.cs-console-height { height: 290px; padding: 5px; }
+.mbm { margin-bottom: 20px; }
+.group::after, #codeschool .progress-bar::after, #challenge #challenge-objective::after, #challenge #challenge-objective header::after, .codeschool-banner::after, .resource-group-panel::after, .toolbar::after, .toolbar .controls::after, footer ul::after, .home .share-block::after, .home .sub-content::after, .success .success-message::after, .bucket::after { clear: both; content: ""; display: table; }
+.bucket-content { display: table-cell; width: 10000px; }
+.bucket-media { float: left; margin-right: 30px; }
+.bucket-media > img { display: block; }
+.home .btn { transition: all 0.2s ease-in-out 0s; background: rgb(217, 135, 69) none repeat scroll 0% 0%; border-radius: 3px; border: 1px solid rgb(163, 92, 44); color: rgb(74, 41, 20); cursor: pointer; display: block; font: 1em "OpenSansBold","Helvetica Neue",Helvetica,Arial,sans-serif; padding: 8px 0px; text-align: center; }
+.home .btn:hover { background: rgb(195, 109, 40) none repeat scroll 0% 0%; text-decoration: none; }
+.home .button-sign-up { background: rgb(60, 120, 181) none repeat scroll 0% 0%; border: 1px solid rgb(42, 91, 141); border-radius: 4px; color: rgb(255, 255, 255); font-family: "OpenSansBold","Helvetica Neue",Helvetica,Arial,sans-serif; padding: 12px 40px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); }
+.home .button-sign-up:hover { background: rgb(47, 95, 143) none repeat scroll 0% 0%; text-decoration: none; }
+.home .link-invert { color: black; font: 1em "OpenSansBold","Helvetica Neue",Helvetica,Arial,sans-serif; }
+.home .cell { margin: 0px auto; max-width: 730px; width: 90%; }
+.home .cell h4 { font: 2.2em "OpenSansBold","Helvetica Neue",Helvetica,Arial,sans-serif; margin: 0px 0px 10px; padding-left: 35px; padding-bottom: 10px; }
+.file-browser { padding: 15px; margin-bottom: 40px; }
+.file-browser .directories { position: relative; overflow: hidden; width: 50%; height: 100px; }
+.file-browser .directories ol.directory { position: absolute; overflow-y: auto; overflow-x: hidden; width: 33.3333%; background-color: rgb(255, 255, 255); padding: 0px; border: 1px solid rgb(204, 204, 204); }
+.file-browser .directories ol.directory a { color: rgb(68, 68, 68); font-size: 15px; font-family: sans-serif; display: block; padding: 5px; }
+.file-browser .directories ol.directory a:hover { background-color: rgb(238, 238, 238); }
+.file-browser .directories ol.directory a.selected { background-color: rgb(170, 170, 170); color: rgb(255, 255, 255); }
+.file-browser .directories ol.directory .folder { font-weight: bold; color: rgb(49, 107, 155); }
+.file-browser .directories ol.directory a.selected.folder { background-color: rgb(49, 107, 155); color: rgb(255, 255, 255); }
+.file-browser .directories ol.selected-directory { background-color: rgb(221, 221, 221); }

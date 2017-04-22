@@ -1,0 +1,797 @@
+<html class="dj_gecko dj_contentbox">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<meta name="wpd_version" content="0.2">
+<meta name="wpd_baseurl" content="http://www.yoyobrain.com/">
+<meta name="wpd_url" content="http://www.yoyobrain.com/">
+<meta name="wpd_date" content="2017-03-18T12:01Z">
+
+  
+	<meta http-equiv="Pragma" content="no-cache">
+    <meta name="verify-v1" content="+K/i1jZ1nimZ+PZUkQuajBwU3V81gzzD5kf1JUtWNo4=">
+	<meta name="google-site-verification" content="KfUZ0GeWkH6rnVrtIiztXImgebn9uv1rKR-b7SUh79k">
+	<meta name="google-site-verification" content="rYayD9OfC6tpoG_GZZMsuVwrTUcBVa5yEvrCww2qOUs">
+	<meta name="y_key" content="f237224945313113">
+	<title>
+
+		
+		Flashcards, notes and learning tools online: YoYoBrain.com.	</title>
+
+	<script id="facebook-jssdk" src="all.js"></script><script type="text/javascript">
+
+
+        //this is the location where we will insert error information into
+        //the database
+        
+        var handleErr = function(message,url,line_number){
+
+			if ((1 > arguments.length) ||  ( !message)) {
+				message = "Was not given in call.";
+			}
+
+			if ((2 > arguments.length) ||  (!url)) {
+				url = 'unknown';
+			}
+			
+			
+			if ((3 > arguments.length) ||  (!line_number)) {
+				line_number = "not given";
+			}
+			browser_location = window.location.href;
+			if (!browser_location) {
+				browser_location = "couldn't find";
+			}
+			
+			var additional_info = "";
+			if (arguments.length > 3 ) {
+				for (var arg_cnt = 3; arguments.length > arg_cnt; arg_cnt+=1 ) {
+					additional_info += arguments[arg_cnt];
+				}
+			}
+			
+			
+				//filter out google analytics stuff
+				if (url == "http://www.google-analytics.com/ga.js") {
+					return true;
+					
+				}
+			
+			
+			//handle known bug of Class not registered for IE 6
+			//occurs on window.open
+			user_agent = navigator.userAgent;
+			if (message.match(/Class not registered/)) {
+				if (user_agent.match(/IE 6\.0/)) {
+				
+					window.location = "/error_handling/class_not_registered";
+					return true;
+				}				
+			}
+
+			if (message.match(/Building SWF failed/)){
+				
+				if (dojox.embed.Flash.available) {
+					additional_info += "Flash version: " + dojox.embed.Flash.version.major + 
+										"." +  dojox.embed.Flash.version.minor + "."  + dojox.embed.Flash.version.rev
+				} else {
+					additional_info += "Don't have flash installed."
+				}
+			}
+
+			if (window.location.hostname=='www.yoyobrain.com' ){
+					// Function to report errors proactively
+					if (error_count > 3){
+						return false;	
+						
+					}else{
+						
+						var post_hash = {	message: message,
+										file_location: url,
+										line_number: line_number,
+										page: browser_location,
+										additional_info: additional_info
+									};
+									
+						var ajax_param_hash = {
+							method: 'post',
+							parameters: post_hash
+						};
+									
+						error_count++;			
+		           
+				 		// submit information to server
+				  	//hold it	var my_request = new Ajax.Request('/error_handling/javascript_error_notifier',ajax_param_hash);
+						return true;
+					}				
+				
+			} else {
+				
+				var alert_message = 'message: ' + message + '\nfile_location=' + url + '\nline_number=' + line_number + "\nAdditional Info: " + additional_info;
+			 	alert(alert_message);
+			}	
+
+        };
+
+
+
+
+	    var debug = false;
+
+
+		
+			
+		        window.onerror = handleErr;
+			
+		
+			
+			
+
+        var error_count=0;
+		
+		
+ 	 	var isUserSignedIn=false;
+		var isPageLoaded=false;
+		
+		// flags for js object loads
+		var isAllOfBaseLoaded=false;
+		var isPrototypeLoaded=false;
+		var isDragDropLoaded=false;
+		var isEffectsLoaded=false;
+
+		
+	</script>
+
+
+	<script type="text/javascript">
+
+		//generic way to add onload functions without requiring any other script to be present
+		function addLoadEvent(func) { 
+		  var oldonload = window.onload; 
+
+		  if (typeof window.onload != 'function') { 
+		    window.onload = func; 
+		  } else { 
+		    window.onload = function() { 
+		      if (oldonload) { 
+		        oldonload(); 
+	      	  } 
+		      func(); 
+		    }; 
+		  } 
+		} 				
+</script>
+				<script type="text/javascript" charset="utf-8">
+
+		var djConfig = {
+			baseUrl : "/dojo/dojo/",
+			
+			
+			useCommentedJson: true,
+			locale: 'en-us',
+			parseOnLoad: true
+		};
+	</script>
+
+	<script src="base_packaged.js" type="text/javascript"></script>
+    <script type="text/javascript" src="dojo.js"></script>
+    <script src="yoyodojo.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="www.yoyobrain.com.css" media="all">
+</head>
+<body class="tundra" id="bodyId"><textarea id="dijit._editor.RichText.savedContent" style="display: none; position: absolute; top: -100px; left: -100px; height: 3px; width: 3px; overflow: hidden;"></textarea><textarea id="dijit._editor.RichText.savedContent" style="display: none; position: absolute; top: -100px; left: -100px; height: 3px; width: 3px; overflow: hidden;"></textarea><div class=" fb_reset" id="fb-root"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe src="www.yoyobrain.com_1.html" style="border: medium none;" tabindex="-1" title="Facebook Cross Domain Communication Frame" aria-hidden="true" id="fb_xdm_frame_http" scrolling="no" allowfullscreen="true" allowtransparency="true" name="fb_xdm_frame_http" frameborder="0"></iframe><iframe src="www.yoyobrain.com_2.html" style="border: medium none;" tabindex="-1" title="Facebook Cross Domain Communication Frame" aria-hidden="true" id="fb_xdm_frame_https" scrolling="no" allowfullscreen="true" allowtransparency="true" name="fb_xdm_frame_https" frameborder="0"></iframe></div></div></div><textarea id="dijit._editor.RichText.savedContent" style="display: none; position: absolute; top: -100px; left: -100px; height: 3px; width: 3px; overflow: hidden;"></textarea><textarea id="dijit._editor.RichText.savedContent" style="display: none; position: absolute; top: -100px; left: -100px; height: 3px; width: 3px; overflow: hidden;"></textarea>
+		
+
+
+	
+		
+		
+	
+
+	
+
+		
+		
+	
+	
+	<script add_asset_id="false" src="jqueryful_packaged.js" type="text/javascript"></script>
+	
+	<!--[if IE]><link rel="stylesheet" href="/stylesheets/ie.css" type="text/css" media="screen, projection"><![endif]-->
+
+	<!--[if lte IE 6]>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/IE6hacks.css"
+	 <![endif]-->
+
+	<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/IE7hacks.css"
+	 <![endif]-->
+	 
+	<script type="text/javascript">
+
+		 loadCSSHackFiles();
+		
+	</script>
+	
+	
+	
+		<link rel="shortcut icon" href="favicon.png" type="image/ico">		
+		<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+
+	
+
+
+
+
+
+
+		
+<div id="top_background" style="width: 100%; z-index: 500;">
+  <div class="container ">
+	   <div class="dijit dijitToolbar span-24" wairole="toolbar" tabindex="0" dojoattachpoint="containerNode" role="toolbar" id="main_navigation" style="" widgetid="main_navigation">
+			<div id="navigation_tab_container" class="span-19 center ">	
+					<span id="logo" class="tab" style="margin-left: 0px; padding-left: 0px; margin-top: -4px;">
+						<a href="http://www.yoyobrain.com/" style="text-decoration: none;">
+						<img alt="YoYoBrain Logo" src="logo_menu.png" border="0">
+						</a>
+					</span>
+										
+						<span id="signup" class="tab selected">
+								<a href="http://www.yoyobrain.com/" id="signup_link">Free Signup</a>
+						</span>
+						<span id="tour" class="tab ">
+								<a href="http://www.yoyobrain.com/welcome/tour1">Tour</a>
+						</span>	
+						<span id="communities" class="tab ">
+									<a href="http://www.yoyobrain.com/community/list" id="communities_link">Communities</a>
+						</span>
+						<span id="teachers" class="tab ">
+								<a href="http://www.yoyobrain.com/welcome/teachers">Teachers</a>
+						</span>			
+						<span id="enterprises" class="tab ">
+								<a href="http://www.yoyobrain.com/welcome/enterprises">Enterprises</a>
+						</span>	
+
+					
+					<span class="dijit dijitReset dijitLeft dijitInline tab  dijitDropDownButton" dojoattachevent="onmouseenter:_onMouse,onmouseleave:_onMouse,onmousedown:_onMouse,onclick:_onDropDownClick,onkeydown:_onDropDownKeydown,onblur:_onDropDownBlur,onkeypress:_onKey" style="width: 35px; padding-left: 0px;" widgetid="help"><span class="dijitReset dijitRight dijitInline"><span class="dijitReset dijitInline dijitButtonNode"><button class="dijitReset dijitStretch dijitButtonContents" type="button" value="" dojoattachpoint="focusNode,titleNode" wairole="button" waistate="haspopup-true,labelledby-help_label" role="button" aria-haspopup="true" aria-labelledby="help_label" id="help" tabindex="0" style="-moz-user-select: none;"><span class="dijitReset dijitInline" dojoattachpoint="iconNode"></span><span class="dijitReset dijitInline dijitButtonText" dojoattachpoint="containerNode,popupStateNode" id="help_label">Help</span><span class="dijitReset dijitInline dijitArrowButtonInner"> </span><span class="dijitReset dijitInline dijitArrowButtonChar">▼</span></button></span></span></span>
+					
+						<span class="tab" id="already_a_member" style="float: right;">
+							<a href="http://www.yoyobrain.com/account/signin">Login</a>
+						</span>
+					
+					
+					
+			</div>		
+			
+			<div id="search_from_nav_container" class="span-5 last align_right" style="height: 29px;">
+				
+						<form dojoattachpoint="containerNode" dojoattachevent="onreset:_onReset,onsubmit:_onSubmit" name="global_search_form" action="http://www.yoyobrain.com/searches/find" method="get" id="dijit_form_Form_0" widgetid="dijit_form_Form_0">
+							
+							   <div dojotype="dojox.data.QueryReadStore" jsid="yoyoBrainSearch" url="/searches/autocomplete"> </div>
+								<div class="dijit dijitReset dijitInlineTable dijitLeft dijitComboBox" id="widget_global_search_for" dojoattachevent="onmouseenter:_onMouse,onmouseleave:_onMouse,onmousedown:_onMouse" dojoattachpoint="comboNode" wairole="combobox" tabindex="-1" role="combobox" style="width: 150px; margin-top: 3px;" widgetid="global_search_for"><div style="overflow: hidden;"><div class="dijitReset dijitRight dijitButtonNode dijitArrowButton dijitDownArrowButton" dojoattachpoint="downArrowNode" wairole="presentation" dojoattachevent="onmousedown:_onArrowMouseDown,onmouseup:_onMouse,onmouseenter:_onMouse,onmouseleave:_onMouse" role="presentation"><div class="dijitArrowButtonInner"> </div><div class="dijitArrowButtonChar">▼</div></div><div class="dijitReset dijitValidationIcon"><br></div><div class="dijitReset dijitValidationIconText">Χ</div><div class="dijitReset dijitInputField"><input name="search_for" autocomplete="off" class="dijitReset" dojoattachevent="onkeypress:_onKeyPress,compositionend" dojoattachpoint="textbox,focusNode" wairole="textbox" waistate="haspopup-true,autocomplete-list" role="textbox" aria-haspopup="true" aria-autocomplete="list" aria-invalid="false" id="global_search_for" tabindex="0" aria-required="true" value="Search" type="text"></div></div></div>
+								<img src="search_glass.png" id="global_search" onclick="submitGlobalSearch();" style="cursor: pointer;" alt="search" align="top" border="0">
+						</form>	
+			</div> 			
+			
+					
+		</div>
+		
+		
+	</div>	
+</div>
+
+	<div id="maincontentarea" class="container content_for_welcome" style="">
+		<div class="span-24 text_dark_gray smaller_font" style="margin-bottom: 3px; margin-top: 10px;">
+				<div style="display: inline;" id="breadcrumbs"><b>Home</b></div>		
+		</div>
+		<script src="swfobject_modified.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+	function parseURLValues(){
+		
+		var search_string = window.location.search;
+		var email_param = search_string.toQueryParams().email;
+		var cardbox_id_param = search_string.toQueryParams().cardbox_id;
+		
+		if (email_param ){
+			email_dom = $('learner_email');
+			if (email_dom) {
+				email_dom.value = email_param;
+			}
+		}
+	    if (location.href.toQueryParams().cardbox_id ){
+			cardbox_id_dom = $('cardbox_id');
+			if (cardbox_id_dom) {
+				cardbox_id_dom.value=cardbox_id_param;
+			}
+		}
+	}
+		
+</script>
+<hr class="space">
+	
+
+<!--LEFT COLUMN-->	
+	<div class="span-6" style="width: 215px;">
+		
+	  	    <div id="sign_in_form" class="small_font colored_table_1 border_1" style="width: 195px;">
+	<form action="http://www.yoyobrain.com/account/signin_authenticate" method="post">
+
+			Email or Login ID:
+			<br>
+			<input id="login" name="login" type="text">
+			<br>
+			Password:
+			<br>
+			<input id="password" name="password" type="password">
+			<div class="align_center" style="padding-top: 14px;">
+						<input value="Sign in" id="signin_home" style="width: 100px;" type="submit">
+	
+						<br>
+						<span id="forgot"><a href="http://www.yoyobrain.com/account/recover_password">Forgot password or login?</a></span>
+			</div>
+	</form>
+</div>
+		
+			<div class="notice" style="margin-top: 60px;">
+										<strong>Today on YoYoBrain.com:</strong><br>
+											<span id="facts_learned_count">289</span> 
+											Facts learned today  <br>  
+											<span id="flashcard_count">373,339</span> 
+											flashcards in play.
+											<br><br>	
+			 								<strong>Today's Most Popular Flashcards:</strong><br>
+		<a href="http://www.yoyobrain.com/quizzes/learn_subject/1183">Vocabulary Flashcards</a>
+		<br>	
+		<a href="http://www.yoyobrain.com/quizzes/learn_subject/551">Spanish Flashcards</a>
+		<br>	
+		<a href="http://www.yoyobrain.com/quizzes/learn_subject/1180">Cultural Literacy Flashcards</a>
+		<br>	
+		<a href="http://www.yoyobrain.com/quizzes/learn_subject/6311">Certified Paraoptometric Technician  Flashcards</a>
+		<br>	
+		<a href="http://www.yoyobrain.com/quizzes/learn_subject/517">Geography Flashcards</a>
+		<br>	
+		<a href="http://www.yoyobrain.com/quizzes/learn_subject/16350">Mediteranean Geography Flashcards</a>
+		<br>	
+		<a href="http://www.yoyobrain.com/quizzes/learn_subject/518">Miscellaneous Flashcards</a>
+		<br>	
+		<a href="http://www.yoyobrain.com/quizzes/learn_subject/636">World History Flashcards</a>
+		<br>	
+		<a href="http://www.yoyobrain.com/quizzes/learn_subject/16356">Japanese Geography Flashcards</a>
+		<br>	
+		<a href="http://www.yoyobrain.com/quizzes/learn_subject/16352">Russian Geography Flashcards</a>
+		<br>	
+
+<br><br>
+<strong>Top Communities:</strong><br>
+ <a href="http://www.yoyobrain.com/communities/show/3">Universities: Southern Methodist University students</a>
+	<br><br>
+ <a href="http://www.yoyobrain.com/communities/show/41">Professional: Web Development</a>
+	<br><br>
+ <a href="http://www.yoyobrain.com/communities/show/1710">High School: AP Studies</a>
+	<br><br>
+ <a href="http://www.yoyobrain.com/communities/show/1685">Languages: Beginner Italian</a>
+<br><br>
+	<div class="align_right">
+		<a href="http://www.yoyobrain.com/community/list">See them all...</a>
+	</div>
+			
+			</div>
+	</div><!-- end left column-->
+<!--END OF LEFT COLUMN-->
+<!--BEGIN  CENTER COLUMN-->
+	<div class="span-12">
+			
+		
+		
+			<div class="span-4 align_center" style="margin-top: 9px;">
+				<img alt="create" src="icon_add_stuff.png">	<br>
+				<h3 style="margin-top: 14px;">Create or find flashcards, notes, outlines and more</h3>
+			</div>
+			<div class="span-4 align_center" style="margin-top: 9px;">
+				<img alt="create" src="icon_share.png">	<br>			
+				<h3 style="margin-top: 14px;">Share and learn together with friends.</h3>
+			</div>
+
+		    <div class="span-4 last align_center" style="margin-top: 9px;">	
+				<img alt="create" src="icon_goal.png">		<br>
+					<h3 style="margin-top: 14px;">The memory accelerator quizzes you to get you to goals faster</h3>					
+			</div>
+	
+		<div class="align_right bold_text" style="margin-top: 12px; padding-right: 10px;">
+					 <a href="http://www.yoyobrain.com/welcome/how_it_works" class="bold_font" id="link_how_works">How it works</a> | 
+					 	<a id="take_a_tour_link" href="http://www.yoyobrain.com/welcome/tour1">Tour</a>
+		</div>
+				
+		<div class="colored_table_1  colored_border_1  small_font" style="margin-top: 26px;">
+ 
+				"I had a finance test the next day, so I was really happy when my friend shared her flashcards with me- I was able to click on the link in 
+				 her email and start studying...It was cool that I could find test information, and also that the site would actually quiz me so I could memorize better"
+				<div class="align_right">
+					<i>- Cate Biggs, senior, Southern Methodist University 
+							</i><br>
+				<a href="http://www.yoyobrain.com/welcome/testamonials">See more of what people are saying...</a>	</div>
+		</div>		
+		<hr class="space">
+		<div class="span-7">
+		
+				<div id="fb-root"></div>
+				<script>(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) {return;}
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));</script>
+
+				<div class="fb-like-box" data-href="http://www.facebook.com/yoyobrain" data-width="292" data-show-faces="false" data-stream="false" data-header="false"></div>
+		
+		</div>
+		<div class="span-4" style="margin-top: 6px;">
+			<a href="http://yoyobrain.w3mg.com/"><img alt="App_store_badge" src="app_store_badge.png"></a>
+		</div>	
+	</div><!--END OF CENTER COLUMN-->
+	<div class="span-6 last">
+					<div dojotype="dojo.data.ItemFileReadStore" urlpreventcache="true" url="/communities" jsid="communityDataStore"></div>
+ <div id="register_table" class="colored_table_1 colored_border_1 signup_box">
+ 	<h6>
+
+ 		Get Started -Create a Free Account
+	</h6>
+<br>
+						<form dojoattachpoint="containerNode" dojoattachevent="onreset:_onReset,onsubmit:_onSubmit" action="http://www.yoyobrain.com/account/save_learner" method="post" id="dijit_form_Form_1" widgetid="dijit_form_Form_1">
+								<input name="cardbox_id" id="cardbox_id" type="hidden">
+								
+								
+								<label for="learner_full_name" style="float: left;">Name: (First and Last)</label>
+								<br>
+								<div class="dijit dijitReset dijitInlineTable dijitLeft dijitTextBox" id="widget_learner_full_name" dojoattachevent="onmouseenter:_onMouse,onmouseleave:_onMouse,onmousedown:_onMouse" wairole="presentation" role="presentation" style="" widgetid="learner_full_name"><div style="overflow: hidden;"><div class="dijitReset dijitValidationIcon"><br></div><div class="dijitReset dijitValidationIconText">Χ</div><div class="dijitReset dijitInputField"><input class="dijitReset" dojoattachpoint="textbox,focusNode" autocomplete="off" name="learner[full_name]" id="learner_full_name" tabindex="0" aria-required="true" aria-invalid="true" value="" type="text"></div></div></div>								
+										<br>
+										<br>
+										
+										<label for="learner_login">Choose Your Login ID</label>
+										<br>
+										<div class="dijit dijitReset dijitInlineTable dijitLeft dijitTextBox" id="widget_learner_login" dojoattachevent="onmouseenter:_onMouse,onmouseleave:_onMouse,onmousedown:_onMouse" wairole="presentation" role="presentation" widgetid="learner_login"><div style="overflow: hidden;"><div class="dijitReset dijitValidationIcon"><br></div><div class="dijitReset dijitValidationIconText">Χ</div><div class="dijitReset dijitInputField"><input class="dijitReset" dojoattachpoint="textbox,focusNode" autocomplete="off" name="learner[login]" id="learner_login" tabindex="0" aria-required="true" aria-invalid="true" value="" type="text"></div></div></div>
+										<br>
+										<br>
+										<label for="learner_email">Email</label>
+										<br>
+										<div class="dijit dijitReset dijitInlineTable dijitLeft dijitTextBox" id="widget_learner_email" dojoattachevent="onmouseenter:_onMouse,onmouseleave:_onMouse,onmousedown:_onMouse" wairole="presentation" role="presentation" widgetid="learner_email"><div style="overflow: hidden;"><div class="dijitReset dijitValidationIcon"><br></div><div class="dijitReset dijitValidationIconText">Χ</div><div class="dijitReset dijitInputField"><input class="dijitReset" dojoattachpoint="textbox,focusNode" autocomplete="off" name="learner[email]" id="learner_email" tabindex="0" aria-required="true" aria-invalid="true" value="" type="text"></div></div></div>
+											<br>
+											<br>
+											
+											<label for="learner_password">Password</label>
+											<br>
+											<div class="dijit dijitReset dijitInlineTable dijitLeft dijitTextBox" id="widget_learner_password" dojoattachevent="onmouseenter:_onMouse,onmouseleave:_onMouse,onmousedown:_onMouse" wairole="presentation" role="presentation" widgetid="learner_password"><div style="overflow: hidden;"><div class="dijitReset dijitValidationIcon"><br></div><div class="dijitReset dijitValidationIconText">Χ</div><div class="dijitReset dijitInputField"><input class="dijitReset" dojoattachpoint="textbox,focusNode" autocomplete="off" name="learner[password]" id="learner_password" tabindex="0" aria-required="true" aria-invalid="true" value="" type="password"></div></div></div>
+										<br>
+										<br>
+										
+										<label class="remove_for_verify" for="community_name" id="community_name_label">School or Affiliation (optional)</label>
+										<br>
+										
+								        <div class="dijit dijitReset dijitInlineTable dijitLeft dijitComboBox" id="widget_community_name" dojoattachevent="onmouseenter:_onMouse,onmouseleave:_onMouse,onmousedown:_onMouse" dojoattachpoint="comboNode" wairole="combobox" tabindex="-1" role="combobox" style="width: 186px;" widgetid="community_name" aria-labelledby="community_name_label"><div style="overflow: hidden;"><div class="dijitReset dijitRight dijitButtonNode dijitArrowButton dijitDownArrowButton" dojoattachpoint="downArrowNode" wairole="presentation" dojoattachevent="onmousedown:_onArrowMouseDown,onmouseup:_onMouse,onmouseenter:_onMouse,onmouseleave:_onMouse" role="presentation"><div class="dijitArrowButtonInner"> </div><div class="dijitArrowButtonChar">▼</div></div><div class="dijitReset dijitValidationIcon"><br></div><div class="dijitReset dijitValidationIconText">Χ</div><div class="dijitReset dijitInputField"><input name="community[name]" autocomplete="off" class="dijitReset" dojoattachevent="onkeypress:_onKeyPress,compositionend" dojoattachpoint="textbox,focusNode" wairole="textbox" waistate="haspopup-true,autocomplete-list" role="textbox" aria-haspopup="true" aria-autocomplete="list" id="community_name" tabindex="0" value="" type="text"></div></div></div>
+									 	<br>
+										<br>
+										<label for="learner_learner_type" id="learner_learner_type_label">
+
+											Your main interest in YoYoBrain
+										</label>
+										<br>
+									
+								        <div class="dijit dijitReset dijitInlineTable dijitLeft dijitComboBox" id="widget_learner_learner_type" dojoattachevent="onmouseenter:_onMouse,onmouseleave:_onMouse,onmousedown:_onMouse" dojoattachpoint="comboNode" wairole="combobox" tabindex="-1" role="combobox" style="width: 186px;" widgetid="learner_learner_type" aria-labelledby="learner_learner_type_label"><div style="overflow: hidden;"><div class="dijitReset dijitRight dijitButtonNode dijitArrowButton dijitDownArrowButton" dojoattachpoint="downArrowNode" wairole="presentation" dojoattachevent="onmousedown:_onArrowMouseDown,onmouseup:_onMouse,onmouseenter:_onMouse,onmouseleave:_onMouse" role="presentation"><div class="dijitArrowButtonInner"> </div><div class="dijitArrowButtonChar">▼</div></div><div class="dijitReset dijitValidationIcon"><br></div><div class="dijitReset dijitValidationIconText">Χ</div><div class="dijitReset dijitInputField"><input autocomplete="off" class="dijitReset" dojoattachevent="onkeypress:_onKeyPress,compositionend" dojoattachpoint="textbox,focusNode" wairole="textbox" waistate="haspopup-true,autocomplete-list" role="textbox" aria-haspopup="true" aria-autocomplete="list" aria-invalid="false" id="learner_learner_type" tabindex="0" aria-required="true" value="Student" type="text"><input style="display: none;" name="learner[learner_type]" type="text"></div></div></div>
+										<br>
+										<br>
+										<span class="dijit dijitReset dijitLeft dijitInline dijitButton dijitButtonDisabled dijitDisabled" dojoattachevent="ondijitclick:_onButtonClick,onmouseenter:_onMouse,onmouseleave:_onMouse,onmousedown:_onMouse" style="font-size: 14px;" widgetid="submit_button"><span class="dijitReset dijitRight dijitInline"><span class="dijitReset dijitInline dijitButtonNode"><button class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" type="submit" value="" wairole="button" waistate="labelledby-submit_button_label" role="button" aria-labelledby="submit_button_label" id="submit_button" style="-moz-user-select: none;" disabled="" aria-disabled="true"><span class="dijitReset dijitInline" dojoattachpoint="iconNode"><span class="dijitReset dijitToggleButtonIconChar">✓</span></span><span class="dijitReset dijitInline dijitButtonText" id="submit_button_label" dojoattachpoint="containerNode">
+
+											
+
+											
+											Start Learning
+										</span></button></span></span></span>
+									
+						</form>
+						
+</div>
+					
+					
+					<div class="align_center bold_font invisible">
+					<a href="http://www.yoyobrain.com/welcome/teachers">YoYoBrain for Teachers</a>
+						<br>
+						<a href="http://www.yoyobrain.com/welcome/enterprises">YoYoBrain for Enterprises</a>
+					</div>
+				
+					
+	</div><!-- end of right column-->
+				
+   <script type="text/javascript">parseURLValues();</script>
+
+		
+	<div id="community_features" class="invisible" style="text-align: center; margin-top: -50px;">
+		<a href="http://www.yoyobrain.com/welcome/featured_student_community">YoYoBrain For Students</a> |  <a href="http://www.yoyobrain.com/welcome/featured_professional_community">YoYoBrain for Professionals</a> | <a href="http://www.yoyobrain.com/welcome/featured_fun_community">YoYoBrain to Pursue Your Goals</a>
+	</div>	
+
+
+	</div>
+	<hr class="space">	
+	<hr class="space">
+	
+	
+<div class="container">
+	<div class="span-24 align_center invisible">
+		<a href="http://www.yoyobrain.com/" style="text-decoration: none;">
+			<img alt="YoYoBrain Logo" src="logo_menu.png" border="0">
+		</a>
+	</div>
+	<hr class="space"><hr class="space">
+		<hr class="space">
+		
+	<div id="about_etc" class="span-24 align_center">
+				<a href="http://blog.yoyobrain.com/">What's new</a>
+				| <a href="http://www.yoyobrain.com/welcome/about_us" id="about_us">About Us</a>
+				| <a href="http://www.yoyobrain.com/welcome/privacy_policy" id="privacy_policy">Privacy Policy</a>  
+				| <a href="http://www.yoyobrain.com/welcome/copyright_policy" id="copyright_policy">Copyright Policy</a>
+				| <a href="http://www.yoyobrain.com/customer_service/contact_us" id="contact_us">Contact Us</a>
+				<br><br>Copyright 2007-2017 YoYoBrain.com <br>
+			
+				<br>
+				<a href="http://www.w3mg.com/" style="text-decoration: none;"><img src="managed_by_w3mg.png" alt="Managed By W3mg" border="0" height="25" width="115"></a>
+				<hr class="space">
+	</div>
+</div>
+	<!-- this has been largely deprecated-->
+	<div id="status_update_container" class="invisible" style="position: fixed; top: 0px; right: 0px;">
+			<img alt="Spinner" src="spinner.gif">
+			<div id="update_message" style="display: inline;">updating...</div>
+	</div>
+	<!--end deprecated div-->
+
+<div id="flash_notice_container" class="last align_center invisible" style="position: fixed; top: 0px; padding: 10px; z-index: 9999; width: 100%;"></div>
+
+
+	
+	
+		<script src="ga.js" type="text/javascript">
+		</script>
+		<script type="text/javascript">
+
+			function load_google_analytics() {
+				try {
+					var pageTracker = _gat._getTracker("UA-593249-8");
+					pageTracker._trackPageview();
+				} catch(ex) {
+					//throw away google's errors
+				}			
+			}
+			addLoadEvent(load_google_analytics);
+		</script>
+	
+
+
+
+	
+	<script type="text/javascript" charset="utf-8">
+
+	//<![CDATA[
+	  dojoInitialization = function() {
+	    
+			if (typeof dojo == 'undefined') {
+				setTimeout(dojoInitialization,200);
+				return;
+			}
+	
+			dojo.require("dojo.parser");
+			dojo.require("dojo.data.ItemFileReadStore");
+			dojo.require("dojo.data.ItemFileWriteStore");
+			dojo.require("dojo.io.iframe");
+			dojo.require("dijit._Calendar");
+			dojo.require("dijit._editor.plugins.FontChoice");
+			dojo.require("dijit._editor.plugins.TextColor");
+ 	    	dojo.require("dijit.Dialog");
+			dojo.require("dijit.Editor");
+			dojo.require("dijit.form.Button");
+			dojo.require("dijit.form.CheckBox");
+			dojo.require("dijit.form.ComboBox");
+			dojo.require("dijit.form.DateTextBox");
+ 	    	dojo.require("dijit.form.DropDownButton");
+			dojo.require("dijit.form.FilteringSelect");
+			dojo.require("dijit.form.Form");
+			dojo.require("dijit.form.MultiSelect");
+			dojo.require("dijit.form.NumberSpinner");
+			dojo.require("dijit.form.SimpleTextarea");
+			dojo.require("dijit.form.Textarea");
+			dojo.require("dijit.form.TextBox");
+			dojo.require("dijit.form.ValidationTextBox");
+			dojo.require("dijit.InlineEditBox");
+			dojo.require("dijit.layout.AccordionContainer");
+			dojo.require("dijit.layout.BorderContainer");
+			dojo.require("dijit.layout.TabContainer");
+			dojo.require("dijit.layout.ContentPane");
+			dojo.require("dijit.Menu");
+			dojo.require("dijit.ProgressBar");
+			dojo.require("dijit.Toolbar");
+			dojo.require("dijit.Tree");
+			dojo.require("dijit._tree.dndSource");
+			dojo.require("dojox.data.QueryReadStore");
+			dojo.require("dojox.editor.plugins.UploadImage");
+			dojo.require("dojox.embed.Object");
+			dojo.require("dojox.grid.DataGrid");
+			dojo.require("dojox.layout.ContentPane");
+			dojo.require("dojox.widget.Wizard");
+			
+			
+	  }
+
+      dojoInitialization();
+	  
+	  
+	  //**************************************************************************
+	  //make this conditional so it is only triggered where we are using the plugin
+	  //**************************************************************************
+      dojoFileUploadInitialization = function() {
+    	dojo.registerModulePath("yoyo_dojo","../../javascripts/yoyo_dojo");
+    	dojo.require("yoyo_dojo.FlashcardRichText");
+    	dojo.require("yoyo_dojo.FlashcardEditor");
+    	dojo.require("yoyo_dojo.UploadAudio");
+    	dojo.require("yoyo_dojo.YoYoUploadImage");
+      }
+      
+      if ((typeof needEditorPlugins) == 'undefined') {
+        needEditorPlugins = false;
+      }
+      if ((typeof dojo) == 'undefined' && needEditorPlugins) {
+          addLoadEvent(dojoFileUploadInitialization);
+      } else if (needEditorPlugins) {
+        dojoFileUploadInitialization();
+      }
+	  
+	  //**************************************************************************
+	  //make this conditional so it is only triggered where we are using the plugin
+	  //**************************************************************************
+      dojoSortedTreeInitialization = function() {
+    	dojo.registerModulePath("yoyo_dojo","../../javascripts/yoyo_dojo");
+    	dojo.require("yoyo_dojo.SortedForestStoreModel");
+      }
+      
+      if ((typeof needSortedTreeInitialization) == 'undefined') {
+        needSortedTreeInitialization = false;
+      }
+      
+      if ((typeof dojo) == 'undefined' && needSortedTreeInitialization) {
+          addLoadEvent(dojoSortedTreeInitialization);
+      } else if (needSortedTreeInitialization) {
+        dojoSortedTreeInitialization();
+      }
+	  
+	  //**************************************************************************
+	  //make this conditional so it is only triggered where we are using the plugin
+	  //**************************************************************************
+      dojoGraphingInitialization = function() {
+		dojo.require("dojox.charting.Chart2D");
+		dojo.require("dojox.charting.themes.Tufte");
+		dojo.require("dojox.charting.themes.Tufte");
+		dojo.require("dojox.data.QueryReadStore");
+		dojo.require("dojox.gfx.svg");
+	  };
+      if ((typeof needGraphingInitialization) == 'undefined') {
+        needGraphingInitialization = false;
+      }
+      
+      if ((typeof dojo) == 'undefined' && needGraphingInitialization) {
+          addLoadEvent(dojoGraphingInitialization);
+      } else if (needGraphingInitialization) {
+        dojoGraphingInitialization();
+      }
+	
+	//]]>
+	</script>
+	
+	
+
+
+<table class="dijit dijitMenu dijitMenuPassive dijitReset dijitMenuTable" wairole="menu" tabindex="0" dojoattachevent="onkeypress:_onKeyPress" role="menu" id="dijit_Menu_0" style="width: 15em; visibility: hidden; position: absolute; top: -9999px;" widgetid="dijit_Menu_0">
+	<tbody class="dijitReset" dojoattachpoint="containerNode">
+		                        <tr class="dijitReset dijitMenuItem" dojoattachpoint="focusNode" wairole="menuitem" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" role="menuitem" id="dijit_MenuItem_0" widgetid="dijit_MenuItem_0" style="-moz-user-select: none;" aria-labelledby="dijit_MenuItem_0_text">
+	<td class="dijitReset" wairole="presentation" role="presentation">
+		<img src="blank.gif" alt="" class="dijitMenuItemIcon" dojoattachpoint="iconNode">
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="dijit_MenuItem_0_text">Use the Memorization Tool
+		                          
+		                        </td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none;" dojoattachpoint="accelKeyNode"></td>
+	<td class="dijitReset dijitMenuArrowCell" wairole="presentation" role="presentation">
+		<div dojoattachpoint="arrowWrapper" style="visibility: hidden;">
+			<img src="blank.gif" alt="" class="dijitMenuExpand">
+			<span class="dijitMenuExpandA11y">+</span>
+		</div>
+	</td>
+</tr>
+		                        <tr class="dijitReset dijitMenuItem" dojoattachpoint="focusNode" wairole="menuitem" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" role="menuitem" id="dijit_MenuItem_1" widgetid="dijit_MenuItem_1" style="-moz-user-select: none;" aria-labelledby="dijit_MenuItem_1_text">
+	<td class="dijitReset" wairole="presentation" role="presentation">
+		<img src="blank.gif" alt="" class="dijitMenuItemIcon" dojoattachpoint="iconNode">
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="dijit_MenuItem_1_text">Create Flashcards
+		                          
+		                        </td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none;" dojoattachpoint="accelKeyNode"></td>
+	<td class="dijitReset dijitMenuArrowCell" wairole="presentation" role="presentation">
+		<div dojoattachpoint="arrowWrapper" style="visibility: hidden;">
+			<img src="blank.gif" alt="" class="dijitMenuExpand">
+			<span class="dijitMenuExpandA11y">+</span>
+		</div>
+	</td>
+</tr>
+		                        <tr class="dijitReset dijitMenuItem" dojoattachpoint="focusNode" wairole="menuitem" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" role="menuitem" id="dijit_MenuItem_2" widgetid="dijit_MenuItem_2" style="-moz-user-select: none;" aria-labelledby="dijit_MenuItem_2_text">
+	<td class="dijitReset" wairole="presentation" role="presentation">
+		<img src="blank.gif" alt="" class="dijitMenuItemIcon" dojoattachpoint="iconNode">
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="dijit_MenuItem_2_text">Building a learning community
+		                          
+		                        </td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none;" dojoattachpoint="accelKeyNode"></td>
+	<td class="dijitReset dijitMenuArrowCell" wairole="presentation" role="presentation">
+		<div dojoattachpoint="arrowWrapper" style="visibility: hidden;">
+			<img src="blank.gif" alt="" class="dijitMenuExpand">
+			<span class="dijitMenuExpandA11y">+</span>
+		</div>
+	</td>
+</tr>
+		                        <tr class="dijitReset dijitMenuItem" dojoattachpoint="focusNode" wairole="menuitem" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" role="menuitem" id="dijit_MenuItem_3" widgetid="dijit_MenuItem_3" style="-moz-user-select: none;" aria-labelledby="dijit_MenuItem_3_text">
+	<td class="dijitReset" wairole="presentation" role="presentation">
+		<img src="blank.gif" alt="" class="dijitMenuItemIcon" dojoattachpoint="iconNode">
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="dijit_MenuItem_3_text">Create a lesson to teach others
+		                          
+		                        </td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none;" dojoattachpoint="accelKeyNode"></td>
+	<td class="dijitReset dijitMenuArrowCell" wairole="presentation" role="presentation">
+		<div dojoattachpoint="arrowWrapper" style="visibility: hidden;">
+			<img src="blank.gif" alt="" class="dijitMenuExpand">
+			<span class="dijitMenuExpandA11y">+</span>
+		</div>
+	</td>
+</tr>
+				                  <tr class="dijitMenuSeparator" id="dijit_MenuSeparator_0" widgetid="dijit_MenuSeparator_0" style="-moz-user-select: none;">
+	<td colspan="4">
+		<div class="dijitMenuSeparatorTop"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+</tr>
+				                  <tr class="dijitReset dijitMenuItem" dojoattachpoint="focusNode" wairole="menuitem" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" role="menuitem" id="dijit_MenuItem_4" widgetid="dijit_MenuItem_4" style="-moz-user-select: none;" aria-labelledby="dijit_MenuItem_4_text">
+	<td class="dijitReset" wairole="presentation" role="presentation">
+		<img src="blank.gif" alt="" class="dijitMenuItemIcon" dojoattachpoint="iconNode">
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="dijit_MenuItem_4_text">See all help topics
+				                    
+				                  </td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none;" dojoattachpoint="accelKeyNode"></td>
+	<td class="dijitReset dijitMenuArrowCell" wairole="presentation" role="presentation">
+		<div dojoattachpoint="arrowWrapper" style="visibility: hidden;">
+			<img src="blank.gif" alt="" class="dijitMenuExpand">
+			<span class="dijitMenuExpandA11y">+</span>
+		</div>
+	</td>
+</tr>
+				                  <tr class="dijitMenuSeparator" id="dijit_MenuSeparator_1" widgetid="dijit_MenuSeparator_1" style="-moz-user-select: none;">
+	<td colspan="4">
+		<div class="dijitMenuSeparatorTop"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+</tr>
+				                  <tr class="dijitReset dijitMenuItem" dojoattachpoint="focusNode" wairole="menuitem" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" role="menuitem" id="dijit_MenuItem_5" widgetid="dijit_MenuItem_5" style="-moz-user-select: none;" aria-labelledby="dijit_MenuItem_5_text">
+	<td class="dijitReset" wairole="presentation" role="presentation">
+		<img src="blank.gif" alt="" class="dijitMenuItemIcon" dojoattachpoint="iconNode">
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="dijit_MenuItem_5_text">Suggestions, gripes or feedback
+				                    
+				                  </td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none;" dojoattachpoint="accelKeyNode"></td>
+	<td class="dijitReset dijitMenuArrowCell" wairole="presentation" role="presentation">
+		<div dojoattachpoint="arrowWrapper" style="visibility: hidden;">
+			<img src="blank.gif" alt="" class="dijitMenuExpand">
+			<span class="dijitMenuExpandA11y">+</span>
+		</div>
+	</td>
+</tr>
+
+							</tbody>
+</table></body>
+</html>

@@ -1,0 +1,82 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<meta name="wpd_version" content="0.2">
+<meta name="wpd_baseurl" content="https://wx.xiaomiquan.com/dweb/#">
+<meta name="wpd_url" content="/dweb/">
+<meta name="wpd_date" content="2017-03-18T13:01Z">
+
+    
+    
+    
+    
+    <!--<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+    <title>小密圈</title>
+    <link rel="shortcut icon" href="favicon_32.ico">
+    <link rel="icon" href="favicon_32.ico">
+    
+    
+    
+    <!-- <link rel="stylesheet" href="assets/js/fs_forse/fsgallery.css"> -->
+    
+    
+    
+
+    
+    <script>
+
+        var isPC = function () {
+            var userAgentInfo = navigator.userAgent;
+            var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone", "iPod"]; //"iPad"
+            var flag = true;
+            for (var v = 0; v < Agents.length; v++) {
+                if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                    flag = false;
+                    break;
+                }
+            }
+            return flag;
+        };
+        if(!isPC()){
+            var url = window.location.href;
+            var group_id = url.split('/#/index/')[1];
+            if((/^\d+$/).test(group_id)){
+                window.location.href = 'https://wx.xiaomiquan.com/mweb/views/joingroup/join_group.html?group_id=' + group_id;
+            }else{
+                window.location.href = 'https://wx.xiaomiquan.com/mweb/views/grouplist/grouplist.html';
+            }
+        }
+          if(window.location.protocol != 'https:'){
+              var url = window.location.href;
+              window.location.href = 'https://' + url.split('http://')[1];
+          }
+    </script>
+    
+
+<script type="text/javascript" src="polyfills.07ce4ecde95357475b99.bundle.js" defer=""></script><script type="text/javascript" src="vendor.8f4f701ccb0a53da41ae.bundle.js" defer=""></script><script type="text/javascript" src="main.a13562cdcfb9049b3579.bundle.js" defer=""></script><script type="text/javascript" charset="utf-8" async="" src="0.10eab6840826619dc727.chunk.js"></script><script type="text/javascript" charset="utf-8" async="" src="1.878e36aa99f3ea336475.chunk.js"></script><script src="0.10eab6840826619dc727.chunk.js" async="" charset="utf-8" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="dweb.css" media="all">
+</head>
+<body>
+    <xmq-web>
+    <router-outlet></router-outlet>
+  </xmq-web>
+
+    
+    <div style="display: none;">
+       <script type="text/javascript">
+
+          var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+          document.write(unescape("%3Cspan id='cnzz_stat_icon_1256787036'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/stat.php%3Fid%3D1256787036' type='text/javascript'%3E%3C/script%3E"));
+       </script><span id="cnzz_stat_icon_1256787036"><a href="http://www.cnzz.com/stat/website.php?web_id=1256787036" target="_top" title="站长统计">站长统计</a></span><script src="stat.php" type="text/javascript"></script><script src="core.php" charset="utf-8" type="text/javascript"></script><span id="cnzz_stat_icon_1256787036"><a href="http://www.cnzz.com/stat/website.php?web_id=1256787036" target="_top" title="站长统计">站长统计</a></span><script src="stat.php" type="text/javascript"></script><script src="core.php" charset="utf-8" type="text/javascript"></script><script src="core.php" charset="utf-8" type="text/javascript"></script>
+    </div>
+    
+
+
+</body>
+</html>

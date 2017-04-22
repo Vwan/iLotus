@@ -1,0 +1,36 @@
+
+/* ::::: http://newtab.firefoxchina.cn/css/errorTab-min.css?v=20140821 ::::: */
+
+body, html { font-family: arial,tahoma,宋体; color: rgb(119, 119, 119); line-height: 27px; font-size: 14px; }
+ul, ol, body, html, p { padding: 0px; margin: 0px; }
+ul, ol, li { list-style-type: none; }
+img, iframe { border: 0px none; }
+img { display: block; }
+table { border-collapse: collapse; }
+iframe { background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+a, iframe, input, select { outline: 0px none; }
+a { text-decoration: none; color: rgb(119, 119, 119); cursor: pointer; }
+a:hover { color: rgb(255, 149, 0) ! important; text-decoration: underline; }
+sup { font-size: 12px; line-height: 12px; color: red; }
+input, input::-moz-focus-inner { padding: 0px; border: 0px none; }
+.img-load-delay { background: transparent url('default.png') no-repeat scroll center center; }
+.main { width: 620px; margin: 0px auto; }
+.main-mod { overflow: hidden; clear: both; }
+.main-engine .engine-logo, .main-engine .engine-wrapper { float: left; }
+.main-engine .engine-logo { width: 87px; height: 28px; background: transparent url('tab-sprite.png') no-repeat scroll 0px 0px; display: block; margin-right: 10px; text-indent: -999em; }
+.main-engine .engine-wrapper { height: 28px; border: 1px solid rgb(226, 226, 228); width: 514px; position: relative; overflow: hidden; }
+.engine-wrapper .engine-ipt { width: 454px; margin-left: 10px; border: 0px none; }
+.engine-wrapper .engine-submit { position: absolute; right: 0px; top: 0px; width: 40px; height: 32px; background: rgb(219, 223, 226) none repeat scroll 0% 0%; }
+.engine-wrapper .engine-submit:hover { background: rgb(213, 215, 218) none repeat scroll 0% 0%; }
+.engine-submit input { background: transparent url('tab-sprite.png') no-repeat scroll 10px -46px; border: 0px none; display: block; width: 100%; height: 100%; cursor: pointer; }
+.search-switch-controller { height: 20px; line-height: 20px; overflow: hidden; padding-top: 2px; padding-left: 93px; clear: both; }
+.search-switch-controller input, .search-switch-controller label { float: left; }
+.main-pics { margin: 10px auto 20px; }
+.main-pics .pic-list { display: none; }
+.main-pics .on { display: block; }
+.main-pics li { float: left; margin-left: 10px; width: 146px; height: 120px; overflow: hidden; position: relative; background: transparent url('default.png') no-repeat scroll center center; }
+.main-pics li img { width: 100%; min-height: 100%; }
+.main-pics li.first { margin-left: 0px; }
+.main-pics li p { height: 24px; line-height: 24px; text-indent: 8px; background: rgba(0, 0, 0, 0.5) none repeat scroll 0% 0%; position: absolute; bottom: 0px; left: 0px; width: 100%; font-size: 12px; }
+.main-pics li p a { display: block; max-width: 140px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: rgb(255, 255, 255); }
+.main-joint iframe { width: 100%; height: 30px; }

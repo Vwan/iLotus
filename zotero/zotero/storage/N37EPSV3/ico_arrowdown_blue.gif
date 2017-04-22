@@ -1,0 +1,622 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+<head>
+	<title> 访问提示 - 我的沪江 </title>
+	<meta name="keywords" content="我的沪江" />
+	<meta name="description" content="我的沪江" />
+	<meta name="robots" content="noindex,nofollow"  />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="/app/css/style.css" rel="stylesheet" type="text/css" />
+	<script src="/app/js/jquery-latest.js"></script>
+	<style>
+		#error_cnt{width:100%;margin-top:63px;margin-bottom:100px;height:100%;padding-bottom:40px;padding-top: 20px;}
+		#error_left{width:507px;float:left;overflow:hidden;min-height:300px;height:325px;background:url(/app/images/bg_error_jiong.gif) no-repeat;margin-top: 25px;}
+		#error_right{width:465px;float:left;margin-top: 20px;background-color: #f9f9f9;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;}
+		.err{width: 450px;margin-left: 12px;margin-top:30px;margin-bottom:20px;}
+		.error_guide{margin-left: 58px;margin-bottom: 50px;line-height:25px;color: #808080;}
+		.err_top{height: 15px;background: url(/app/images/error_top.gif)}
+		.err_mid{height: 60px;background: url(/app/images/error_mid.gif)}
+		.err_bottom{height: 20px;background: url(/app/images/error_bottom.gif)}
+		.err_icon{display: block;width: 24px;height: 24px;margin-top: 8px;background: url(/app/images/err.gif) no-repeat;margin-left: 40px;_margin-left:20px;}
+		.err_disc{width: 320px;height: 60px;margin-top: 7px;line-height: 25px;font-size: 14px;color: #666;}
+		.err_disc a{font-size: 14px;text-decoration: none;}
+		.error_guide a{text-decoration: none;}
+		.app_icon{margin:0px 5px 0 10px; }
+		.app_icon img{vertical-align: middle;}
+	</style>
+</head>
+
+<body>
+<span id="club_Header_pnl_newHead" class="club_Header_pnl_newHead">
+
+<script type="text/javascript">
+	
+	if(location.href.toLowerCase().indexOf("setting") &&  top!=this){
+		// 页面在iframe中时处理
+		$("#app_bar,#clubHeader_pnl_oldHeader,#cls_pnlHeader_wrap").hide();
+		$("#app_cnt2").css({float:"left"});
+		
+		$("#app_main2").css({background:"none"});
+		$("#css_theme").remove();
+		$("#footer").remove();
+	}
+</script>
+
+<link rel='stylesheet' href='/app/css/output/$_app_css_head_css$_app_css_style_css$_app_css_tipswindown_css$_app_css_skin_jbox_css$_app_css_gift_css.css?v=635919921700000000' type='text/css'/>
+    
+<script src="/app/js/jquery.json-2.2.min.js" type="text/javascript" ></script>
+<script src='/app/js/output/$_app_js_head_js$_app_js_base_js$_app_js_returntop_js$_app_js_tipswindown_js$_app_js_jbox_jquery_jbox_min_js$_app_js_jbox_i18n_jquery_jbox-zh-cn_js.js?v=635859500500000000' type='text/javascript'></script>
+
+    
+    <script type="text/javascript" src="http://t.hujiang.com/js/ingSender.js"></script>
+<script type="text/javascript" src="https://pass.hujiang.com/static/js/biz/hjpassport-async.js"></script>
+    <script type="text/javascript" src="/app/js/fastlogin_v2.js"></script>
+
+    <script type="text/javascript" src="/app/js/messageTip.js"></script>
+    <script type="text/javascript">
+        var ingSenderBox =null;
+        $(function () {
+            ingSenderBox = new ingSender();
+            ingSenderBox.callback_success=function(){
+                ingSenderBox.showSuccess("您发布的信息正在审核中，请稍等……（审核完成前只有自己可以预览哦） <a style='margin:0px 5px 0px 10px' href='http://t.hujiang.com/0' class='noline' target='_blank'>查看碎碎&raquo;</a>",true,3000);
+        };
+    })
+</script>
+<script type="text/javascript">
+	register_tooltip.userID = 0;
+	register_tooltip.check();
+</script>
+
+
+<style type="text/css">
+	#cont_h1 {
+	position: absolute;
+	top: -5px;
+	padding-left: 6px;
+	font-size: 14px;
+	z-index: 1;
+	}
+	.cont_h1{
+		border-bottom: 1px solid #ddd; 
+	line-height: 22px;
+	}
+	.dafont {
+	font-size: 14px;
+	text-decoration: none;
+	cursor: pointer;
+	}
+</style>
+    <link rel="stylesheet" type="text/css"  href="http://common.hjfile.cn/site/css/TopBanner.css?time=636281973626280703"/>
+    
+     <input type="hidden" id="hiCateKey" value="bulo" parentCateKey="bulo" class="TopBanner"/>
+<div id="cls_pnlHeader_wrap" class="cls_pnlHeader_wrap">
+	<div id="cls_pnlHeader">
+		<div id="cls_header_AppSlide">
+			<div class="cls_header_AppSlide_Title">
+				<a href="/" id="cls_headLogo">
+					<div class="link_header_AppSlide">
+					</div>
+				</a>
+			</div>
+			<ul>
+                <li><a class="cls_header_app_st" target="_blank" href="http://st.hujiang.com/">沪江社团</a></li>
+				<li><a class="cls_header_app_bulo" target="_blank" href="http://class.hujiang.com/">沪江网校</a></li>
+                <li><a class="cls_header_app_cc" target="_blank" href="http://www.cctalk.com/">CC课堂</a></li>
+				<li><a class="cls_header_app_hj" target="_blank" href="http://www.hujiang.com">沪江网</a></li>
+				<li class="cls_line"><a class="cls_header_app_en" target="_blank" href="http://www.hjenglish.com/">英语</a></li>
+				<li><a class="cls_header_app_jp" target="_blank" href="http://jp.hjenglish.com/">日语</a></li>
+				<li><a class="cls_header_app_fr" target="_blank" href="http://fr.hujiang.com/">法语</a></li>
+				<li><a class="cls_header_app_kr" target="_blank" href="http://kr.hujiang.com/">韩语</a></li>
+				<li><a class="cls_header_app_dict" target="_blank" href="http://dict.hjenglish.com">沪江小D</a></li>
+			</ul>
+		</div>
+		<div class="cls_listUserInfo_box">
+			<a class="update_info pass_register_tooltip" style="z-index:9999;position: absolute;right: 110px;top: 29px;color: #fff !important;line-height: 22px;background-image: url(/app/images/update_info.png);width: 95px;line-height: 36px;height: 30px;text-align: center;cursor: pointer;display:none;">完善信息送课</a>
+			<ul class="cls_listUserInfo floatleft layleft">
+				
+				<li class="li_xdbox">
+					<div class="layer_slideTitle">
+						<a id="tool_dict_quick" href="javascript:void(0);" class="head_icon head_xd_icon " title="沪江小D" onclick="ToolDictQuick();"></a>
+					</div>
+					<div class="layer_slideList layer_suisuiList">
+							<div class="layer_cnt">
+								<ul class="musicbox_list">
+									<li><a  href="http://dict.hjenglish.com"  target="_blank">英语词典</a></li>
+									<li><a  href="http://dict.hjenglish.com/jp/" target="_blank" >日语词典</a></li>
+									<li><a  href="http://dict.hjenglish.com/fr/" target="_blank">法语词典</a></li>
+									<li><a  href="http://dict.hjenglish.com/kr/" target="_blank">韩语词典</a></li>
+									<li><a  href="javascript:void(0);" onclick="ToolDictQuick();">快速查词</a></li>
+									<div class="clear"></div>
+								</ul>
+								<div class="clear"></div>
+								<div id="tipset">
+									<a id="hjdict_slide" class="on" href="javascript:void(0);" title="小D划词翻译开/关" onclick="ShiftDictEnable();return false;">划词</a>
+								</div>
+							</div>
+						</div>
+					<!-- <a href="javascript:void(0);" class="head_icon head_xd_icon" title="沪江小D" onclick="tipsWindown('沪江小D <span style=font-weight:200;color:gray;>(使用快捷键Ctrl+F8可快速呼叫出查词窗口哦~)</span>','iframe:http://dict.hjenglish.com/outapp/bulo/en.aspx','530','440','true','','false','text','/images/dict_demo.gif');"></a> -->
+				</li>
+			</ul>
+			<div class="cls_pnlSearch">
+				<a href="javascript:void(0);" id="cls_btnSearch" title="点击搜索" ></a>
+				<input type="text" id="cls_txtHeadSearch" rel="搜节目/ 帖子..." value="搜节目/ 帖子..." class="lightgray" />
+			</div>
+
+			<ul class="cls_listUserInfo floatleft">
+			
+				<li class="head_menu">
+					<a href="javascript:" onclick="window.hjquicklogin.doLogin({source : 'nbulo'});" class="link_shadow">登录</a> 
+				</li>
+				<li class="head_menu">
+					<a href="javascript:;" onclick="window.hjquicklogin.doRegister({source : 'nbulo'});" class="link_shadow" rel="nofollow">注册</a> 
+				</li>
+			
+			</ul>
+			<div class="clear"></div>
+		</div>
+		<ul class="cls_listApp">
+			<li class="head_menu" id="cls_headMenu_home"><a class="link_shadow" href="/">
+				首页</a></li>
+			<!-- <li class="head_menu" id="cls_headMenu_mybulo"><a href="/0/"
+				class="link_shadow" nouserface="true">我的部落</a> </li> -->
+			<li id="cls_headMenu_myfriends">
+				<div class="layer_slideTitle">
+					<a class="slide slidelink_shadow" href="/friends/">好友</a>
+					<b></b>
+					<div class="clear">
+					</div>
+				</div>
+				<div class="layer_slideList layer_friendsList">
+					<div class="layer_cnt">
+						<ul>
+							<li><a href="/friends" rel="nofollow">我的好友</a></li>
+							<li><a href="/friends/fans/" rel="nofollow">我的粉丝</a></li>
+							<li><a href="/myfollows/" rel="nofollow">我的关注</a></li>
+							<li><a href="/friends/area/" rel="nofollow">寻找好友</a></li>
+							<li><a href="/friends/mayknow/" rel="nofollow">可能认识</a></li>
+							<li><a href="http://t.hujiang.com/star">名人机构</a></li>
+
+							<div class="clear">
+							</div>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li id="cls_headMenu_using">
+				<div class="layer_slideTitle">
+					<a href="/app/list/" class="slide link_shadow">应用</a>
+					<b></b>
+					<div class="clear">
+					</div>
+				</div>
+				<div class="layer_slideList layer_AppList">
+					<div class="layer_cnt">
+						<div class="layer_cnt_top">
+							<span class="floatright gray"><a href="/app/list/" class="gray">
+								添加</a> | <a href="/app/set/" class="gray">设置</a> | <a href="/help/"
+									class="gray">帮助</a> </span><span class="allapp_text">我的沪江应用</span>
+							<div class="clear"></div>
+						</div>
+						<ul>
+							
+									<li id="app_st">
+										<a href="http://st.hujiang.com/">
+										社团</a>
+									</li>
+								
+									<li id="app_diary">
+										<a href="/diary/">
+										日志</a>
+									</li>
+								
+									<li id="app_listen">
+										<a href="http://ting.hujiang.com/">
+										听力酷</a>
+									</li>
+								
+									<li id="app_cichang">
+										<a href="/app/cichang/">
+										开心词场</a>
+									</li>
+								
+									<li id="app_tiku">
+										<a href="http://tiku.hujiang.com/">
+										虎将题库</a>
+									</li>
+								
+									<li id="app_menu">
+										<a href="/menu/">
+										学习节目</a>
+									</li>
+								
+									<li id="app_gongkaike">
+										<a href="http://www.cctalk.com/">
+										CC课堂</a>
+									</li>
+								
+									<li id="app_day">
+										<a href="/app/day/">
+										天天向上</a>
+									</li>
+								
+									<li id="app_talk">
+										<a href="/app/talk/">
+										口语练习</a>
+									</li>
+								
+									<li id="app_class">
+										<a href="http://www.hjclass.com/">
+										沪江网校</a>
+									</li>
+								
+									<li id="app_cang">
+										<a href="http://app.hujiang.com/cang/">
+										收藏中心</a>
+									</li>
+								
+									<li id="app_medal">
+										<a href="/app/medal/">
+										勋章馆</a>
+									</li>
+								
+									<li id="app_gift">
+										<a href="/app/gift/">
+										礼物</a>
+									</li>
+								
+							
+						</ul>
+						<div class="clear"></div>
+						<p><a href="###" class="moreApp noline gray">更多</a></p>
+					</div>
+				</div>
+			</li>
+            <li class="head_menu shetuan" id="cls_headMenu_st"><a class="link_shadow" href="http://st.hujiang.com">
+				社团</a></li>
+			<li class="head_menu" id="cls_headMenu_menu"><a class="link_shadow" href="/menu">
+				节目</a></li>
+			
+            
+			
+		</ul>
+		<div class="clear"></div>
+	</div>    
+
+</div>
+    
+
+    
+<script type="text/javascript">
+    var HJ_New_BuloID = 0; 
+	document.cookie= "BuloMusicControl=0;path=/";
+	document.cookie= "BuloMusicTitle=0;path=/;expires=Sat, 31 Oct 1995 16:08:58 GMT";
+
+	$(document).ready(function () {
+	    //window.passAddAd.init('bulo');
+	    
+	    // 双12位置
+	    setTimeout("GetMsg();", 3000);        
+		if(HJ_New_BuloID>0){
+		    //GetMsg();
+		    setInterval(function(){
+		        GetMsg();
+		    },30000);
+		}
+		window.hjquicklogin.init();//初始化新登录
+		//checkAuth();
+		//setTimeout("refreshPlayer()", 100);
+
+		//添加快捷键捕获
+        setTimeout(function(){ $(document).keyup(setQuickKey); }, 100);
+
+        //皮肤设置
+        if (document.location.hash == "#setSkin")
+        {     
+            OpenThemeSetting();
+        }
+	});
+    function autoPush() {
+        var RefreshID = null;
+        if (RefreshID) { clearTimeout(RefreshID); }
+        RefreshID = setInterval("GetMsg()", 50000);
+    }	
+    function ToolDictQuick()
+    {
+        tipsWindown('沪江小D <span style=font-weight:200;color:gray;>(使用快捷键Ctrl+F8可快速呼叫出查词窗口哦~)</span>','iframe:http://dict.hjenglish.com/outapp/bulo/en.aspx','530','440','true','','false','text','/images/dict_demo.gif');
+    }
+
+    function DelayScript(url, delay) {
+        var load = function () {
+            var blnIsLoad = false;
+            try{
+                if(typeof(HJ) !="undefined" && typeof (HJ.global)!="undefined" && typeof (HJ.global.SearchType) !="undefined")
+                {
+                    blnIsLoad = true;
+                }
+            }
+            catch(e){}
+            if(!blnIsLoad)
+            {
+                var el = document.createElement("script");
+                el.type = "text/javascript";
+                el.src = url;
+                var head = document.getElementsByTagName("head")[0];
+                head.appendChild(el);
+            }
+        }
+        if (delay) {
+            window.setTimeout(load, delay);
+        } else {
+            $(document).ready(load);
+        } 
+    }
+
+    var currentUrl=window.location.toString();
+    var index=currentUrl.indexOf('/diary/add');
+    if(index<0)
+        DelayScript("http://dict.hujiang.com/app/js/dict_ajax.js",3000);//小D开关延迟两秒加载
+    
+    
+</script>
+
+<div style="display:none" id="pnl_returnTop" onfocus="this.blur()">
+	<a href="javascript:void(0);" onclick="window.scrollTo(0,0);" onfocus="this.blur()" title="返回顶部"></a>
+</div>
+
+</span>
+<input type="hidden" id="OwnedTheme" value="0"/>
+<input type="hidden" id="ThemeType" value="0"/>
+<input type="hidden" id="CurrentUrl" value="/app/error.aspx"/>
+<input type="hidden" id="OwnThemes" value="0"/>
+<input type="hidden" id="IsPreviewTheme" value="False"/>
+<div id="wrapper_new"></div>
+<style type="text/css">
+        .top_banner{
+        position: absolute;
+        z-index: 9999;
+        top: 38px;
+        left:0px;
+    }
+</style>
+<script src="http://common.hjfile.cn/site/js/TopBanner-v2.0.js?t=636281973626280703"></script>
+    <script type="text/javascript" src="http://common.hjfile.cn/site/js/passAddAd.js?t=636281973626280703"></script>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+	    window.passAddAd.init('bulo');	    
+	});
+    
+</script>
+<div id="wrapper">
+	<h1 id="cont_h1"><a href="/home" class="dafont">首页</a> / 访问提示</h1>
+    <!-- 更新部分 -->
+    <div id="error_cnt">
+        <!-- 左侧图片 -->
+        <div id="error_left"></div>
+        <!-- 右侧部分 -->
+        <div id="error_right">
+
+            <div class="err">
+                <div class="err_top"></div>
+                <div class="err_mid" style="height:60px">
+                    <i class="err_icon fl"></i>
+                    <div class="err_disc fl ml10" data-code="">
+                        你输入的网址可能不正确，或者该网页不存在。
+                        <br />
+                        <span class="blue">[</span><a href="javascript:history.back(1)">返回上一页</a><span class="blue">]</span> 或去 
+                        <span class="blue">[</span><a href="http://bulo.hujiang.com">首页</a><span class="blue">]</span>。 
+                        
+                    </div>
+                </div>
+                <div class="err_bottom"></div>
+            </div>
+
+            <div class="error_guide">
+                <p class="mb10"><span id="AutoOpenInfo">将在<span class="red ml5 mr5" id="AutoOpenTime">10</span>秒后自动跳转，</span> 你可以：</p>
+                <ul>
+                    <li>1. 到 <a href="http://kefu.hujiang.com/feedback/">部落反馈中心</a> 报告问题；</li>
+                    <li>2. 去玩其他部落应用：
+						<a href="http://cichang.hujiang.com/" class="color666"><span class="app_icon">
+                            <img src="/app/images/happy_word.png"></span>开心词场</a>
+                        <a href="http://ting.hujiang.com/" class="color666"><span class="app_icon">
+                            <img src="/app/images/listen.png"></span>听写酷</a>
+                        <a href="http://dict.hjenglish.com/" class="color666"><span class="app_icon">
+                            <img src="/app/images/icon_dict.jpg"></span>小D</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+    <!-- 结束更新 -->
+	<div id="footer">
+		<a href="http://www.hujiang.com/about/" target="_blank" rel="nofollow">关于我们</a><i class="split">|</i>
+<a href="http://www.hujiang.com/about/report/" target="_blank" rel="nofollow">媒体报道</a><i class="split">|</i>
+<a href="http://www.hujiang.com/about/contact/" target="_blank" rel="nofollow">联系我们</a><i class="split">|</i>
+<a href="http://www.hujiang.com/about/biz/" target="_blank" rel="nofollow">商务合作</a><i class="split">|</i>
+<a href="http://jobs.hujiang.com/" target="_blank" rel="nofollow">沪江招聘</a><i class="split">|</i>
+<a href="http://kefu.hujiang.com/" target="_blank" rel="nofollow">帮助中心</a><i class="split">|</i>
+<a href="http://www.hujiang.com/sitemap/" target="_blank" rel="nofollow">全站地图</a><i class="split">|</i>
+<a href="http://bulo.hujiang.com/help/">部落帮助</a>
+
+©2007-2017 <a href="http://www.hujiang.com" target="_blank">沪江</a> <a href="http://www.miitbeian.gov.cn/" target="_blank" rel="nofollow">沪B2-20110096</a>
+
+<!--<script type="text/javascript" src="/app/js/jquery-1.7.2.min.js"></script>-->
+<link rel="stylesheet" href="http://st.hujiang.com/zt/siteads/stsiteads.css" />
+  <script type="text/javascript" src="http://st.hujiang.com/zt/siteads/stsiteads.js"></script>  
+  <script src="http://common.hjfile.cn/site/js/bottomActive1212.js"></script>
+  <script type="text/javascript">
+    $(function(){
+    bottomActive1212.init("bulo");
+    })
+    $(function () {
+    $('.old_hu_help').live('mouseenter', function (e) {
+    var $el = $('#old_hu_help_tip');
+    if (!$el.length) {
+    $el = $('<div id="old_hu_help_tip">点此查看我的沪元</div>');
+    $el.css({
+    position: 'fixed',
+    'z-index': 10000,
+    'font-size': '12px',
+    color: '#666',
+    height: '21px',
+    'line-height': '21px',
+    border: '1px solid #E0E0E0',
+    background: 'white',
+    padding: '0 8px'
+    });
+    $('body').append($el);
+    }
+
+    $el.css({
+    top: e.clientY + 10,
+    left: e.clientX + 6
+    }).show();
+    })
+    .live('mouseleave', function (e) {
+    $('#old_hu_help_tip').hide();
+    });
+    });
+  </script>
+
+  <span style="display: none;">
+			<script type="text/javascript">
+        (function () {
+       
+        var index1 = escape(document.URL).indexOf("//dev.");
+        var index2 = escape(document.URL).indexOf("localhost");
+        if(index1>-1 || index2>-1)
+        return;
+
+        function getCookieValue(arglen) {
+        var endstr = document.cookie.indexOf(";", arglen);
+        if (endstr == -1)
+        endstr = document.cookie.length;
+        return document.cookie.substring(arglen, endstr);
+        }	  function getCookie(name) {
+        var arg = name + "=";
+        var arglen = arg.length;
+        var cookielen = document.cookie.length;
+        var i = 0;
+        var j;
+        while (i < cookielen) {
+							j = i + arglen;
+							if (document.cookie.substring(i, j) == arg)
+							return getCookieValue(j);
+							i = document.cookie.indexOf(" ", i) + 1;
+							if (i == 0)
+							break;
+						}
+						return null;
+					}
+
+				})();
+       
+				  var oDate = new Date().getTime();
+			    var startDate = new Date("2015-03-30").getTime();
+			    if (oDate < startDate) {
+			        TopBanner.setTopBanner({
+			            pageName: "bannerbulokxj",
+			            imgUrl1: "http://i3.s.7.hjfile.cn/img/entry/201503/4726d8bf-a171-4e51-92c9-ea313fcbc585.jpg",
+			            imgUrl2: "http://i3.s.7.hjfile.cn/img/entry/201503/4726d8bf-a171-4e51-92c9-ea313fcbc585.jpg",
+			            iconUrl1: "http://i2.w.yun.hjfile.cn/doc/201411/313c8fbe638a48f8a82021163c8c7686.png",
+			            iconUrl2: "http://i2.w.yun.hjfile.cn/doc/201411/313c8fbe638a48f8a82021163c8c7686.png",
+			            pageSrc: "http://channel.hujiang.com/ch_click.aspx?ch_source=st_kxjbllm&page=http://st.hujiang.com/topic/162835611629/",
+			            img1LocationX: "33px",
+			            img1LocationY: "130px",
+			            img2LocationX: "33px",
+			            img2LocationY: "130px"
+			        });
+			    }
+				
+			</script>
+			<script type="text/javascript" src="http://common.hjfile.cn/analytics/site/bulo.js"></script>
+      <script type="text/javascript" src="http://common.hjfile.cn/analytics/hotlink/hotlink.js?v=2"></script>
+      <script type="text/javascript" src="http://common.hjfile.cn/js/jquery.qrcode.min.js"></script>
+      <script type="text/javascript" src="http://common.hjfile.cn/js/hj-plugins.js"></script>
+    </span>
+ 
+
+	</div>
+
+
+
+
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function ()
+    {
+        CheckCode('');
+    });
+
+    function CheckCode(code)
+    {
+        var url = '';
+        var resultUrl = '';
+        switch(code)
+        {
+            case '400':
+                {
+                    if (url.indexOf('t.hujiang.com') >= 0)
+                    {
+                        resultUrl = 'http://t.hujiang.com';
+                    }
+                    else if (url.indexOf('/diary') >= 0)
+                    {
+                        resultUrl = 'http://bulo.hujiang.com/app/diary/';
+                    }
+                    else if (url.indexOf('/home') >= 0)
+                    {
+                        resultUrl = 'http://bulo.hujiang.com/home/';
+                    }
+                }
+                break;
+            case '201':
+                resultUrl = 'http://pass.hujiang.com/signup/';
+                break;
+            case '202':
+                resultUrl = 'http://bulo.hujiang.com/home/';
+                break;
+            case '504':
+                resultUrl = 'http://bulo.hujiang.com/group/';
+                break;
+            case '999':
+                resultUrl = 'http://bulo.hujiang.com/home/';
+                break;
+            case '40314':
+                resultUrl = 'http://bulo.hujiang.com/home/';
+                break;
+            default:
+                resultUrl = '';
+        }
+        //跳转
+        jump(10, resultUrl);
+    }
+
+    //自动跳转
+    function jump(count, toUrl)
+    {
+        if ((count == 0) || (toUrl == ''))
+        {
+            $('#AutoOpenInfo').hide();
+        }
+        else {
+            $('#AutoOpenInfo').show();
+            window.setInterval(function () {
+                count--;
+                if (count > 0) {
+                    $('#AutoOpenTime').attr('innerHTML', count);
+                } else {
+                    location.href = toUrl;
+                }
+            }, 1000);
+        }
+    }
+</script>
+</body>
+</html>

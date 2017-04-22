@@ -1,0 +1,479 @@
+
+/* ::::: https://vwan.github.io/static/style.css ::::: */
+
+html { color: rgb(31, 9, 9); background: rgb(243, 242, 238) none repeat scroll 0% 0%; }
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, group, menu, nav, section { margin: 0px; padding: 0px; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+audio, canvas, video { display: inline-block; }
+body, button, input, select, textarea { font: 500 14px/1.8 "PT Serif","Hiragino Sans GB",sans-serif; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; }
+th { text-align: inherit; }
+fieldset, img { border: 0px none; }
+img {  }
+iframe { display: block; }
+blockquote { padding: 0.5em 1em 0.1em; margin-bottom: 1em; background: rgba(214, 214, 214, 0.5) none repeat scroll 0% 0%; border-width: 1px 1px 1px 0.4em; border-color: rgb(216, 216, 216) rgb(216, 216, 216) rgb(216, 216, 216) rgb(208, 208, 208); border-style: solid; vertical-align: middle; border-radius: 0px 2px 2px 0px; }
+blockquote blockquote { padding: 0px 1em; margin-left: 2em; border-width: 1px 1px 1px 0.4em; border-style: solid; border-color: rgba(120, 120, 120, 0.1); }
+acronym, abbr { border-bottom: 1px dotted; font-variant: normal; }
+abbr { cursor: help; }
+del { text-decoration: line-through; }
+address, caption, cite, code, den, em, th, var { font-style: normal; font-weight: 500; }
+ul, ol { list-style: outside none none; }
+caption, th { text-align: left; }
+q::before, q::after { content: ""; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; }
+:root sub, :root sup { vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+a { color: rgb(6, 85, 136); font-size: 100%; }
+a:hover { text-decoration: underline; }
+ins, a { text-decoration: none; }
+u, .lotus-u { text-decoration: underline; }
+mark { background: rgb(255, 251, 153) none repeat scroll 0% 0%; }
+pre, code { font-family: "Courier New",Courier,monospace; overflow-x: auto; vertical-align: middle; }
+pre { font-size: 12px; border-width: 1px 1px 1px 0.4em; border-style: solid; border-color: rgb(216, 216, 216); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; background: rgba(214, 214, 214, 0.5) none repeat scroll 0% 0%; padding: 10px; }
+code { color: rgb(77, 77, 77); background: rgba(214, 214, 214, 0.5) none repeat scroll 0% 0%; padding: 0px 0.2em; border: 1px solid rgb(189, 189, 189); border-radius: 2px; vertical-align: top; }
+small { font-size: 12px; color: rgb(136, 136, 136); }
+*::-moz-selection { background: rgba(0, 0, 0, 0.1) none repeat scroll 0% 0%; }
+img::-moz-selection { background: rgba(127, 191, 17, 0.2) none repeat scroll 0% 0%; width: 100%; }
+.fn-clear::before, .fn-clear::after { content: ""; display: table; }
+.fn-clear::after { clear: both; }
+.fn-clear {  }
+.fn-img { display: block; width: auto; max-width: 99%; text-align: center; background: rgb(254, 254, 254) none repeat scroll 0% 0%; margin-top: 0.3em; margin-bottom: 0.3em; border: 1px solid rgb(184, 184, 184); box-shadow: 3px 3px 0px rgb(216, 216, 216); }
+.fn-img-lf { width: auto; max-width: 32%; float: left; margin-right: 0.8em; }
+.fn-img-rg { width: auto; max-width: 32%; float: right; margin-left: 0.8em; }
+.fn-img:hover { border: 1px solid rgb(168, 168, 168); }
+[class^="icon-"]::before, [class*=" icon-"]::before { font-family: FontAwesome; font-weight: normal; font-style: normal; display: inline-block; text-decoration: inherit; }
+a [class^="icon-"], a [class*=" icon-"] { display: inline-block; text-decoration: inherit; }
+.icon-large::before { vertical-align: top; font-size: 1.33333em; }
+.btn [class^="icon-"], .btn [class*=" icon-"] { line-height: 0.9em; }
+li [class^="icon-"], li [class*=" icon-"] { display: inline-block; width: 1.25em; text-align: center; }
+li .icon-large[class^="icon-"], li .icon-large[class*=" icon-"] { width: 1.875em; }
+li[class^="icon-"], li[class*=" icon-"] { margin-left: 0px; list-style-type: none; }
+li[class^="icon-"]::before, li[class*=" icon-"]::before { text-indent: -2em; text-align: center; }
+li.icon-large[class^="icon-"]::before, li.icon-large[class*=" icon-"]::before { text-indent: -1.33333em; }
+.icon-glass::before { content: ""; }
+.icon-music::before { content: ""; }
+.icon-search::before { content: ""; }
+.icon-envelope::before { content: ""; }
+.icon-heart::before { content: ""; }
+.icon-star::before { content: ""; }
+.icon-star-empty::before { content: ""; }
+.icon-user::before { content: ""; }
+.icon-film::before { content: ""; }
+.icon-th-large::before { content: ""; }
+.icon-th::before { content: ""; }
+.icon-th-list::before { content: ""; }
+.icon-ok::before { content: ""; }
+.icon-remove::before { content: ""; }
+.icon-zoom-in::before { content: ""; }
+.icon-zoom-out::before { content: ""; }
+.icon-off::before { content: ""; }
+.icon-signal::before { content: ""; }
+.icon-cog::before { content: ""; }
+.icon-trash::before { content: ""; }
+.icon-home::before { content: ""; }
+.icon-file::before { content: ""; }
+.icon-time::before { content: ""; }
+.icon-road::before { content: ""; }
+.icon-download-alt::before { content: ""; }
+.icon-download::before { content: ""; }
+.icon-upload::before { content: ""; }
+.icon-inbox::before { content: ""; }
+.icon-play-circle::before { content: ""; }
+.icon-repeat::before { content: ""; }
+.icon-refresh::before { content: ""; }
+.icon-list-alt::before { content: ""; }
+.icon-lock::before { content: ""; }
+.icon-flag::before { content: ""; }
+.icon-headphones::before { content: ""; }
+.icon-volume-off::before { content: ""; }
+.icon-volume-down::before { content: ""; }
+.icon-volume-up::before { content: ""; }
+.icon-qrcode::before { content: ""; }
+.icon-barcode::before { content: ""; }
+.icon-tag::before { content: ""; }
+.icon-tags::before { content: ""; }
+.icon-book::before { content: ""; }
+.icon-bookmark::before { content: ""; }
+.icon-print::before { content: ""; }
+.icon-camera::before { content: ""; }
+.icon-font::before { content: ""; }
+.icon-bold::before { content: ""; }
+.icon-italic::before { content: ""; }
+.icon-text-height::before { content: ""; }
+.icon-text-width::before { content: ""; }
+.icon-align-left::before { content: ""; }
+.icon-align-center::before { content: ""; }
+.icon-align-right::before { content: ""; }
+.icon-align-justify::before { content: ""; }
+.icon-list::before { content: ""; }
+.icon-indent-left::before { content: ""; }
+.icon-indent-right::before { content: ""; }
+.icon-facetime-video::before { content: ""; }
+.icon-picture::before { content: ""; }
+.icon-pencil::before { content: ""; }
+.icon-map-marker::before { content: ""; }
+.icon-adjust::before { content: ""; }
+.icon-tint::before { content: ""; }
+.icon-edit::before { content: ""; }
+.icon-share::before { content: ""; }
+.icon-check::before { content: ""; }
+.icon-move::before { content: ""; }
+.icon-step-backward::before { content: ""; }
+.icon-fast-backward::before { content: ""; }
+.icon-backward::before { content: ""; }
+.icon-play::before { content: ""; }
+.icon-pause::before { content: ""; }
+.icon-stop::before { content: ""; }
+.icon-forward::before { content: ""; }
+.icon-fast-forward::before { content: ""; }
+.icon-step-forward::before { content: ""; }
+.icon-eject::before { content: ""; }
+.icon-chevron-left::before { content: ""; }
+.icon-chevron-right::before { content: ""; }
+.icon-plus-sign::before { content: ""; }
+.icon-minus-sign::before { content: ""; }
+.icon-remove-sign::before { content: ""; }
+.icon-ok-sign::before { content: ""; }
+.icon-question-sign::before { content: ""; }
+.icon-info-sign::before { content: ""; }
+.icon-screenshot::before { content: ""; }
+.icon-remove-circle::before { content: ""; }
+.icon-ok-circle::before { content: ""; }
+.icon-ban-circle::before { content: ""; }
+.icon-arrow-left::before { content: ""; }
+.icon-arrow-right::before { content: ""; }
+.icon-arrow-up::before { content: ""; }
+.icon-arrow-down::before { content: ""; }
+.icon-share-alt::before { content: ""; }
+.icon-resize-full::before { content: ""; }
+.icon-resize-small::before { content: ""; }
+.icon-plus::before { content: ""; }
+.icon-minus::before { content: ""; }
+.icon-asterisk::before { content: ""; }
+.icon-exclamation-sign::before { content: ""; }
+.icon-gift::before { content: ""; }
+.icon-leaf::before { content: ""; }
+.icon-fire::before { content: ""; }
+.icon-eye-open::before { content: ""; }
+.icon-eye-close::before { content: ""; }
+.icon-warning-sign::before { content: ""; }
+.icon-plane::before { content: ""; }
+.icon-calendar::before { content: ""; }
+.icon-random::before { content: ""; }
+.icon-comment::before { content: ""; }
+.icon-magnet::before { content: ""; }
+.icon-chevron-up::before { content: ""; }
+.icon-chevron-down::before { content: ""; }
+.icon-retweet::before { content: ""; }
+.icon-shopping-cart::before { content: ""; }
+.icon-folder-close::before { content: ""; }
+.icon-folder-open::before { content: ""; }
+.icon-resize-vertical::before { content: ""; }
+.icon-resize-horizontal::before { content: ""; }
+.icon-bar-chart::before { content: ""; }
+.icon-twitter-sign::before { content: ""; }
+.icon-facebook-sign::before { content: ""; }
+.icon-camera-retro::before { content: ""; }
+.icon-key::before { content: ""; }
+.icon-cogs::before { content: ""; }
+.icon-comments::before { content: ""; }
+.icon-thumbs-up::before { content: ""; }
+.icon-thumbs-down::before { content: ""; }
+.icon-star-half::before { content: ""; }
+.icon-heart-empty::before { content: ""; }
+.icon-signout::before { content: ""; }
+.icon-linkedin-sign::before { content: ""; }
+.icon-pushpin::before { content: ""; }
+.icon-external-link::before { content: ""; }
+.icon-signin::before { content: ""; }
+.icon-trophy::before { content: ""; }
+.icon-github-sign::before { content: ""; }
+.icon-upload-alt::before { content: ""; }
+.icon-lemon::before { content: ""; }
+.icon-phone::before { content: ""; }
+.icon-check-empty::before { content: ""; }
+.icon-bookmark-empty::before { content: ""; }
+.icon-phone-sign::before { content: ""; }
+.icon-twitter::before { content: ""; }
+.icon-facebook::before { content: ""; }
+.icon-github::before { content: ""; }
+.icon-unlock::before { content: ""; }
+.icon-credit-card::before { content: ""; }
+.icon-rss::before { content: ""; }
+.icon-hdd::before { content: ""; }
+.icon-bullhorn::before { content: ""; }
+.icon-bell::before { content: ""; }
+.icon-certificate::before { content: ""; }
+.icon-hand-right::before { content: ""; }
+.icon-hand-left::before { content: ""; }
+.icon-hand-up::before { content: ""; }
+.icon-hand-down::before { content: ""; }
+.icon-circle-arrow-left::before { content: ""; }
+.icon-circle-arrow-right::before { content: ""; }
+.icon-circle-arrow-up::before { content: ""; }
+.icon-circle-arrow-down::before { content: ""; }
+.icon-globe::before { content: ""; }
+.icon-wrench::before { content: ""; }
+.icon-tasks::before { content: ""; }
+.icon-filter::before { content: ""; }
+.icon-briefcase::before { content: ""; }
+.icon-fullscreen::before { content: ""; }
+.icon-group::before { content: ""; }
+.icon-link::before { content: ""; }
+.icon-cloud::before { content: ""; }
+.icon-beaker::before { content: ""; }
+.icon-cut::before { content: ""; }
+.icon-copy::before { content: ""; }
+.icon-paper-clip::before { content: ""; }
+.icon-save::before { content: ""; }
+.icon-sign-blank::before { content: ""; }
+.icon-reorder::before { content: ""; }
+.icon-list-ul::before { content: ""; }
+.icon-list-ol::before { content: ""; }
+.icon-strikethrough::before { content: ""; }
+.icon-underline::before { content: ""; }
+.icon-table::before { content: ""; }
+.icon-magic::before { content: ""; }
+.icon-truck::before { content: ""; }
+.icon-pinterest::before { content: ""; }
+.icon-pinterest-sign::before { content: ""; }
+.icon-google-plus-sign::before { content: ""; }
+.icon-google-plus::before { content: ""; }
+.icon-money::before { content: ""; }
+.icon-caret-down::before { content: ""; }
+.icon-caret-up::before { content: ""; }
+.icon-caret-left::before { content: ""; }
+.icon-caret-right::before { content: ""; }
+.icon-columns::before { content: ""; }
+.icon-sort::before { content: ""; }
+.icon-sort-down::before { content: ""; }
+.icon-sort-up::before { content: ""; }
+.icon-envelope-alt::before { content: ""; }
+.icon-linkedin::before { content: ""; }
+.icon-undo::before { content: ""; }
+.icon-legal::before { content: ""; }
+.icon-dashboard::before { content: ""; }
+.icon-comment-alt::before { content: ""; }
+.icon-comments-alt::before { content: ""; }
+.icon-bolt::before { content: ""; }
+.icon-sitemap::before { content: ""; }
+.icon-umbrella::before { content: ""; }
+.icon-paste::before { content: ""; }
+.icon-lightbulb::before { content: ""; }
+.icon-exchange::before { content: ""; }
+.icon-cloud-download::before { content: ""; }
+.icon-cloud-upload::before { content: ""; }
+.icon-user-md::before { content: ""; }
+.icon-stethoscope::before { content: ""; }
+.icon-suitcase::before { content: ""; }
+.icon-bell-alt::before { content: ""; }
+.icon-coffee::before { content: ""; }
+.icon-food::before { content: ""; }
+.icon-file-alt::before { content: ""; }
+.icon-building::before { content: ""; }
+.icon-hospital::before { content: ""; }
+.icon-ambulance::before { content: ""; }
+.icon-medkit::before { content: ""; }
+.icon-fighter-jet::before { content: ""; }
+.icon-beer::before { content: ""; }
+.icon-h-sign::before { content: ""; }
+.icon-plus-sign-alt::before { content: ""; }
+.icon-double-angle-left::before { content: ""; }
+.icon-double-angle-right::before { content: ""; }
+.icon-double-angle-up::before { content: ""; }
+.icon-double-angle-down::before { content: ""; }
+.icon-angle-left::before { content: ""; }
+.icon-angle-right::before { content: ""; }
+.icon-angle-up::before { content: ""; }
+.icon-angle-down::before { content: ""; }
+.icon-desktop::before { content: ""; }
+.icon-laptop::before { content: ""; }
+.icon-tablet::before { content: ""; }
+.icon-mobile-phone::before { content: ""; }
+.icon-circle-blank::before { content: ""; }
+.icon-quote-left::before { content: ""; }
+.icon-quote-right::before { content: ""; }
+.icon-spinner::before { content: ""; }
+.icon-circle::before { content: ""; }
+.icon-reply::before { content: ""; }
+.icon-github-alt::before { content: ""; }
+.icon-folder-close-alt::before { content: ""; }
+.icon-folder-open-alt::before { content: ""; }
+.lotus p, .lotus pre, .lotus ul, .lotus ol, .lotus dl, .lotus form, .lotus hr, .lotus table, .lotus-p, .lotus-pre, .lotus-ul, .lotus-ol, .lotus-dl, .lotus-form, .lotus-hr, .lotus-table { margin-bottom: 1em; vertical-align: middle; }
+.lotus blockquote p { margin-bottom: 0.4em; }
+.lotus blockquote p::before { content: "“"; font-size: 38px; line-height: 18px; position: relative; color: rgb(200, 200, 200); overflow: hidden; top: 18px; }
+.lotus blockquote p::after { content: "”"; font-size: 38px; line-height: 18px; position: relative; color: rgb(200, 200, 200); overflow: hidden; top: 14px; }
+h1, h2, h3, h4, h5, h6 { font-weight: 500; color: rgb(51, 51, 51); }
+.lotus h1, .lotus h2, .lotus h3, .lotus h4, .lotus h5, .lotus h6, .lotus-h1, .lotus-h2, .lotus-h3, .lotus-h4, .lotus-h5, .lotus-h6 { margin-bottom: 0.4em; line-height: 1.5; }
+.lotus h1, .lotus-h1 { font-size: 1.8em; }
+.lotus h2, .lotus-h2 { font-size: 1.6em; }
+.lotus h3, .lotus-h3 { font-size: 1.4em; border-bottom: 1px dotted rgb(216, 216, 216); margin-top: 1.4em; }
+.index h3 { margin-top: 0px; }
+.lotus h4, .lotus-h4 { font-size: 1.2em; }
+.lotus h5, .lotus h6, .lotus-h5, .lotus-h6 { font-size: 1em; }
+.lotus .lotus-break { line-height: 18px; font-size: 14px; font-style: italic; font-weight: 400; border-bottom: 1px dotted rgb(232, 232, 232); color: rgb(137, 137, 137); }
+.lotus .lotus-pagetit { padding-bottom: 0.5em; margin-bottom: 0.5em; border-bottom: 1px solid rgb(197, 197, 197); }
+.lotus .lotus-tagline { color: rgb(136, 136, 136); font-size: 13px; margin: 0px 0px 1.2em; font-weight: 400; }
+.lotus .lotus-tagline .lotus-tagline-catg { margin-left: 1em; }
+.lotus ul, .lotus-ul { margin-left: 1.3em; list-style: outside none disc; }
+.lotus ol, .lotus-ol { list-style: outside none decimal; margin-left: 1.9em; }
+.lotus li ul, .lotus li ol, .lotus-ul ul, .lotus-ul ol, .lotus-ol ul, .lotus-ol ol { margin-top: 0px; margin-bottom: 0px; margin-left: 2em; }
+.lotus li ul, .lotus-ul ul, .lotus-ol ul { list-style: outside none circle; }
+.lotus table th, .lotus table td, .lotus-table th, .lotus-table td { border: 1px solid rgb(208, 208, 208); padding: 5px 10px; }
+.lotus table th, .lotus-table th { background: rgba(214, 214, 214, 0.5) none repeat scroll 0% 0%; }
+.lotus table thead th, .lotus-table thead th { background: rgba(214, 214, 214, 0.8) none repeat scroll 0% 0%; }
+.lotus-em, .lotus em { font-weight: 700; }
+.lotus-first::first-letter { display: block; float: left; line-height: 36px; height: 36px; font-size: 280%; padding: 3px; margin: 5px 10px 0px 0px; overflow: hidden; }
+.lotus .lotus-last { margin-bottom: 0px; }
+.lotus .lotus-last-view { color: rgb(168, 168, 168); font-size: 12px; }
+.lotus .lotus-squ { padding: 0px 10px; color: rgb(168, 168, 168); font-size: 14px; }
+.lotus .lotus-pagebtn { border-bottom: 1px solid rgb(222, 222, 222); margin-top: 2.2em; margin-bottom: 3px; }
+.lotus .lotus-anno { text-align: right; padding: 5px 10px; font-size: 12px; color: rgb(160, 160, 160); background: rgb(228, 228, 226) none repeat scroll 0% 0%; border-top: 1px solid rgb(208, 208, 208); }
+.lotus .lotus-anno a { color: rgb(31, 9, 9); }
+.lotus { width: 720px; padding: 1em 0px 0em; margin: 0px auto; }
+.index { padding: 1em 0px 0px; }
+.index h3 { border-bottom: medium none; }
+.lotus-nav { width: 58px; height: 100%; background: transparent -moz-linear-gradient(180deg, rgb(41, 41, 41) 0%, rgb(64, 64, 64) 8%, rgb(71, 71, 71) 14%, rgb(71, 71, 71) 100%) repeat scroll 0% 0%; border-right: 1px solid rgb(33, 33, 33); position: fixed; left: 0px; top: 0px; }
+.lotus-nav ul { list-style: outside none none; width: 58px; margin: 0px; border-bottom: 1px solid rgb(49, 49, 49); }
+.lotus-nav ul li { height: 42px; display: block; font-size: 20px; line-height: 42px; text-align: center; border-top: 1px solid rgb(49, 49, 49); overflow: hidden; }
+.lotus-nav ul .home { margin-bottom: 3.8em; border-top: 0px none; }
+.lotus-nav ul li a { color: rgb(255, 255, 255); display: block; cursor: pointer; }
+.lotus-nav ul li a:hover, .lotus-nav ul .current a { text-decoration: none; box-shadow: 1px 1px 24px rgba(0, 0, 0, 0.8) inset; transition: box-shadow 0.3s linear 0s; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); }
+.lotus-nav ul .last { position: relative; }
+.lotus-logo { border-bottom: 1px solid rgb(208, 208, 208); }
+.lotus-article { margin: 2em 0px; border-bottom: 1px dotted rgb(200, 200, 200); }
+.lotus-date { color: rgb(160, 160, 160); }
+.lotus-double { margin-bottom: 3em; }
+.lotus-double .article { float: left; }
+.lotus-double .article-first { width: 54%; border-right: 1px dotted rgb(200, 200, 200); }
+.lotus-double .article-last { width: 42%; margin-left: 1.5em; }
+.lotus-breadcrub { padding-bottom: 1em; }
+.lotus-archives { margin-top: 1.5em; }
+.lotus-archives .count { color: rgb(137, 137, 137); font-weight: 400; }
+.lotus-pages { margin-top: 1em; }
+.lotus-pages a, .lotus-pages span { text-decoration: none; float: left; display: inline; margin: 0px 5px 0px 0px; }
+.lotus-pages .pages { line-height: 22px; float: left; display: inline; margin-right: 10px; margin-left: 0px; height: 22px; position: relative; top: -1px; }
+.lotus-pages a.page, .lotus-pages .last, .lotus-pages .first { height: 20px; line-height: 20px; padding: 0px 8px; margin-top: 1px; font-weight: normal; }
+.lotus-pages a:hover, .lotus-pages span.current, .lotus-pages a.last:hover, .lotus-pages a.first:hover { height: 20px; line-height: 20px; padding: 0px 8px; }
+.lotus-pages a.page:hover { height: 20px; line-height: 20px; padding: 0px 8px; background: rgb(6, 85, 136) none repeat scroll 0% 0%; color: rgb(243, 242, 238); }
+.iLight .lotus-pages a.page:hover { background: rgb(156, 0, 1) none repeat scroll 0% 0%; }
+.lotus-pages span.current { height: 20px; line-height: 20px; padding: 0px 8px; }
+.lotus-pages .extend { float: left; display: inline; margin: 0px 5px; line-height: 16px; font-weight: bold; }
+.lotus-tags a, .lotus-tags .tags-normal { display: inline; padding: 2px 8px; }
+.lotus-tags .tags-big { font-size: 20px; font-weight: 500; }
+.lotus-tag .tags-larget { font-size: 28px; font-weight: 500; }
+.lotus-tags a:hover {  }
+#link .lotus-link { list-style: outside none none; margin-left: 0px; }
+#link .lotus-link-item { margin-bottom: 1em; }
+.lotus-404 { padding-top: 20em; background: transparent url('404.png') no-repeat scroll center 0px; }
+.lotus-post img:hover { cursor: pointer; }
+.lotus-post .lotus-post-end { height: 21px; text-align: center; vertical-align: top; border-bottom: 1px dotted rgb(224, 224, 224); }
+.lotus-post .lotus-post-end span { width: 94px; padding-left: 4px; height: 21px; display: block; margin: 0px auto; position: relative; top: 10px; font-style: italic; line-height: 21px; background: rgb(243, 242, 237) none repeat scroll 0% 0%; color: rgb(210, 209, 205); }
+.lotus-post .lotus-post-end span i { float: left; width: 21px; height: 21px; display: block; background: transparent url('logo.jpg') no-repeat scroll 0px 0px / cover ; overflow: hidden; opacity: 0.2; }
+.lotus-nextpage { margin-top: 1em; }
+.lotus-nextpage .lotus-nextpage-left { float: left; }
+.lotus-nextpage .lotus-nextpage-right { float: right; }
+.lotus-disqus { margin-top: 2em; }
+.lotus-footer { margin-top: 3em; }
+.lotus-footer-link a { color: rgb(243, 242, 238); }
+.lotus-backtop { width: 34px; height: 34px; line-height: 34px; text-align: center; overflow: hidden; font-size: 40px; color: rgb(71, 71, 71); opacity: 0.5; }
+.lotus-backtop:hover { opacity: 0.8; text-decoration: none; }
+.lotus-meta { color: rgb(168, 168, 168); }
+.violet-logo { float: left; position: relative; width: 66px; height: 66px; margin: 20px 0px 12px; border-radius: 33px; }
+.v-position-1, .v-position-2, .v-position-3, .v-position-4, .v-position-5, .v-position-6, .v-position-7 { position: absolute; }
+.violet-logo .v-position-1 { top: 0px; left: 23px; }
+.violet-logo .v-position-2 { top: 9px; right: 6px; }
+.violet-logo .v-position-3 { bottom: 9px; right: 6px; }
+.violet-logo .v-position-4 { bottom: 0px; left: 23px; }
+.violet-logo .v-position-5 { bottom: 9px; left: 6px; }
+.violet-logo .v-position-6 { top: 9px; left: 6px; }
+.violet-logo .v-petal { position: relative; width: 20px; height: 28px; }
+.v-deg-0 { transform: rotate(0deg); }
+.v-deg-60 { transform: rotate(60deg); }
+.v-deg-120 { transform: rotate(120deg); }
+.v-deg-180 { transform: rotate(180deg); }
+.v-deg-240 { transform: rotate(-120deg); }
+.v-deg-300 { transform: rotate(-60deg); }
+.v-color-1 .v-petal-top, .v-color-1 .v-petal-left-det, .v-color-1 .v-petal-right-det { background: rgb(82, 82, 82) none repeat scroll 0% 0%; }
+.v-color-2 .v-petal-top, .v-color-2 .v-petal-left-det, .v-color-2 .v-petal-right-det { background: rgb(82, 82, 82) none repeat scroll 0% 0%; }
+.v-color-3 .v-petal-top, .v-color-3 .v-petal-left-det, .v-color-3 .v-petal-right-det { background: rgb(82, 82, 82) none repeat scroll 0% 0%; }
+.v-color-4 .v-petal-top, .v-color-4 .v-petal-left-det, .v-color-4 .v-petal-right-det { background: rgb(82, 82, 82) none repeat scroll 0% 0%; }
+.v-color-5 .v-petal-top, .v-color-5 .v-petal-left-det, .v-color-5 .v-petal-right-det { background: rgb(82, 82, 82) none repeat scroll 0% 0%; }
+.v-color-6 .v-petal-top, .v-color-6 .v-petal-left-det, .v-color-6 .v-petal-right-det { background: rgb(82, 82, 82) none repeat scroll 0% 0%; }
+.v-petal-left, .v-petal-right { position: absolute; top: 8px; height: 20px; overflow: hidden; }
+.v-petal-left { left: 0px; width: 11px; }
+.v-petal-right { right: 0px; width: 10px; }
+.v-petal-top, .v-petal-left-det, .v-petal-right-det { position: absolute; width: 20px; }
+.v-petal-top { top: 0px; right: 0px; height: 10px; border-radius: 9px 9px 0px 0px; }
+.v-petal-left-det { left: 0px; height: 20px; border-radius: 0px 0px 0px 20px; }
+.v-petal-right-det { right: 0px; height: 20px; border-radius: 0px 0px 20px; }
+.violet-site { float: left; margin: 20px 0px 12px; position: relative; width: 200px; color: rgb(82, 82, 82); }
+.violet-site h1, .violet-site h1 a { font-family: "Times New Roman",Times,serif; font-size: 32px; font-weight: normal; color: rgb(82, 82, 82); margin-bottom: 0px; }
+.violet-site h1 a:hover { color: rgb(50, 50, 50); text-decoration: none; }
+.violet-site h1 span { display: inline; padding: 0px 5px 0px 3px; position: relative; line-height: 12px; font-size: 10px; font-family: Verdana,Arial,Helvetica,sans-serif; color: rgb(82, 82, 82); background: rgb(216, 216, 216) none repeat scroll 0% 0%; border-radius: 7px 0px; top: -23px; left: 5px; font-weight: 600; }
+.violet-site h2 { padding-top: 2px; font-size: 14px; line-height: 14px; border-top: 1px solid rgb(49, 49, 49); }
+.iLight { color: rgb(8, 8, 8); background: rgb(254, 254, 254) none repeat scroll 0% 0%; }
+.iLight .lotus-nav { background: transparent -moz-linear-gradient(180deg, rgb(227, 227, 227) 0%, rgb(241, 241, 237) 8%, rgb(241, 241, 237) 14%, rgb(241, 241, 237) 100%) repeat scroll 0% 0%; border-right: 1px solid rgb(223, 223, 223); }
+.iLight .lotus-nav ul { border-bottom: 1px solid rgb(227, 227, 227); }
+.iLight .lotus-nav ul li { border-top: 1px solid rgb(227, 227, 227); }
+.iLight .lotus-nav ul .home { border-top: 0px none; }
+.iLight .lotus-nav ul li a { color: rgb(197, 197, 187); }
+.iLight .lotus-nav ul li a:hover, .iLight .lotus-nav ul .current a { background: rgb(205, 0, 1) none repeat scroll 0% 0%; color: rgb(254, 254, 254); box-shadow: 1px 1px 24px rgba(0, 0, 0, 0.6) inset; transition: box-shadow 0.3s linear 0s, background 0.3s linear 0s, color 0.3s linear 0s; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); }
+.iLight a { color: rgb(156, 0, 1); }
+.iLight a:hover, .iLight a:active { color: rgb(205, 0, 1); }
+.iLight blockquote { border-color: rgb(212, 212, 212); background: rgba(214, 214, 214, 0.2) none repeat scroll 0% 0%; }
+.iLight .fn-img { padding: 3px; box-shadow: 0px 0px 3px rgb(212, 212, 212); background: rgb(254, 254, 254) none repeat scroll 0% 0%; border: 1px solid rgb(212, 212, 212); }
+.iLight .lotus-post .lotus-post-end span { background: rgb(254, 254, 254) none repeat scroll 0% 0%; }
+.iLight .lotus-backtop { color: rgb(197, 197, 187); }
+.iLight .violet-site h1 span { background: rgb(241, 241, 237) none repeat scroll 0% 0%; }
+@media only screen and (min-width: 1440px) {
+  .lotus { width: 1024px; }
+  .lotus-post-columns-2 { -moz-column-count: 2; -moz-column-gap: 3em; -moz-column-rule: 1px dotted rgb(200, 200, 200); }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .lotus { width: 600px; }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .lotus table th, .lotus table td, .lotus-table th, .lotus-table td { padding: 2px 0px; text-align: center; vertical-align: middle; }
+  .lotus { width: 90%; padding: 7em 5% 0px; position: relative; }
+  .index { padding-top: 3em; }
+  .lotus-nav { width: 100%; height: 42px; top: 0px; position: absolute; z-index: 1000; background: transparent -moz-linear-gradient(90deg, rgb(41, 41, 41) 0%, rgb(64, 64, 64) 8%, rgb(71, 71, 71) 14%, rgb(71, 71, 71) 100%) repeat scroll 0% 0%; border-left: medium none; border-bottom: 1px solid rgb(33, 33, 33); }
+  .lotus-nav ul { width: 320px; margin: 0px auto; }
+  .lotus-nav ul li { float: left; width: 60px; line-height: 42px; border-top: 0px none; }
+  .lotus-nav ul .home { margin-bottom: 0px; }
+  .lotus-double .article-first { width: 100%; border-right: medium none; border-bottom: 1px dotted rgb(200, 200, 200); }
+  .lotus-double .article-last { width: 100%; margin-left: 0px; margin-top: 2em; }
+  .iLight .lotus-nav { background: transparent -moz-linear-gradient(90deg, rgb(227, 227, 227) 0%, rgb(241, 241, 237) 8%, rgb(241, 241, 237) 14%, rgb(241, 241, 237) 100%) repeat scroll 0% 0%; border-right: medium none; border-bottom: 1px solid rgb(223, 223, 223); }
+  .iLight .lotus-nav ul li { border-top: 0px none; }
+  .lotus-breadcrub { padding-top: 10px; }
+}
+@media print {
+  .lotus-nav { display: none; }
+}
+.lotus-lightbox-overlay { background-color: black; display: none; left: 0px; opacity: 0.8; position: fixed; top: 0px; z-index: 9999; }
+.lotus-lightbox { display: none; position: absolute; text-align: center; width: 100%; line-height: 0; z-index: 10000; }
+.lotus-lightbox img { width: auto; height: auto; display: none; }
+.lotus-lightbox .lotus-lightbox-cnt { position: relative; box-shadow: 4px 4px 10px rgb(0, 0, 0); border-radius: 4px; margin: 0px auto; background: rgb(243, 242, 238) url('logo.jpg') no-repeat scroll center center; padding: 10px; width: 250px; height: 250px; }
+.lotus-lightbox .lotus-lightbox-close { position: absolute; display: none; margin: 0px auto; top: 0px; width: 24px; height: 24px; font-size: 12px; text-align: center; line-height: 24px; background: rgb(243, 242, 238) none repeat scroll 0% 0%; z-index: 10001; border-radius: 3px; cursor: pointer; }
+.roll-link { display: inline-block; overflow: hidden; vertical-align: top; perspective: 600px; perspective-origin: 50% 50%; }
+.roll-link:hover { text-decoration: none; }
+.roll-link span { display: block; position: relative; padding: 0px 2px; color: rgb(0, 50, 83); transition: all 400ms ease 0s; transform-origin: 50% 0% 0px; transform-style: preserve-3d; }
+.roll-link:hover span { background: rgb(6, 85, 136) none repeat scroll 0% 0%; transform: translate3d(0px, 0px, -30px) rotateX(90deg); }
+.roll-link span::after { content: attr(data-title); display: block; position: absolute; left: 0px; top: 0px; padding: 0px 2px; color: rgb(243, 242, 238); background: rgb(6, 85, 136) none repeat scroll 0% 0%; transform-origin: 50% 0% 0px; transform: translate3d(0px, 105%, 0px) rotateX(-90deg); }
+.pln { color: rgb(74, 74, 74); }
+@media screen {
+  .str { color: rgb(0, 136, 0); }
+  .kwd { color: rgb(0, 68, 136); }
+  .com { color: rgb(171, 171, 171); }
+  .typ { color: rgb(153, 0, 153); }
+  .lit { color: rgb(102, 153, 0); }
+  .pun, .opn, .clo { color: rgb(102, 102, 0); }
+  .tag { color: rgb(218, 87, 58); }
+  .atn { color: rgb(102, 0, 102); }
+  .atv { color: rgb(0, 136, 0); }
+  .dec, .var { color: rgb(102, 0, 102); }
+  .fun { color: red; }
+}
+pre code { background: transparent none repeat scroll 0% 0%; border: medium none; }
+pre.prettyprint { font-family: Monaco,Menlo,Consolas,"Courier New",monospace; background: rgba(255, 255, 255, 0.5) none repeat scroll 0% 0%; border-radius: 0px 2px 2px 0px; box-shadow: 0px 4px 4px rgb(232, 232, 232); }
