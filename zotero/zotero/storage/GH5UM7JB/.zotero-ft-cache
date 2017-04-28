@@ -1,0 +1,394 @@
+
+Toggle navigation Jenkins Job DSL Plugin
+
+    API
+    GitHub
+    Playground
+
+     
+    buildFlowJob
+     
+    buildMonitorView
+     
+    buildPipelineView
+     
+    categorizedJobsView
+     
+    configFiles
+     
+    customConfigFile
+     
+    dashboardView
+     
+    deliveryPipelineView
+     
+    folder
+     
+    freeStyleJob
+     
+    globalMavenSettingsConfigFile
+     
+    ivyJob
+     
+    job
+     
+    listView
+     
+    managedScriptConfigFile
+     
+    matrixJob
+     
+    mavenJob
+     
+    mavenSettingsConfigFile
+     
+    multibranchPipelineJob
+     
+    multiJob
+     
+    nestedView
+     
+    organizationFolder
+     
+    pipelineJob
+     
+    queue
+     
+    readFileFromWorkspace
+     
+    sectionedView
+     
+    streamFileFromWorkspace
+     
+    userContent
+
+Jenkins Job DSL API
+
+Welcome to the Job DSL API Viewer. This is the Job DSL reference, showing all available DSL methods. Use the navigation on the left to browse all methods starting from the methods available in the script context.
+
+The Job DSL API currently supports 199 Jenkins plugins. Click the on the top-right to filter methods by plugin.
+
+For further documentation, please go to the Job DSL Wiki .
+
+Other Jenkins plugins can contribute DSL methods through extension points. Refer to the plugins' wiki pages for documentation:
+
+    ClearCase UCM Plugin
+    CodeSonar Plugin
+    GitHub Pull Request Builder Plugin
+    JGiven Plugin
+    Logging Plugin
+    Memory Map Plugin
+    Next Build Number Plugin
+    Pretested Integration Plugin
+
+Top-Level Methods
+
+    // Creates or update a job for managing Jenkins jobs orchestration using a dedicated DSL.
+    buildFlowJob ( String name)
+    // Creates or update a job for managing Jenkins jobs orchestration using a dedicated DSL.
+    buildFlowJob ( String name) { }
+    // Creates or updates a view that provides a highly visible view of the status of selected Jenkins jobs.
+    buildMonitorView ( String name)
+    // Creates or updates a view that provides a highly visible view of the status of selected Jenkins jobs.
+    buildMonitorView ( String name) { }
+    // Create or updates a view of upstream and downstream connected jobs.
+    buildPipelineView ( String name)
+    // Create or updates a view of upstream and downstream connected jobs.
+    buildPipelineView ( String name) { }
+    // Creates or updates a new view that is very similar to the standard Jenkins List Views, but where you can group jobs and categorize them according to regular expressions.
+    categorizedJobsView ( String name)
+    // Creates or updates a new view that is very similar to the standard Jenkins List Views, but where you can group jobs and categorize them according to regular expressions.
+    categorizedJobsView ( String name) { }
+    // Creates managed config files.
+    configFiles { }
+    // Creates a managed custom file. Deprecated: use {@link #configFiles(groovy.lang.Closure)} instead.
+    customConfigFile ( String name)
+    // Creates a managed custom file. Deprecated: use {@link #configFiles(groovy.lang.Closure)} instead.
+    customConfigFile ( String name) { }
+    // Creates or updates a dashboard / portal-like view.
+    dashboardView ( String name)
+    // Creates or updates a dashboard / portal-like view.
+    dashboardView ( String name) { }
+    // Creates or updates a view that renders pipelines based on upstream/downstream jobs.
+    deliveryPipelineView ( String name)
+    // Creates or updates a view that renders pipelines based on upstream/downstream jobs.
+    deliveryPipelineView ( String name) { }
+    // Creates or updates a folder.
+    folder ( String name)
+    // Creates or updates a folder.
+    folder ( String name) { }
+    // Creates or updates a free style job.
+    freeStyleJob ( String name)
+    // Creates or updates a free style job.
+    freeStyleJob ( String name) { }
+    // Creates a managed global Maven settings file. Deprecated: use {@link #configFiles(groovy.lang.Closure)} instead.
+    globalMavenSettingsConfigFile ( String name)
+    // Creates a managed global Maven settings file. Deprecated: use {@link #configFiles(groovy.lang.Closure)} instead.
+    globalMavenSettingsConfigFile ( String name) { }
+    // Creates or updates a job to build an Ivy project.
+    ivyJob ( String name)
+    // Creates or updates a job to build an Ivy project.
+    ivyJob ( String name) { }
+    // Creates or updates a free style job.
+    job ( String name)
+    // Creates or updates a free style job.
+    job ( String name) { }
+    // Creates or updates a view that shows items in a simple list format.
+    listView ( String name)
+    // Creates or updates a view that shows items in a simple list format.
+    listView ( String name) { }
+    // Creates a managed script file. Deprecated: use {@link #configFiles(groovy.lang.Closure)} instead.
+    managedScriptConfigFile ( String name)
+    // Creates a managed script file. Deprecated: use {@link #configFiles(groovy.lang.Closure)} instead.
+    managedScriptConfigFile ( String name) { }
+    // Creates or updates a multi-configuration job.
+    matrixJob ( String name)
+    // Creates or updates a multi-configuration job.
+    matrixJob ( String name) { }
+    // Creates or updates a job to build a Maven project.
+    mavenJob ( String name)
+    // Creates or updates a job to build a Maven project.
+    mavenJob ( String name) { }
+    // Creates a managed Maven settings file. Deprecated: use {@link #configFiles(groovy.lang.Closure)} instead.
+    mavenSettingsConfigFile ( String name)
+    // Creates a managed Maven settings file. Deprecated: use {@link #configFiles(groovy.lang.Closure)} instead.
+    mavenSettingsConfigFile ( String name) { }
+    // Creates or updates a multi-job project, suitable for running other jobs.
+    multiJob ( String name)
+    // Creates or updates a multi-job project, suitable for running other jobs.
+    multiJob ( String name) { }
+    // Create or updates a multibranch pipeline job.
+    multibranchPipelineJob ( String name)
+    // Creates or updates a multibranch pipeline job.
+    multibranchPipelineJob ( String name) { }
+    // Creates or updates a view that allows grouping views into multiple levels.
+    nestedView ( String name)
+    // Creates or updates a view that allows grouping views into multiple levels.
+    nestedView ( String name) { }
+    // Creates or updates an organization folder job.
+    organizationFolder ( String name) { }
+    // Creates or updates an organization folder job.
+    organizationFolder ( String name)
+    // Create or updates a pipeline job.
+    pipelineJob ( String name)
+    // Create or updates a pipeline job.
+    pipelineJob ( String name) { }
+    // Schedule a job to be run later.
+    queue ( String jobName)
+    // Schedule a job to be run later.
+    queue (javaposse.jobdsl.dsl.Job job)
+    // Streams a file from the workspace of the seed job.
+    readFileFromWorkspace ( String filePath)
+    // Reads a file from the workspace of a job.
+    readFileFromWorkspace ( String jobName, String filePath)
+    // Creates or updates a view that can be divided into sections.
+    sectionedView ( String name)
+    // Creates or updates a view that can be divided into sections.
+    sectionedView ( String name) { }
+    // Streams a file from the workspace of the seed job.
+    streamFileFromWorkspace ( String filePath)
+    // Upload the stream as user content.
+    userContent ( String path, java.io.InputStream content)
+
+Filter by Plugin
+
+    Active Choices Plug-in
+    Alternative build chooser
+    Android Lint Plugin
+    AnsiColor
+    Ant Plugin
+    Any Build Step Plugin
+    artifactdeployer
+    Associated Files Plugin
+    Box UK - JSLint
+    Branch API Plugin
+    Build Blocker Plugin
+    Build Failure Analyzer
+    Build Monitor View
+    Build Pipeline Plugin
+    build-flow-plugin
+    build-flow-test-aggregator
+    build-name-setter
+    categorized-view
+    CCM Plug-in
+    Checkstyle Plug-in
+    ChuckNorris Plugin
+    Clang Scan-Build Plugin
+    CloudBees Docker Build and Publish plugin
+    CloudBees Docker Custom Build Environment Plugin
+    CMake plugin
+    Conditional BuildStep
+    Config File Provider Plugin
+    Copy Artifact Plugin
+    Credentials Binding Plugin
+    Credentials Plugin
+    crittercism-dsym
+    Cron Column Plugin
+    Cucumber json test reporting.
+    Cucumber reports
+    Custom Job Icon plugin
+    Dashboard View
+    Debian Package Builder
+    Delivery Pipeline Plugin
+    Deploy WebLogic Plugin
+    DOS Trigger
+    DRY Plug-in
+    Email Extension Plugin
+    emotional-jenkins-plugin
+    Environment Injector Plugin
+    export dynamic job data
+    Extra Columns Plugin
+    Fail The Build Plugin
+    FindBugs Plug-in
+    Flaky Test Handler plugin
+    Flexible Publish Plugin
+    Flowdock plugin
+    Folders Plugin
+    Gatling Jenkins Plugin
+    Gerrit Trigger
+    Git Parameter Plug-In
+    GitHub Branch Source Plugin
+    GitHub plugin
+    GitHub Pull Request Builder
+    GitLab Plugin
+    Global Variable String Parameter
+    Go Plugin
+    Gradle Plugin
+    grails
+    Groovy
+    Groovy Postbuild
+    Heavy Job Plugin
+    HTML Publisher plugin
+    HTTP Request Plugin
+    Hudson Build-Publisher plugin
+    Hudson Post build task
+    Hudson Ruby Plugin
+    Hudson SCP publisher plugin
+    Hudson Seleniumhq plugin
+    Ivy Plugin
+    Javadoc Plugin
+    Jenkins batch task plugin
+    Jenkins Bitbucket Plugin
+    Jenkins build log file size checker plugin
+    Jenkins build timeout plugin
+    Jenkins BuildResultTrigger Plug-in
+    Jenkins Claim Plugin
+    Jenkins ClearCase Plug-in
+    Jenkins Clone Workspace SCM Plug-in
+    Jenkins Clover PHP plugin
+    Jenkins Cobertura Plugin
+    Jenkins Compress Build Log plugin
+    Jenkins cross-platform shell plugin
+    Jenkins Custom Tools Plugin
+    Jenkins CVS Plug-in
+    Jenkins description setter plugin
+    Jenkins Emma plugin
+    Jenkins Exclusion Plug-in
+    Jenkins Git plugin
+    Jenkins IRC Plugin
+    Jenkins Jabber notifier plugin
+    Jenkins JaCoCo plugin
+    Jenkins JIRA plugin
+    Jenkins Mailer Plugin
+    Jenkins Mantis plugin
+    Jenkins Maven Info Plugin
+    Jenkins Maven Release Plug-in Plug-in
+    Jenkins Mercurial plugin
+    Jenkins MSBuild Plugin
+    Jenkins Multijob plugin
+    Jenkins Multiple SCMs plugin
+    Jenkins Notification plugin
+    Jenkins Parameterized Trigger plugin
+    Jenkins Phing plugin
+    Jenkins Port Allocator Plug-in
+    Jenkins PowerShell plugin
+    Jenkins Priority Sorter Plugin
+    Jenkins Rake plugin
+    Jenkins Release Plugin
+    Jenkins Rundeck plugin
+    Jenkins S3 publisher plugin
+    Jenkins Sauce OnDemand plugin
+    Jenkins sbt plugin
+    Jenkins SLOCCount Plug-in
+    Jenkins SSH plugin
+    Jenkins Subversion Plug-in
+    Jenkins TextFinder plugin
+    Jenkins Throttle Concurrent Builds Plug-in
+    Jenkins URLTrigger Plug-in
+    Jenkins user build vars plugin
+    Jenkins Violations plugin
+    Jenkins Wall Display Master Project
+    Jenkins Workspace Cleanup Plugin
+    Jenkins Xvfb plugin
+    Jenkins Xvnc plugin
+    Jenkins Zentimestamp plugin
+    Job and Node ownership plugin
+    Job DSL
+    Job Node Stalker
+    Join plugin
+    JUnit Attachments Plugin
+    JUnit Plugin
+    Jython Plugin
+    Keychains and Provisioning Profiles Management
+    Lockable Resources plugin
+    Log Parser Plugin
+    Managed Scripts
+    Mask Passwords Plugin
+    Matrix Authorization Strategy Plugin
+    Matrix Configuration Parameter Plugin
+    Matrix Project Plugin
+    Mattermost Notification Plugin
+    Maven Deployment Linker
+    Maven Integration plugin
+    Naginator
+    NAnt Plugin
+    Nested View Plugin
+    next-executions
+    Node and Label parameter plugin
+    NodeJS Plugin
+    OWASP Dependency-Check Plugin
+    P4 Plugin
+    Parameterized Remote Trigger Plugin
+    Perforce Plugin
+    Phabricator Differential Plugin
+    Pipeline
+    Pipeline: Groovy
+    Pipeline: Multibranch
+    Plot plugin
+    PMD Plug-in
+    postbuildscript
+    Pre SCM BuildStep Plugin
+    Prerequisite build step plugin
+    Progress Bar Column Plugin
+    Publish Over SSH
+    rbenv plugin
+    Rebuilder
+    Repository Connector
+    Robot Framework plugin
+    ruby-runtime
+    RubyMetrics plugin for Jenkins
+    Run Condition Plugin
+    Rvm
+    SCM API Plugin
+    Script Security Plugin
+    Sectioned View Plugin
+    Selenium HTML report
+    Shared Objects Plugin
+    ShiningPanda Plugin
+    Sidebar Link
+    SonarQube Scanner for Jenkins
+    SSH Agent Plugin
+    Stash Notifier
+    Static Analysis Collector Plug-in
+    svn-tag
+    Task Scanner Plug-in
+    Team Concert Plugin
+    Test stability history
+    TestNG Results Plugin
+    Timestamper
+    Tool Environment plugin
+    View Job Filters
+    vSphere Plugin
+    Warnings Plug-in
+    xUnit plugin
+

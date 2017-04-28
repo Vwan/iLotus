@@ -1,15 +1,15 @@
 {
 	"translatorID": "96b54986-16c7-45ea-b296-fde962d658b2",
+	"translatorType": 4,
 	"label": "The Open Library",
 	"creator": "Sebastian Karcher",
 	"target": "^https?://openlibrary\\.org",
 	"minVersion": "3.0",
-	"maxVersion": "",
+	"maxVersion": null,
 	"priority": 100,
 	"inRepository": true,
-	"translatorType": 4,
 	"browserSupport": "gcsbv",
-	"lastUpdated": "2015-08-31 16:05:29"
+	"lastUpdated": "2017-04-25 12:45:00"
 }
 
 /*
@@ -94,10 +94,11 @@ function scrape(doc, url) {
 		translator.setTranslator("5e3ad958-ac79-463d-812b-a86a9235c28f");
 		translator.setString(text);
 		translator.setHandler("itemDone", function (obj, item) {
-			item.itemType= "book";
+			item.itemType = "book";
 			//the DC doesn't distinguish between personal and institutional authors - get them from the page and parse
 			//var authors = ZU.xpath(doc, '//div[@id="archivalDescriptionArea"]//div[@class="field"]/h3[contains(text(), "Name of creator")]/following-sibling::div/a');
-			for (var i in authors) {
+			item.creators = [];
+			for (i = 0; i<authors.length; i++) {
 				item.creators.push(ZU.cleanAuthor(authors[i].textContent, "author"));
 				//if (!item.creators[i].firstName) item.creators[i].fieldMode = 1;
 			}

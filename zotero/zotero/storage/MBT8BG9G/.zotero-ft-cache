@@ -1,0 +1,1004 @@
+Birds & Coconuts
+Numbers & Variables
+
+Level 1
+
+Why Python?
+Easy to read Fast Versatile
+
+Random color art jeremykun.com
+
+Code School User Voice
+
+Frets on Fire fretsonﬁre.sourceforge.net
+
+The Python Interpreter
+
+>>>
+
+This symbol means "write your code here"
+This symbol points to the outcome
+
+>>>
+
+30.5 30.5
+
+Mathematical Operators
+addition >>> 3 + 5 8 subtraction >>> 10 - 5 5
+
+multiplication
+
+>>>
+
+3 * 5 15
+
+division
+
+>>>
+
+30 / 6 5
+
+exponent
+
+>>>
+
+2 ** 3 8
+
+negation
+
+>>>
+
+-2 + -3 -5
+
+Integers and Floats
+Here’s a little Python terminology.
+
+int
+
+>>>
+
+35 35
+
+ﬂoat
+
+>>>
+
+30.5 30.5
+
+An int is a whole number
+
+A ﬂoat is a decimal number
+
+Order of Operations
+These are the calculations happening ﬁrst.
+
+>>>
+Behind the scenes
+
+( 5 + 7 ) 12 36
+
+* 3 * 3
+
+>>>
+
+5 + 7 * 3 5 + 21 26
+
+PEMDAS: Parentheses Exponent Multiplication Division Addition Subtraction
+
+Can a Swallow Carry a Coconut?
+Let’s use some math to ﬁgure out if this swallow can carry this coconut!
+
+What we know: A swallow weighs 60g and can carry 1/3 of its weight.
+Swallow’s weight in grams >>> 60 / 3 20
+So, 1 swallow can carry 20 grams
+…but a coconut weighs 1450 grams
+
+Divide by 3
+
+How Many Swallows Can Carry a Coconut?
+Let’s try to ﬁgure out how many swallows it takes to carry 1 coconut.
+
+What we know: A swallow weighs 60g and can carry 1/3 of its weight.
+Coconut weight Swallow’s weight Divide by 3
+
+>>>
+
+1450 / 60 / 3 8.06
+
+That number seems way too low. Let’s look at what happened behind the scenes:
+
+1450 / 60 / 3 24.17 / 3
+
+We wanted 60/3 to happen ﬁrst — we can add parentheses to ﬁx this.
+
+Using Correct Order of Operations
+How many swallows does it take to carry 1 coconut?
+
+What we know: A swallow weighs 60g and can carry 1/3 of its weight.
+Coconut weight Swallow’s weight Divide by 3
+
+>>>
+
+1450 / ( 60 / 3 ) 1450 / ( 20 ) 72.5
+
+That’s a lot of swallows!
+
+What Other Fruits Can a Swallow Carry?
+Let’s see if we can get closer to 1 swallow with other fruits.
+
+# swallows per coconut:
+
+>>>
+
+1450 / ( 60 / 3 )
+
+72.5
+
+# swallows per apple:
+
+>>>
+
+128 / ( 60 / 3 )
+
+6.4 Great! We found one that works!
+
+# swallows per cherry:
+
+>>>
+
+8 / ( 60 / 3 )
+
+0.4
+
+Seems like we’re repeating this a lot
+
+Creating a Variable in Python
+Use variables to store a value that can be used later in your program.
+
+>>>
+
+swallow_limit = 60 / 3
+
+variable name # swallows per coconut: # swallows per apple: # swallows per cherry:
+
+value to store 72.5 6.4 0.4
+
+>>> >>> >>>
+
+1450 / swallow_limit 128 / swallow_limit 8 / swallow_limit
+
+Less repeated calculations More organized
+
+Using Variables Assigns Meaning
+Variables keep your code more readable and assign meaning to values.
+
+>>> >>> >>>
+
+swallow_limit = 60 / 3 swallows_per_cherry = 8 / swallow_limit num_per_cherry = swallows_per_cherry 0.4
+
+What Should I Name My Variables?
+As long as you’re not breaking these rules, you can name variables anything you want!
+
+no spaces = 0
+
+no spaces in the name no digits or special characters in front
+
+3mice, $mice
+
+Pep 8 Style Guide recommends:
+swallow_limit lowercase, use underscores for spaces
+
+Pep 8 Style Guide does NOT recommend:
+swallowLimit camel case, later words are capitalized
+
+Check Pep 8 style guide here - http://go.codeschool.com/pep8-styleguide
+
+Can a Macaw Carry a Coconut?
+Step 1: Declare variables for each value and ﬁnd out the macaw’s carrying limit.
+
+>>> >>> >>> >>> >>>
+
+perc = 1/3 coco_wt = 1450 macaw_wt = 900 macaw_limit = macaw_wt * perc macaw_limit 300
+
+Notice our variables are descriptive, but we’re still using abbreviations where appropriate.
+
+Can a Macaw Carry a Coconut?
+Step 2: Divide the coconut’s weight by the limit. # macaws needed to carry a coconut
+
+>>> >>> >>> >>> >>> >>>
+
+perc = 1/3 coco_wt = 1450 macaw_wt = 900 macaw_limit = macaw_wt * perc num_macaws = coco_wt/macaw_limit num_macaws
+
+4.8
+
+Importing Modules — Extra Functionality
+Occasionally, we will want to use modules containing functionality that is not built in to the Python language.
+This is importing extra math functions
+
+>>> >>> >>>
+
+import math num_macaws = 4.8 math.ceil(num_macaws)
+
+ceil() is short for ceiling, which rounds up
+
+5
+
+Check out Python libraries here - http://go.codeschool.com/python-libraries
+
+Can a Macaw Carry a Coconut?
+Step 3: Use the ceiling function to round up.
+
+>>> >>> >>> >>> >>> >>> >>>
+
+import math perc = 1/3 coco_wt = 1450 macaw_wt = 900 macaw_limit = macaw_wt * perc num_macaws = coco_wt/macaw_limit math.ceil(num_macaws) 5
+
+Spam & Strings
+Strings
+
+Level 2
+
+Creating Strings
+Strings are a sequence of characters that can store letters, numbers, or a combination — anything!
+
+Create a string with quotes
+
+Single or double quotes work — just be consistent
+
+string
+
+>>>
+
+'Hello World' 'Hello World'
+
+string
+
+>>>
+
+"SPAM83" 'SPAM83'
+
+String Concatenation With +
+We can combine (or concatenate) strings by using the + operator.
+
+>>> >>> >>> >>>
+
+first_name = 'Monty' last_name = 'Python' full_name = first_name + last_name full_name
+Need to add a space!
+
+'MontyPython'
+
+Concatenating a Space
+We can
+>>> >>> >>> >>>
+
+first_name = 'Monty' last_name = 'Python' full_name = first_name + ' ' + last_name full_name
+
+concatenate a space character bet ween the words
+
+'Monty Python'
+
+Moving Our Code to a Script File
+>>> >>> >>> >>>
+
+first_name = 'Monty' last_name = 'Python' full_name = first_name + ' ' + last_name full_name
+
+Each line is entered on the command line
+
+Instead, we can put all lines into a single script ﬁle
+script.py
+
+first_name = 'Monty' last_name = 'Python' full_name = first_name + ' ' + last_name
+But how can we output the value of full_name?
+
+Output From Scripts With print()
+Everything in 1 script:
+script.py
+
+first_name = 'Monty' last_name = 'Python' full_name = first_name + ' ' + last_name
+print(full_name)
+Prints whatever is inside the () Monty Python
+
+print(first_name, last_name)
+Monty Python
+print() as many things as you want, just separate them with commas print() automatically adds spaces bet ween arguments In Python 2, print doesn’t need ()
+
+print full_name
+
+Running a Python Script
+script.py
+
+first_name = 'Monty' last_name = 'Python' full_name = first_name + ' ' + last_name
+print(full_name)
+Put the name of your script ﬁle here
+
+>>>
+
+python script.py
+Monty Python
+
+This is the command to run Python scripts
+
+Demo: Running a Python Script From the Console
+
+Comments Describe What We’re Doing
+Let’s write a script to describe what Monty Python is.
+
+script.py
+
+# Describe the sketch comedy group name = 'Monty Python' description = 'sketch comedy group' year = 1969
+
+# me ans t his line
+
+do e s n’t ge t
+
+i s a c omme r un
+
+n t and
+
+Concatenating Strings and Ints
+When we try to concatenate an int, year, with a string, we get an error.
+
+script.py
+
+# Describe the sketch comedy group name = 'Monty Python' description = 'sketch comedy group' year = 1969 # Introduce them
+
+Year is an int, not a string
+
+sentence = name + ' is a ' + description + ' formed in ' + year
+
+TypeError: Can't convert 'int' object to str implicitly
+
+Concatenating Strings and Ints
+script.py
+
+# Describe the sketch comedy group name = 'Monty Python' description = 'sketch comedy group' year = '1969' # Introduce them
+
+We could add quotes and make the year a string instead of an int
+
+sentence = name + ' is a ' + description + ' formed in ' + year
+This will work, but it really makes sense to keep numbers as numbers.
+
+Turning an Int Into a String
+script.py
+
+# Describe the sketch comedy group name = 'Monty Python' description = 'sketch comedy group' year = 1969
+
+Instead, convert
+
+# Introduce them sentence = name + ' is a ' + description + ' formed in ' + str( year) print(sentence) Monty Python is a sketch comedy group formed in 1969
+
+the int to a string when we concatenate with str()
+
+print() Casts to String Automatically
+script.py
+
+# Describe the sketch comedy group name = 'Monty Python' description = 'sketch comedy group' year = 1969
+
+print() does string conversions for us
+
+# Introduce them print(name, 'is a', description, 'formed in', year)
+
+Monty Python is a sketch comedy group formed in 1969
+
+Dealing With Quotes in Strings
+script.py
+
+# Describe Monty Python's work famous_sketch = 'Hell's Grannies' Syntax Error: invalid syntax
+
+Interpreter thinks the quote has ended and doesn’t know what S is
+
+script.py
+
+# Describe Monty Python's work famous_sketch1 = "Hell's Grannies" print(famous_sketch1) Hell's Grannies
+
+Start with now the '
+
+'of the string the end
+
+'' longer means no
+''
+instead —
+
+Special Characters for Formatting
+We want to add some more sketches and print them out
+
+script.py
+
+Let’s add another famous sketch
+
+# Describe Monty Python's work famous_sketch1 = "Hell's Grannies" famous_sketch2 = 'The Dead Parrot' print(famous_sketch1, famous_sketch2)
+
+Hell's Grannies The Dead Parrot
+This works, but we want to format it better.
+
+Special Characters — Newline
+\n is a special character that means new line.
+script.py
+
+# Describe Monty Python's work famous_sketch1 = "\nHell's Grannies" famous_sketch2 = '\nThe Dead Parrot' print('Famous Work:', famous_sketch1, famous_sketch2)
+
+Add a newline to make this look better
+
+Famous Work: Hell's Grannies The Dead Parrot
+This works, but we want to indent the titles.
+
+Special Characters — Tab
+\t is a special character that means tab.
+script.py
+
+# Describe Monty Python's work famous_sketch1 = "\n\tHell's Grannies" famous_sketch2 = '\n\tThe Dead Parrot' print('Famous Work:', famous_sketch1, famous_sketch2)
+
+Add a tab to indent and make this look even better
+
+Famous Work: Hell's Grannies The Dead Parrot
+
+Strings Behind the Scenes — a List of Characters
+A string is a list of characters, and each character in this list has a position or an index.
+
+greeting = 'H E L L O
+Starts at 0
+
+W O R L D !'
+
+[0] [1] [2] [3] [4] [5] [6] [7] [8] [9] [10][11]
+
+>>> >>> >>>
+
+greeting[0] greeting[11] greeting[12]
+
+'H' '!'
+
+We can get each character by calling its index with []
+
+IndexError: string index out of range
+
+String Built-in Function — len()
+There are a few built-in string functions — like len(), which returns the length of a string and is very useful.
+
+'H E L L O
+script.py
+
+W O R L D !'
+
+[0] [1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11]
+
+# print the length of greeting
+
+greeting = 'HELLO WORLD!' print( len(greeting) )
+
+12
+
+12
+
+The Man Who Only Says Ends of Words
+'G o o d'
+Go
+
+'E v e n i n g'
+[0] [1] [2] [3] [4] [5] [6]
+
+[0] [1] [2] [3]
+od Ev en ing
+od ning
+
+script.py word1 = 'Good' end1 = word1[2] + word1[3] print(end1)
+The last half of the word: characters at positions [2] and [3]
+
+od
+
+Using Slices to Access Parts of a String
+Boundary starts before index 2 Boundary ends before index 5
+
+word =
+
+"P y t h o n"
+[0] [1] [2] [3] [4] [5]
+
+>>>
+
+word[2:5]
+Start boundary End boundary
+
+tho
+
+Slice Formula and Shortcuts
+slice formula: variable [start : end+1]
+Go od
+Go
+
+Go
+
+od
+od
+
+word1 ='G o o d'
+[0] [1] [2] [3]
+
+word1 ='G o o d'
+[0] [1] [2] [3]
+
+>>>
+
+word1[0:2]
+
+Go
+
+>>>
+
+word1[2:4]
+
+od Go
+
+Shortcuts:
+>>>
+
+Means from start to position
+
+Means from position to end
+
+word1[:2]
+
+Go
+
+>>>
+
+word1[2:]
+
+od
+
+Incorporating String Slices Into Our Solution
+'G o o d'
+[0] [1] [2] [3]
+Go
+
+'E v e n i n g'
+[0] [1] [2] [3] [4] [5] [6]
+
+od
+od
+
+script.py
+
+word1 = 'Good' end1 = word1[2] + word1[3] word1[2:4] print(end1)
+Replace this with a slice
+
+od
+
+Using the String Slice Shortcut
+'G o o d'
+[0] [1] [2] [3]
+Go od
+
+'E v e n i n g'
+[0] [1] [2] [3] [4] [5] [6]
+
+Ev
+
+script.py
+en ing
+od ning
+
+word1 = 'Good' end1 = word1[2:] word2 = 'Evening' end2 = word2[3:] print(end1, end2)
+
+Improved this with a shortcut
+
+od ning
+It would be great if we didn’t have to know the halfway points were at 2 and 3…
+
+The Index at the Halfway Point
+The len() function will let us calculate the halfway index of our word.
+
+script.py
+
+Go
+
+od
+
+Ev
+
+en
+
+ing
+od ning
+
+# Calculate the halfway index
+
+word1 = 'Good' half1 = len(word1)/2
+
+half1 is 2.0
+
+word2 = 'Evening' half2 = len(word2)/2
+
+half2 is 3.5
+
+'G o o d'
+[0] [1] [2] [3]
+
+PROBLEM: indexes have to be integers — ﬂoats won’t work!
+
+'E v e n i n g'
+[0] [1] [2] [3] [4] [5] [6]
+
+The Index at the Halfway Point
+// 2 division signs means integer division in Python.
+script.py
+
+Integer division vs ﬂoor division. Be consistent if we cover in Level 1.
+
+'G o o d'
+[0] [1] [2] [3]
+
+# Calculate the halfway index half1 is 4/ = 2 /2
+
+word1 = 'Good' half1 = len(word1)//2
+
+/ Means integer division /
+
+'E v e n i n g'
+[0] [1] [2] [3] [4] [5] [6]
+
+half2 is 7 /2 = 3 /
+
+word2 = 'Evening' half2 = len(word2)//2
+
+/ Also rounds down to the / nearest integer
+
+In Python 2, single division / is int division unless there are ﬂoats involved
+
+Making Our Program More Reusable
+Calculating the halfway index makes our logic reusable.
+Go od
+
+script.py
+
+Ev
+
+en
+
+ing
+od ning
+
+half1 is 4/ = 2 /2
+
+word1 = 'Good' half1 = len(word1)//2 end1 = word1[2:] word1[half1:] word2 = 'Evening' half2 = len(word2)//2 end2 = word2[3:] word2[half2:] print(end1, end2)
+
+half2 is 7 /2 = 3 /
+
+'G o o d'
+[0] [1] [2] [3]
+
+'E v e n i n g'
+od ning
+
+[0] [1] [2] [3] [4] [5] [6]
+
+Conditional Rules of Engagement
+Conditionals & Input
+
+Level 3
+
+Extended Battle Rules
+if there's less than 3 knights Retreat!
+
+if there's more than 10 knights Trojan Rabbit!
+
+otherwise
+
+Comparison Operators
+There are 6 comparators in Python:
+
+<
+less than
+
+less than equal to
+
+<=
+
+==
+equal to
+
+greater than equal to
+
+>=
+
+>
+greater than
+
+not equal to Setting the name variable equal to 'Pam' False
+
+!=
+
+Is 5 less than 10 ?? >>> 5 < 10 True
+
+Is name equal to Jim ?? >>> >>> name = 'Pam' name == 'Jim'
+
+Is 5 equal to 10 ?? >>> 5 == 10 False
+
+Is name NOT equal to Jim ?? >>> name != 'Jim' True
+
+Comparison Operator Outputs
+Here’s the output of evaluating all 6 comparisons:
+
+>>>
+
+5 < 10 True
+
+>>>
+
+5 == 10 False
+
+>>>
+
+5 > 10 False
+
+>>>
+
+5 <= 10 True
+
+>>>
+
+5 != 10 True
+
+>>>
+
+5 >= 10 False
+
+Booleans
+In programming, a boolean is a type that can only be True or False.
+
+True
+
+booleans
+
+False
+
+Capital T and Capital F
+>>> >>> is_raining = True is_raining True
+
+Conditional — if, then
+An if statement lets us decide what to do: if True, then do this.
+
+script.py
+
+# Battle Rules num_knights = 2
+
+True
+
+if num_knights < 3: print('Retreat!') print('Raise the white flag!')
+
+If True:
+
+Then do this Then this
+
+Any indented code that comes after an if statement is called a code block
+
+Retreat! Raise the white flag!
+
+Conditional — if, then
+An if statement lets us decide what to do: if False, then don’t do this.
+
+script.py
+
+# Battle Rules num_knights = 4
+
+False
+
+if num_knights < 3: print('Retreat!') print('Raise the white flag!')
+
+Because the conditional is False, this block doesn’t run
+
+p e n s… g h ap ot h i n N kets* *c r i c
+
+The Program Continues After the Conditional
+The code continues to run as usual, line by line, after the conditional block.
+
+script.py
+
+# Battle Rules num_knights = 4
+
+False
+
+if num_knights < 3: print('Retreat!') print('Raise the white flag!') print('Knights of the Round Table!') Knights of the Round Table!
+
+Always this
+
+This block doesn’t run, but the code right outside of the block still does
+
+Rules for Whitespace in Python
+In Python, indent with 4 spaces. However, anything will work as long as you’re consistent.
+
+Irregular spacing is a no-no!
+
+2 spaces 4 spaces
+
+if num_knights == 1: # Block start print('Do this') print('And this') print('Always this')
+
+IndentationError: unexpected indent
+
+The PEP 8 style guide recommends 4 spaces - http://go.codeschool.com/pep8-styleguide
+
+Extended Battle Rules
+
+if there's less than 3 knights Retreat!
+
+otherwise
+
+Conditional — if False
+script.py
+
+else
+
+# Battle Rules num_knights = 4 if num_knights < 3: print('Retreat!') else: print('Truce?') Truce?
+
+If this statement is True, then run the indented code below Otherwise, then run the indented code below
+
+Conditionals — How to Check Another Condition?
+script.py
+
+# Battle Rules num_knights = 10 if num_knights < 3: print('Retreat!') else: print('Truce?') Truce?
+
+X
+
+Otherwise if at least 10, then Trojan Rabbit
+
+elif Allows Checking Alternatives
+script.py
+Else sequences will exit as soon as a statement is True…
+
+# Battle Rules num_knights = 10 day = 'Wednesday' if num_knights < 3: print('Retreat!') elif num_knights >= 10: print('Trojan Rabbit') elif day == 'Tuesday': print('Taco Night') else: print('Truce?')
+
+elif means other wise if We can have multiple elifs
+
+…and continue the program after
+
+Trojan Rabbit
+
+Combining Conditionals With and/or
+King Arthur has decided:
+
+On all Mondays, we retreat
+if num_knights < 3: print('Retreat!')
+
+We can only use the Trojan Rabbit on Wednesday (we’re renting it out on other days)
+if num_knights >= 10: print('Trojan Rabbit!')
+
+OR
+if it’s a Monday Retreat!
+
+AND
+it’s Wednesday Trojan Rabbit!
+
+Putting or in Our Program
+On all Mondays, or if we have less than 3 knights, we retreat.
+
+If we have less than 3 knights
+
+OR
+
+If it’s a Monday
+
+Spelled out Monday, and Wednesday on the next slide.
+
+if num_knights < 3 or day == "Monday": print('Retreat!')
+
+Putting and in Our Program
+We can only use the Trojan Rabbit if we have at least 10 knights AND it’s Wednesday.
+
+If we have at least 10 knights
+
+AND
+
+If it’s a Wednesday
+
+if num_knights >= 10 and day == "Wednesday": print('Trojan Rabbit!')
+
+Boolean Operators — and / or
+Make it possible to combine comparisons or booleans.
+
+True
+
+and and and or or or
+
+True False False
+
+True False False
+
+If 1 is False and result will be False
+
+True False
+
+If 1 is True or result will be True
+
+True True False
+
+True False False
+
+True True False
+
+Incorporating the Days of the Week
+script.py
+
+# Battle Rules num_knights = 10 day = 'Wednesday' if num_knights < 3 or day == 'Monday': print('Retreat!') elif num_knights >= 10 and day == 'Wednesday': print('Trojan Rabbit!') else: print('Truce?')
+
+Checking day of the week
+
+User Input — With the input() Function
+script.py
+
+# Ask the user to input the day of the week day = input('Enter the day of the week')
+
+day saves the user's input
+print('You entered:', day)
+
+prints out this statement and waits for user input
+
+In Python 2, raw_input() is used instead of input()
+
+Receiving User Input From Console
+Just like we can print() text to the console, we can also get user input from the console.
+
+script.py
+
+# Ask the user to input the number of knights num_knights = int(input('Enter the number of knights'))
+
+Change (or cast) the string to an int
+
+User enters #, but it comes in as text
+
+print('You entered:', num_knights)
+if num_knights < 3 or day == 'Monday': print('Retreat!')
+
+Enter the number of knights You entered: 10
+
+10
+
+User enters 10
+
+Diﬀerent Input and Conditionals Changes Output
+script.py
+Different user input causes different program ﬂow:
+
+# Battle Rules num_knights = int(input('How many knights?')) day = input('What day is it?')) if num_knights < 3 or day == 'Monday': print('Retreat!') elif num_knights >= 10 and day == 'Wednesday': print('Trojan Rabbit!') else: print('Truce?') 2 Tuesday
+2nd run
+
+1st run 2nd run
+
+1st run
+
+How many knights? What day is it? Retreat
+
+How many knights? What day is it? Trojan Rabbit!
+
+12 2 Wednesday
+
+Extended Battle Rules
+
+num_knights < 3 killer bunny
+
+Holy Hand Grenade
+
+num_knights >= 10
+
+otherwise
+
+Nested Conditionals — Ask Follow-up Questions
+script.py # Battle Rules num_knights = int(input('Enter number of knights') day = input('Enter day of the week') enemy = input('Enter type of enemy') if enemy == 'killer bunny': print('Holy Hand Grenade!') else:
+Do the original battle rules here
+
+First, ﬁnd out if our enemy is the killer bunny
+
+# Original Battle Rules
+
+If not, then use the original battle rules
+
+if num_knights < 3 or day == 'Monday': print('Retreat!') if num_knights >= 10 and day == 'Wednesday': print('Trojan Rabbit!') else: print('Truce?')
+
+Nested Conditionals
+script.py
+
+# Battle Rules num_knights = int(input('Enter number of knights') day = input('Enter day of the week') enemy = input('Enter type of enemy')
+if enemy == 'killer bunny': print('Holy Hand Grenade!')
+
+Our ﬁnal Rules of Engagement
+
+else: # Original Battle Rules if num_knights < 3 or day == 'Monday': print('Retreat!') if num_knights >= 10 and day == 'Wednesday': print('Trojan Rabbit!') else: print('Truce?')
+

@@ -1,0 +1,131 @@
+
+Code School
+
+    Initializing
+    Checking the Status
+    Adding & Committing
+    Adding Changes
+    Checking for Changes
+    Committing
+    Adding All Changes
+    Committing All Changes
+    History
+    Remote Repositories
+    Pushing Remotely
+    Pulling Remotely
+    Differences
+    Staged Differences
+    Staged Differences (cont'd)
+    Resetting the Stage
+    Undo
+    Branching Out
+    Switching Branches
+    Removing All The Things
+    Commiting Branch Changes
+    Switching Back to master
+    Preparing to Merge
+    Keeping Things Clean
+    The Final Push
+
+1.10 Remote Repositories
+
+Great job! We've gone ahead and created a new empty GitHub repository for you to use with Try Git at https://github.com/try-git/try_git.git . To push our local repo to the GitHub server we'll need to add a remote repository.
+
+This command takes a remote name and a repository URL , which in your case is https://github.com/try-git/try_git.git .
+
+Go ahead and run git remote add with the options below:
+
+git remote add origin https://github.com/try-git/try_git.git
+
+    Console
+
+    Terms
+    Hints
+
+Toggle Editor Mode
+
+    Close
+    Minimize
+    Maximize
+
+TryGit—1300x310
+
+ >  
+
+ Press enter to submit commands
+
+  
+
+ > 
+
+ 
+ 
+
+Press Enter / Return to submit code in Console mode
+
+    Close
+    Minimize
+    Maximize
+
+My Octobox Repository
+
+    .git
+    octobox
+
+Advice
+
+git remote: Git doesn't care what you name your remotes, but it's typical to name your main one origin .
+
+It's also a good idea for your main repository to be on a remote server like GitHub in case your machine is lost at sea during a transatlantic boat cruise or crushed by three monkey statues during an earthquake.
+
+TryGit
+Create a free account on Code School to save your progress!
+Try Git
+2250 Total Points
+Level 1 Change Level
+
+    Got 15 minutes and want to learn Git?
+    Checking the Status
+    Adding & Committing
+    Adding Changes
+    Checking for Changes
+    Committing
+    Adding All Changes
+    Committing All Changes
+    History
+    Remote Repositories
+    Pushing Remotely
+    Pulling Remotely
+    Differences
+    Staged Differences
+    Staged Differences (cont'd)
+    Resetting the Stage
+    Undo
+    Branching Out
+    Switching Branches
+    Removing All The Things
+    Commiting Branch Changes
+    Switching Back to master
+    Preparing to Merge
+    Keeping Things Clean
+    The Final Push
+
+    Rewatch Video
+    Keyboard Shortcuts
+    Download Slides
+
+An Envy Labs Product
+
+    ⌘ + enter Submit code
+    ctrl + enter Submit code
+    esc Hide errors or modal windows
+    → After success, advance to the next challenge
+
+Close
+Tweet Your Progress Tweet Your Progress
+Code School GitHub
+
+    Share With Your Friends Share With Your Friends on Facebook
+    Tweet Your Progress Tweet Your Progress
+
+Need support?

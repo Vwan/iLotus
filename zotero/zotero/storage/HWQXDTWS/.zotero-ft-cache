@@ -1,0 +1,134 @@
+Level 1 – Section 1
+
+Containers & Images
+Running Your First Container
+
+What Are Linux Containers?
+Linux containers are a way to create isolated environments that can run code while sharing a single operating system.
+
+Container 1 Container 2 Container 3
+App Bin/lib App Bin/lib App Bin/lib
+
+Each container is from the others
+
+completely isolated
+
+Physical Server + OS
+
+A computer somewhere - could even be the laptop or desktop computer you’re using right now!
+
+Why Docker?
+Managing Linux containers is hard. Docker is a tool that makes it much easier to manage Linux containers.
+
+Container 1 Container 2 Container 3
+App Bin/lib App Bin/lib App Bin/lib
+
+Application that manages
+
+containers behind the scenes
+
+Docker Engine
+
+Physical Server + OS
+
+How Can Docker Help Me?
+There are many diﬀerent ways people can use Docker.
+
+Developers
+Create contained, controlled dev environment Share identical dev environment across team Bug reporting
+This is what
+
+IT Ops
+Testing Deployment
+
+we’ll focus on in this course
+
+Installing Docker
+The simplest way to install Docker is to download one of the oﬃcial Docker applications.
+
+Applications
+Docker for Mac - Community Edition Docker for Windows - Community Edition
+
+Installation Instructions
+Linux Azure AWS Windows Server
+
+https://go.codeschool.com/install-docker
+
+Containers & Images
+An image is a blueprint for creating a container.
+
+Image
+
+Container
+
+Pre-built images
+
+available in Docker Store (and Docker Hub)
+
+Level 1 – Section 2
+
+Dockerﬁles
+Automating the Creation of Custom Images
+
+The Problem: Creating Containers Is Clunky
+Creating containers from the command line works, but it quickly gets a little clunky the more customization that you need to do.
+
+Image Container
+
+1 2 3 4
+
+open port 80 update package manager download a package copy web server config
+
+Each step modiﬁes the container a little bit
+
+Dockerﬁles help make this process slightly less manual
+
+Dockerﬁles Help You Create Images
+A Dockerﬁle is a specially formatted text ﬁle where you can add a list of instructions that will run and result in a new image that can be used to make a container.
+
+Image Dockerﬁle
+1 2 3 4 open port 80 update package manager download a package copy web server config
+
+Container
+
+The steps in a
+
+Dockerﬁle are run single image
+
+and turned into a
+
+Level 1 – Section 3
+
+Volumes
+Working With Data in Containers
+
+Getting Data Into Containers
+If the image you’re building a container with doesn’t already contain application ﬁles, you’ll need an extra step to get them into your container.
+
+Copy a ﬁle into a container from the command line
+
+Copy a ﬁle into an image with instructions in a Dockerﬁle
+
+The Problem: Containers Don’t Persist Data
+Our containers aren’t really doing much right now because we don’t have a way to get data in them.
+
+Modiﬁed data is gone! Start Modify ﬁles in container Stop
+
+container
+
+container
+
+The Solution: Data Volumes
+Data volumes expose ﬁles on your host machine to the container.
+
+Host
+
+Container
+
+Volume
+Data is still there! Start Modify ﬁles in data volume Stop
+
+container
+
+container
+

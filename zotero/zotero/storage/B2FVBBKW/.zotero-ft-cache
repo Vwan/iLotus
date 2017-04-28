@@ -1,0 +1,112 @@
+
+不忘初心mao
+
+2017年4月17日
+在 Intellij 中设置集成 Jenkins 服务器连接
+摘要: 如何在 Intellij 中设置集成 Jenkins 服务器连接 在Intellij中可以很方便的设置Jenkins服务器，不用登录到浏览器中，在Intellij中即可浏览所有job，开发plugin，或利用现有plugin比如job dsl轻松创建新Job，运行Job。 具体步骤如下： 1. 下载 阅读全文
+
+posted @ 2017-04-17 22:32 不忘初心mao 阅读(9) 评论(0) 编辑
+
+2017年4月16日
+《算法4》读书笔记 1.4 - 算法分析（Analysis of Algorithm）
+摘要: ——————————————————————————— First priority is to make you code CLEAR and CORRECT , but PERFORMANCE is also an essential， Keep Asking: How long will my 阅读全文
+
+posted @ 2017-04-16 16:11 不忘初心mao 阅读(5) 评论(0) 编辑
+概念学习 - JNDI, JDBC, ODBC, DataSource
+摘要: layout: post title: 概念学习 JNDI, JDBC, ODBC, DataSource 最近在学习Java Hibernate，对数据库资源访问这块好多概念模糊，所以在此记录一下, 如有错误 盼指正。 Data Source It is physically a set of d 阅读全文
+
+posted @ 2017-04-16 16:10 不忘初心mao 阅读(13) 评论(0) 编辑
+Java 别名(Aliasing)
+摘要: 别名 (Aliasing) 别名，顾名思义，是有别于现在名字的另一个名字，但指的是不是同一个人或事物呢？比如，你上学的时候同学有没有给你起什么外号？如果有的话，你的名字和同学给你起的外号是不是都指的是你自己？肯定是的哦。 Java中的别名亦类似，Java 给某个变量起别名，其实就是赋 值 语句（As 阅读全文
+
+posted @ 2017-04-16 11:09 不忘初心mao 阅读(12) 评论(0) 编辑
+Java 比较（==, equals, compareTo, compare)
+摘要: 在Java中，有 ==， equals(), compareTo(), compare() 等方法可以比较两个值或对象，比较容易混淆。画了个简单的思维导图总结一下 Java Compares 我经常记不住Java中的各种比较方法，为什么设计者要弄出这么多种比较？ 设计源于生活，如果我们先想一想现实世 阅读全文
+
+posted @ 2017-04-16 11:09 不忘初心mao 阅读(5) 评论(0) 编辑
+Java: 隐性赋值（Implicit Assignment)
+摘要: 初学 Java 时，我总是记不住如何区别 i++ 和 ++i。在《算法（第四版）》一书中第16页，作者提到： ++i is the same as i = i+1, and has the value i+1 in an expression. The code i++ is the same ex 阅读全文
+
+posted @ 2017-04-16 11:08 不忘初心mao 阅读(5) 评论(0) 编辑
+Java 原始数据类型
+摘要: 如何记住 Java 中的原始数据类型？ 画了一个图方便记忆： 阅读全文
+
+posted @ 2017-04-16 11:05 不忘初心mao 阅读(5) 评论(0) 编辑
+Java 原始数据类型的计算：运算符重载（Operator Overload）和类型转换（Type Conversion)
+摘要: 原文阅读:《算法（第四版）》第一章 第一节：基础编程模型 有没有在面试的时候被问到：下面这几行代码的执行结果是什么？依据是什么？ 这个问题涉及到的概念有： 运算符重载和类型转换。 对于原始数据类型如int, double, 运算符+, , , / 可以用于不同类型数据之间的计算: int + int 阅读全文
+
+posted @ 2017-04-16 10:59 不忘初心mao 阅读(7) 评论(0) 编辑
+
+Powered by:
+博客园
+Copyright © 不忘初心mao
+< 	2017年4月 	>
+日 	一 	二 	三 	四 	五 	六
+26 	27 	28 	29 	30 	31 	1
+2 	3 	4 	5 	6 	7 	8
+9 	10 	11 	12 	13 	14 	15
+16 	17 	18 	19 	20 	21 	22
+23 	24 	25 	26 	27 	28 	29
+30 	1 	2 	3 	4 	5 	6
+导航
+
+    首页
+    新随笔
+    联系
+    订阅 订阅
+    管理
+
+公告
+昵称： 不忘初心mao
+园龄： 2天
+粉丝： 0
+关注： 0
++加关注
+搜索
+ 
+ 
+随笔分类
+
+    java(6)
+    Jenkins + Groovy(1)
+    算法(1)
+
+随笔档案
+
+    2017年4月 (8)
+
+文章分类
+
+    Java
+    其他
+
+最新评论
+阅读排行榜
+
+    1. 概念学习 - JNDI, JDBC, ODBC, DataSource(13)
+    2. Java 别名(Aliasing)(12)
+    3. 在 Intellij 中设置集成 Jenkins 服务器连接(9)
+    4. Java 原始数据类型的计算：运算符重载（Operator Overload）和类型转换（Type Conversion)(7)
+
+评论排行榜
+推荐排行榜
+喜欢请打赏
+
+    支付宝支付宝
+    微信微信
+
+扫描二维码打赏
+
+用支付宝给我打赏
+
+了解更多
+喜欢请打赏
+
+    支付宝支付宝
+    微信微信
+
+扫描二维码打赏
+
+用支付宝给我打赏
+
+了解更多

@@ -1,0 +1,139 @@
+
+
+    阳志平的网志
+    随笔
+    技术
+    痕迹
+    资源
+    新读者
+    工作谈
+    心智专栏
+    联系
+
+阳志平
+阳志平
+
+我是「阳志平」，安人心智科学总监，从事认知科技产品研发与项目孵化。
+关注
+
+    五道口，北京
+    网站
+    电子邮箱
+    Twitter
+    GitHub
+    Weibo
+
+心理学工作者学什么编程语言？
+
+#废话：为什么要学编程？
+
+心理学解释现实很牛，但是改造现实很弱。为了增进改造现实的能力，请迈入程序世界。心理学工作者学什么编程语言？我的选择标准是：1）开源，社区友善；2）易入门；3）在特定问题领域，拥有大量最佳实践与外部库，避免重复劳动；4）容易产品化，好卖钱，并且销售基于该程序语言开发的产品不侵犯第三方知识产权。5）不仅学术界，工业界同样大量使用,因此好就业好创业。
+
+根据以上标准，首选R，有了它，统计模型、数据处理，算法生成一站搞定；次选python，有了它，实验设计、认知神经、实验平台轻松搞定；再选是ruby，有了它，网站开发、与web交互、文本处理快快搞定；最后选择是arduino，有了它，你就是下一个斯金纳。
+
+#世界一流程序员的干货
+
+以下，为一些重要入门资料。请根据个人兴趣入门。
+
+##R
+
+官网
+
+必读入门导航
+
+R入门手册
+Using R for psychological research
+An introduction to psychometric theory with applications in R
+Learning R for Researchers in Psychology
+
+重要外部库与最佳实践
+
+cran
+Psychometric Models and Methods
+Social Sciences
+Multivariate
+Structural Equation Modelling in R
+Must-Have R Packages for Social Scientists
+Notes on the use of R for psychology experiments and questionnaires
+PSYCH-R Home Page
+getting things done with R
+Writing R Extensions
+Kickstarting R - Making your work portable
+rpanel
+
+##Python
+
+官网： Python
+
+必读入门导航
+
+与孩子一起学编程
+Learn Python The Hard Way
+
+重要外部库与最佳实践
+
+PsychoPy
+Rpy2
+PyMVPA
+Modular toolkit for Data Processing (MDP)
+Vision Egg
+DataViewer3D
+OpenElectrophy
+brainlab
+pynn
+Python in neuroscience
+
+##Ruby
+
+官网： Ruby
+
+必读入门导航
+
+Ruby Programming
+Ruby与Rails开发基础书单
+
+重要外部库与最佳实践
+
+ruby-toolbox
+Ruby for Scientific Computing
+Ruby与Rails新手慎入
+
+##Arduino
+
+官网： Arduino
+
+必读入门导航
+
+Tinkering
+Arduino Language Reference
+
+重要外部库与最佳实践
+
+Rad
+ArduBlock
+arduinaap
+USB_Host_Shield
+amarino
+
+#老阳的私货
+
+全世界程序员都说好的图书
+与小朋友一起学编程
+技术派心理学
+Ruby与Rails开发基础书单
+结束语
+
+结束语1：我辈皆愚，勤能补拙。——Ruby Programming后记
+
+结束语2： Learn Python The Hard Way, 2nd Edition后记
+
+    科技界科技公司里会编程的人多如牛毛，没人会在意他们。而在生物界，医药界，政府，社会学界，物理界，历史界和数学界，如果你有这种技能，你能做出令人瞩目的事情。 …这世界需要更多的能知道事情如何工作、喜欢去探索的人。当他们这样对待你时，你要记住，这是你的生活，不是他们的。与众不同不是罪恶…
+
+最新的: August 29, 2011
+向前 向后
+
+    关注:
+    GitHub
+    Feed
+
+© 2017 阳志平. 技术来自于 Jekyll & Minimal Mistakes .
