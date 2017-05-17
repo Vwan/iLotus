@@ -25,14 +25,17 @@ keywords: PIZn, GitHub, Jekyll, Plugins, Works, Archives, Quotes, Violet, css, h
             {% endfor %}
         </ul>
     </article>
+		<h4>Category</h4>
+		<ul>
+    //这里使用了 jekyll 语法，会被编译，所以加多个"\"
+    {\% for category in site.categories %}
+    <li><a href="/categories/{{ category | first }}/" title="view all
+posts">{{ category | first }} {{ category | last | size }}</a>
+    </li>
+    {\% endfor %}
+</ul>
 		<article class="article article-first">
-    <h3>心智</h3>
-        <ul>
-            {% for npost in site.posts.mindnotes limit:3 offset:2   %}
-            <li><a href="{{ npost.url }}" pubdate="{{ npost.date | date_to_utc | date: '%Y-%m-%d' }}" title="{{ npost.title }}" rel="bookmark">{{ npost.title }}</a></li>
-            {% endfor %}
-        </ul>
-    </article>
+
     <article class="article article-last">
     <h3>相关页面</h3>
     <ul>
