@@ -25,6 +25,14 @@ keywords: PIZn, GitHub, Jekyll, Plugins, Works, Archives, Quotes, Violet, css, h
             {% endfor %}
         </ul>
     </article>
+		<article class="article article-first">
+    <h3>心智</h3>
+        <ul>
+            {% for npost in site.posts.mindnotes limit:3 offset:2   %}
+            <li><a href="{{ npost.url }}" pubdate="{{ npost.date | date_to_utc | date: '%Y-%m-%d' }}" title="{{ npost.title }}" rel="bookmark">{{ npost.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </article>
     <article class="article article-last">
     <h3>相关页面</h3>
     <ul>
