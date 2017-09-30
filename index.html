@@ -10,6 +10,20 @@ keywords: PIZn, GitHub, Jekyll, Plugins, Works, Archives, Quotes, Violet, css, h
         <h2>{{ site.subTitle }}</h2>
     </hgroup><!-- //violet-site -->
 </section>
+<div class="cate-bar"><span id="cateBar"></span></div>
+
+   <ul class="artical-list">
+   {% for post in site.categories.blog %}
+       <li>
+           <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+           <div class="title-desc">{{ post.description }}</div>
+       </li>
+   {% endfor %}
+   </ul>
+</div>
+
+<div class="aside">
+</div>
 <article class="lotus-article">
 {% for rpost in paginator.posts limit:1 %}
     <h3><a href="{{ rpost.url }}" title="{{ rpost.title }}" rel="bookmark">{{ rpost.title }}</a></h3>
@@ -28,11 +42,11 @@ keywords: PIZn, GitHub, Jekyll, Plugins, Works, Archives, Quotes, Violet, css, h
 		<h4>Category</h4>
 		<ul>
     //这里使用了 jekyll 语法，会被编译，所以加多个"\"
-    {\% for category in site.categories %}
+    {% for category in site.categories %}
     <li><a href="/categories/{{ category | first }}/" title="view all
 posts">{{ category | first }} {{ category | last | size }}</a>
     </li>
-    {\% endfor %}
+    {% endfor %}
 </ul>
 		<article class="article article-first">
 
