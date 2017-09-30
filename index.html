@@ -41,12 +41,17 @@ keywords: PIZn, GitHub, Jekyll, Plugins, Works, Archives, Quotes, Violet, css, h
     </article>
 		<h4>Category</h4>
 		<ul>
-    //这里使用了 jekyll 语法，会被编译，所以加多个"\"
-    {% for category in site.categories %}
-    <li><a href="/categories/{{ category | first }}/" title="view all
-posts">{{ category | first }} {{ category | last | size }}</a>
-    </li>
-    {% endfor %}
+      <div class="post-categories">
+      {% if post %}
+        {% assign categories = post.categories %}
+      {% else %}
+        {% assign categories = page.categories %}
+      {% endif %}
+      {% for category in categories %}
+      <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+      {% unless forloop.last %}&nbsp;{% endunless %}
+      {% endfor %}
+    </div>
 </ul>
 		<article class="article article-first">
 
