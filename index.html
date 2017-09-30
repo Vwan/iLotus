@@ -43,9 +43,9 @@ keywords: PIZn, GitHub, Jekyll, Plugins, Works, Archives, Quotes, Violet, css, h
 		<ul>
       <div class="post-categories">
       {% if post %}
-        {% assign categories = post.categories %}
+        {% assign categories = post.category %}
       {% else %}
-        {% assign categories = page.categories %}
+        {% assign categories = page.category %}
       {% endif %}
       {% for category in categories %}
       <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
